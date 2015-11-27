@@ -1,0 +1,37 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : true,
+    "frameRate" : 60,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d"],
+
+    "jsList" : [
+        "src/resource.js",
+        "src/constants.js",
+        "src/util.js",
+        "src/DataHandler.js",
+        "src/GameScene/GameScene.js",
+        "src/GameScene/GameSceneController.js",
+        "src/GameScene/AttackBoxController.js",
+        "src/GameScene/Layer/BackgroundLayer.js",
+        "src/GameScene/Layer/GamePlayLayer.js",
+        "src/GameScene/Layer/UILayer.js",
+        "src/GameScene/Layer/PauseLayer.js",
+        "src/GameScene/Layer/GameOverLayer.js",
+        "src/GameScene/Layer/UpgradeLayer.js",
+        "src/GameScene/Node/BaseObject.js",
+        "src/GameScene/Node/BaseActor.js",
+        "src/GameScene/Node/BaseBox.js",
+        "src/GameScene/Node/Hero.js",
+        "src/GameScene/Node/HeroBox.js",
+        "src/GameScene/Node/Enemy.js",
+        "src/GameScene/Node/EnemyBox.js",
+        "src/GameScene/UI/CtlHP.js",
+        "src/GameScene/UI/CtlCombo.js"
+    ]
+}
