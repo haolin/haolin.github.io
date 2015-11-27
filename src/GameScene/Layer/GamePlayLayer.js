@@ -293,7 +293,6 @@ var GamePlayLayer = cc.Layer.extend({
         this._hero._comboNumber = 0;
     },
     enemyBeAttack :function(attackNum){
-        this._hero._comboNumber = 0;
         this._sliderSpeed = this._sliderSpeed > 0 ? this._defSliderSpeed : -this._defSliderSpeed ;
         this.enemy._currentHP = this.enemy._currentHP - attackNum;
         if(this.enemy._currentHP <= 0){
