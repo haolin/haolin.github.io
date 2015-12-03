@@ -17,5 +17,13 @@ var BaseBox = BaseObject.extend({
     loadConfig : function(){
     },
     onClick : function(){
+    },
+    removeFromParent:function(){
+        this.scaleX = 0.08;
+        this.scaleY = 1.5;
+        var ac1 = cc.scaleTo(0.1, 0, 2);
+        var ac2 = cc.callFunc(this._super, this);
+        var ac = cc.sequence(ac1, ac2);
+        this.runAction(ac);
     }
 });

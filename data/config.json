@@ -4,18 +4,21 @@
 		"def_mindamage": "2",
 		"def_maxdamage": "5",
 		"def_mgcdamage": "5",
-		"repel_range": "10",
+		"repel_range": "15",
 		"combo_repel": "5",
-		"max_repel": "150",
+		"max_repel": "80",
 		"ysquare_weight": "1",
 		"gsquare_weight": "1.5",
-		"gsquare_percent": "0.1",
+		"gsquare_percent": "0.3",
 		"def_weight": "5",
 		"add_weight": "0",
 		"max_weight": "5",
 		"judgetime_low": "0.8",
 		"judgetime_hight": "1.5",
-		"blue_speedup1": "3.5"
+		"blue_speedup1": "5",
+		"red_back": "1",
+		"red_back1": "0.2",
+		"red_back2": "0.8"
 	}
 ]
 

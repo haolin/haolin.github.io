@@ -542,6 +542,26 @@ cc.easeInOut = function (rate) {
 };
 
 /**
+ * 修改引擎
+ * Slow to fast then to slow.
+ * @function
+ * @param {Number} v0 -初始速度
+ * @param {Number} v  -最终速度
+ * @return {Object}
+ *
+ */
+cc.easeAcceleration = function (v0, v) {
+    return {
+        a: v0,
+        b: (1/2)*(v-v0),
+        c: v0 + (1/2)*(v-v0),
+        easing: function (dt) {
+            return (this.a * dt + this.b *  Math.pow(dt, 2))/this.c;
+        }
+    };
+};
+
+/**
  * cc.Ease Exponential In. Slow to Fast. <br />
  * Reference easeInExpo: <br />
  * {@link http://www.zhihu.com/question/21981571/answer/19925418}

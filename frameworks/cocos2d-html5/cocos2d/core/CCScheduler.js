@@ -561,6 +561,11 @@ cc.Scheduler = cc.Class.extend(/** @lends cc.Scheduler# */{
                 paused = repeat;
                 delay = 0;
                 repeat = cc.REPEAT_FOREVER;
+            }else if(arguments.length === 7){
+                key = key;
+                paused = paused;
+                delay = delay;
+                repeat = repeat;
             }
         }else{
             //selector, target, interval, repeat, delay, paused

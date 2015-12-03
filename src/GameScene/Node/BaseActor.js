@@ -3,7 +3,7 @@
  */
 
 
-var BaseActor = cc.Sprite.extend({
+var BaseActor = BaseObject.extend({
     _speed : 0,
     _maxHP : 0,
 

@@ -8,7 +8,7 @@
     "renderMode" : 0,
     "engineDir":"frameworks/cocos2d-html5",
 
-    "modules" : ["cocos2d"],
+    "modules" : ["cocos2d", "cocostudio"],
 
     "jsList" : [
         "src/resource.js",
@@ -32,6 +32,7 @@
         "src/GameScene/Node/Enemy.js",
         "src/GameScene/Node/EnemyBox.js",
         "src/GameScene/UI/CtlHP.js",
-        "src/GameScene/UI/CtlCombo.js"
+        "src/GameScene/UI/CtlCombo.js",
+        "src/GameScene/UI/CtlSlider.js"
     ]
 }

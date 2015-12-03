@@ -15,10 +15,7 @@
 var GamePlayLayer = cc.Layer.extend({
     hero : null,
     enemy : null,
-    slider : null,
-    _defSliderSpeed : 0,
-    _sliderSpeed : 0,
-    _sliderAcceleration : 0,
+
     _gameSceneController: null,
     _attackBoxController:null,
     _enemyNumber : 0,
@@ -27,6 +24,8 @@ var GamePlayLayer = cc.Layer.extend({
     heroHPCtl : null,
 
     ComboCtl : null,
+
+    sliderCtl : null,
 
     _damageLabel : null,
     _powerLabel : null,
@@ -53,24 +52,26 @@ var GamePlayLayer = cc.Layer.extend({
     onEnter:function () {
         this._super();
 
-        this._attackBoxController.initBoxs();
+
+        //todo scheduler不支持repeat和delay
+        //this._attackBoxController.initBoxs();
+        this.schedule(this.addHeroBox, 0.08, 3, 0);
+    },
+    addHeroBox : function() {
+        this._attackBoxController.addHeroBox(false);
     },
     loadConfig : function() {
         this._gameSceneController = GameSceneController.getInstance();
         this._attackBoxController = new AttackBoxController(this);
         this._enemyNumber = 1;
         this._comboTime = 0;
-
-        var dataHandler = DataHandler.getInstance();
-        var data = dataHandler.getConfigData();
-        var percentageAcceleration = parseFloat(data["blue_speedup1"]);
-        this._sliderAcceleration = ATTACK_HOLDER_WIDTH * (percentageAcceleration / 100);
     },
     loadResource : function(){
         cc.spriteFrameCache.addSpriteFrames(res.ActorRun_plist);
         cc.spriteFrameCache.addSpriteFrames(res.Enemy_plist);
         cc.spriteFrameCache.addSpriteFrames(res.tp_slider_plist);
         cc.spriteFrameCache.addSpriteFrames(res.tp_ui_plist);
+        ccs.armatureDataManager.addArmatureFileInfo(res.at_achievement_png, res.at_achievement_plist, res.at_achievement_xml);
     },
     loadActors : function(){
 
@@ -86,15 +87,21 @@ var GamePlayLayer = cc.Layer.extend({
         this.enemy.setPosition(ScreenSize.width + 20, 120 + 55);
         this.enemy.idle();
         this.addChild(this.enemy, 201);
-        this._defSliderSpeed = this.enemy._sliderSpeed;
-        this._sliderSpeed = this._defSliderSpeed;
         this._attackBoxController.loadDataByEnemy(this.enemy);
+
+        //test armature
+        //var armature = new ccs.Armature("achievement_logindown");
+        //armature.getAnimation().play("achievement_logindown");
+        //armature.getAnimation().setSpeedScale(10/60);
+        //this.addChild(armature, 10000);
+        //armature.setPosition(ScreenSize.width / 2, ScreenSize.height / 2);
     },
     loadUI : function(){
         //slider
-        this.slider = new cc.Sprite("#movingBarBlue.png");
-        this.slider.setPosition(ATTACK_HOLDER_MIN_X, 90);
-        this.addChild(this.slider, 300);
+        this.sliderCtl = new CtlSlider();
+        this.sliderCtl.setPosition(ATTACK_HOLDER_MIN_X, 90);
+        this.addChild(this.sliderCtl, 300);
+        this.sliderCtl.loadConfigByEnemy(this.enemy);
 
 
         //actor hp
@@ -193,8 +200,13 @@ var GamePlayLayer = cc.Layer.extend({
                 }
                 break;
             case  GameStatus.Battle :
+                var tempComboNumber = this._hero._comboNumber;
                 this._attackBoxController.update(dt);
-                this.updateSlider(dt);
+                //todo
+                if(this._hero._comboNumber === 0 && tempComboNumber !== 0){
+                    this.sliderCtl.slowDown();
+                }
+                this.sliderCtl.update(dt);
                 break;
             case  GameStatus.NextEmeny :
                 this._hero.run();
@@ -230,21 +242,9 @@ var GamePlayLayer = cc.Layer.extend({
         this.enemy.idle();
         this.addChild(this.enemy, 201);
 
-        this._defSliderSpeed = this.enemy._sliderSpeed;
-        this._sliderSpeed = this._defSliderSpeed;
+        this.sliderCtl.loadConfigByEnemy(this.enemy);
 
         this._attackBoxController.loadDataByEnemy(this.enemy);
-    },
-    updateSlider:function(dt){
-        var position = cc.pAdd(this.slider.getPosition(), cc.p(this._sliderSpeed * dt, 0));
-        if(position.x >= ATTACK_HOLDER_MAX_X && this._sliderSpeed > 0){
-            position.x = ATTACK_HOLDER_MAX_X - (position.x - ATTACK_HOLDER_MAX_X);
-            this._sliderSpeed = -this._sliderSpeed;
-        }else if(position.x <= ATTACK_HOLDER_MIN_X && this._sliderSpeed < 0){
-            position.x = ATTACK_HOLDER_MIN_X + (position.x - ATTACK_HOLDER_MIN_X);
-            this._sliderSpeed = -this._sliderSpeed;
-        }
-        this.slider.setPosition(position);
     },
     updateUI:function(dt){
         var str = this._hero._minAttack + "-" + this._hero._maxAttack;
@@ -259,16 +259,29 @@ var GamePlayLayer = cc.Layer.extend({
 
         this._powerLabel.setString("Pwr:" + this._hero._comboAttack);
 
-        var str = this.enemy._minAttack + "-" + this.enemy._maxAttack;
-        this._enemyDamageLabel.setString(str);
+        var enemyAttackStr = null;
+        var enemyMaxHP = 0;
+        var enemyCurrentHP = 0;
+        var gameStatus = this._gameSceneController.getStatus();
+        if(gameStatus === GameStatus.Move){
+            enemyAttackStr = "?-?";
+            enemyMaxHP = -1;
+            enemyCurrentHP = -1;
+        }else{
+            enemyAttackStr = this.enemy._minAttack + "-" + this.enemy._maxAttack;
+            enemyMaxHP = this.enemy._maxHP;
+            enemyCurrentHP = this.enemy._currentHP;
+        }
 
-        this.enemyHPCtl.maxHP = this.enemy._maxHP;
-        this.enemyHPCtl.currentHP = this.enemy._currentHP;
+        this._enemyDamageLabel.setString(enemyAttackStr);
+
+        this.enemyHPCtl.maxHP = enemyMaxHP;
+        this.enemyHPCtl.currentHP = enemyCurrentHP;
         this.enemyHPCtl.update();
     },
     nextBattle:function(sender){
         sender.removeFromParent();
-        this.slider.setPosition(cc.p(ATTACK_HOLDER_MIN_X, this.slider.getPosition().y));
+        this.sliderCtl.reset();
         var upgradeLayer = new UpgradeLayer(this._hero);
         this.addChild(upgradeLayer, 1000);
         this._hero.idle();
@@ -284,8 +297,7 @@ var GamePlayLayer = cc.Layer.extend({
 
         if(this._gameSceneController.getStatus() !== GameStatus.Upgrade){
             this._attackBoxController.comboAction();
-            this._sliderSpeed = this._defSliderSpeed;
-            this.slider.setPosition(cc.p(ATTACK_HOLDER_MIN_X, this.slider.getPosition().y));
+            this.sliderCtl.reset();
             this._gameSceneController.setStatus(GameStatus.Combo);
             this._comboTime = PLAY_COMBO_TIME;
         }
@@ -293,9 +305,11 @@ var GamePlayLayer = cc.Layer.extend({
         this._hero._comboNumber = 0;
     },
     enemyBeAttack :function(attackNum){
-        this._sliderSpeed = this._sliderSpeed > 0 ? this._defSliderSpeed : -this._defSliderSpeed ;
+        this.sliderCtl.speedUp();
+
         this.enemy._currentHP = this.enemy._currentHP - attackNum;
         if(this.enemy._currentHP <= 0){
+            this.sliderCtl.reset();
             this.enemy.die(this, this.nextBattle);
             this._gameSceneController.setStatus(GameStatus.Upgrade);
             this._attackBoxController.cleanEnemyBoxes();
@@ -337,19 +351,20 @@ var GamePlayLayer = cc.Layer.extend({
             return true;
         }
 
-        var location = target.slider.getPosition().x;
+        var location = target.sliderCtl.getPosition().x;
         var actionType =  target._attackBoxController.clickAt(location);
 
         if(actionType === ActionType.HeroDefence){
             target._hero._comboNumber++;
-            target._sliderSpeed += (target._sliderSpeed > 0 ? target._sliderAcceleration : -target._sliderAcceleration);
+            target.sliderCtl.speedUp();
         }else if(actionType === ActionType.HeroNormalAttack || actionType === ActionType.HeroCriticalAttack ){
             target._hero._comboNumber++;
-            target._sliderSpeed += (target._sliderSpeed > 0 ? target._sliderAcceleration : -target._sliderAcceleration);
+            target.sliderCtl.speedUp();
             var isCritical = actionType === ActionType.HeroCriticalAttack;
             var attackNum = target._hero.attack(isCritical);
             target.enemyBeAttack(attackNum);
         }else{
+            target.sliderCtl.slowDown();
             var attackNum = target.enemy.attack();
             target.heroBeAttack(attackNum);
         }

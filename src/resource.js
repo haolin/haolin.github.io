@@ -28,7 +28,13 @@ var res = {
     //data
     dt_config : "data/config.json",
     dt_enemy : "data/enemy.json",
-    dt_hero : "data/hero.json"
+    dt_hero : "data/hero.json",
+
+
+    //
+    at_achievement_plist : "res/armature/achievement_logindown.plist",
+    at_achievement_png : "res/armature/achievement_logindown.png",
+    at_achievement_xml : "res/armature/achievement_logindown.xml"
 };
 
 var g_resources = [

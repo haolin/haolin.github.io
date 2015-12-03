@@ -25,6 +25,8 @@ var GameScene = cc.Scene.extend({
         this.addChild(this.uiLayer, 2);
 
         this.scheduleUpdate();
+
+        //ccs.armatureDataManager.addArmatureFileInfo
     },
     update:function(dt){
         if(this._gameSceneController.getStatus() === GameStatus.GameOver){

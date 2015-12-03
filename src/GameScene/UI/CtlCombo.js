@@ -38,7 +38,7 @@ var CtlCombo = cc.Sprite.extend({
         this._greenBar = new cc.Sprite(res.ComboBar_png);
         this._greenBar.setPosition(3.5, 4.5);
         this._greenBar.setAnchorPoint(0,0);
-        //green.setScaleX(1.5);
+        //
         //green.setTextureRect(cc.rect(0, 0, 0 , green.getContentSize().height));
         this.addChild(this._greenBar,1);
         this._greenBarWidth = this._greenBar.getContentSize().width;
@@ -56,6 +56,7 @@ var CtlCombo = cc.Sprite.extend({
         }
 
         this._textLabel.setString(this.currentComboCount);
+        cc.moveBy()
     }
 
 });

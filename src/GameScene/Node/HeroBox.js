@@ -32,6 +32,18 @@ var HeroBox = BaseBox.extend({
         this._super(frameName);
         return true;
     },
+    onEnter:function () {
+        this._super();
+
+        this.scaleY = 0.6;
+        var ac1 = cc.scaleTo(0.2, 1.0, 1.12);
+        var ac2 = cc.scaleTo(0.2, 1.0, 1.0);
+        var ac = cc.sequence(ac1, ac2);
+        this.runAction(ac);
+    },
+    onExit:function () {
+        this._super();
+    },
     loadConfig : function(){
         this._data = DataHandler.getInstance().getConfigData();
         if(this._type === HeroBoxType.Critical){

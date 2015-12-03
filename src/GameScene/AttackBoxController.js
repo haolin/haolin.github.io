@@ -1,7 +1,7 @@
 
 //boss>箭头>炸弹>盾牌>红色>绿色>黄色
 
-var AttackBoxController = cc.Class.extend({
+var AttackBoxController = cc.Node.extend({
     _gameSceneController: null,
     _currentLayer : null,
     _heroBoxes : [],
@@ -54,6 +54,15 @@ var AttackBoxController = cc.Class.extend({
     //记录还需生成的敌人特殊方块数
     _enemySpecialBoxLeft: 0,
 
+    _enemySpecialBoxLeft: 0,
+
+    _enemySpecialBoxLeft: 0,
+
+    //
+    _enemBoxBackTime: 0,
+    _enemBoxBackTimeT1: 0,
+    _enemBoxBackSpeed: 0,
+
     //_sliderAccelerationPerStage : 0,
     ctor: function (layer) {
 
@@ -80,6 +89,9 @@ var AttackBoxController = cc.Class.extend({
         this._repelDistanceAdditional = util.getValueByPercentage(this._data["combo_repel"]);
         this._defMaxRepelDistance = util.getValueByPercentage(this._data["max_repel"]);
 
+        this._enemBoxBackTime = parseFloat(this._data["red_back"]);
+        this._enemBoxBackTimeT1 = parseFloat(this._data["red_back1"]);
+        this._enemBoxBackSpeed = parseFloat(this._data["red_back2"]);
 
         this._heroBoxes = [[],[]];
         this._boxWeight = 0;
@@ -87,6 +99,9 @@ var AttackBoxController = cc.Class.extend({
         this._judgeTimePeriod = 0;
         this._judgeTime = this.getRandomJudgeTime();
         this._enemySpecialBoxLeft = 0;
+    },
+    onEnter:function () {
+        this._super();
     },
     /**
      * @param {Hero} hero
@@ -101,7 +116,6 @@ var AttackBoxController = cc.Class.extend({
         this._enemy = enemy;
         this._sliderSpeed = this._enemy._sliderSpeed;
 
-
         this._maxBoxWeight = this._defWeight;
         this._judgeTimePeriod = 0;
         this._judgeTime = this.getRandomJudgeTime();
@@ -114,9 +128,29 @@ var AttackBoxController = cc.Class.extend({
         this._enemySpecialBoxLeft = 0;
     },
     initBoxs : function(){
-        for(var idx = 0; idx < 4; idx++){
-            this.addHeroBox(false);
-        }
+
+        //var acArray = [];
+        //var count = 4;
+        //for(var idx = 0; idx < count; idx++){
+        //    var ac1 = cc.callFunc(this.addHeroBox, this, false);
+        //    var ac2 = cc.delayTime(0.1);
+        //
+        //    if(idx< (count - 1)){
+        //        acArray.push(ac1);
+        //        acArray.push(ac2);
+        //    }else{
+        //        acArray.push(ac1);
+        //    }
+        //}
+        //
+        //var action = cc.sequence(acArray);
+        //this.scheduleUpdate(action);
+        //cc.scheduler.schedule(this.addHeroBox, this, 0.1, 4, 0, false, false);
+        //this.schedule(this.addHeroBox, 0.1, 4, false, false);
+
+        //this.scheduleOnce
+        //todo scheduler不支持repeat和delay
+        //cc.director.getScheduler().schedule(this.addHeroBox, this, 0.1, 4, 0, false, false);
     },
     getRandomJudgeTime : function(){
         return util.getRandomFloat(this._judgeTimeMin,this._judgeTimeMax);
@@ -207,7 +241,6 @@ var AttackBoxController = cc.Class.extend({
         if(randomType){
 
             var random = Math.random();
-            cc.log(random);
             if(random < this._criticalBoxChance){
                 boxType = HeroBoxType.Critical;
             }else{
@@ -462,7 +495,84 @@ var AttackBoxController = cc.Class.extend({
             }
         }
     },
+    /*
+     *
+     *匀速的combo击退动画
+     */
     repelEnemyBox:function(box){
+
+        //总时间
+        var T = this._enemBoxBackTime;
+        //到达中间最高速度的时间
+        var T1 = this._enemBoxBackTimeT1;
+        //初始速度和最大速度的比率
+        var r = this._enemBoxBackSpeed;
+
+        var shouldRemove = false;
+        var comboNum = this._hero._comboNumber;
+        var repelDistance = this._repelDistance + (comboNum - MAX_BOX_COUNT)*this._repelDistanceAdditional;
+
+        if(repelDistance > this._defMaxRepelDistance){
+            repelDistance = this._defMaxRepelDistance;
+        }
+
+        //位移
+        var S = repelDistance;
+
+        var duration = PLAY_COMBO_TIME;
+
+        var x = box.getPosition().x;
+        var maxDeltaX = (ATTACK_HOLDER_MAX_X - box.getContentSize().width/2 - x);
+        var deltaX = repelDistance;
+
+        if(deltaX >= maxDeltaX){
+            S = maxDeltaX;
+            T = T * (maxDeltaX/deltaX);
+            T1 = T1 * (maxDeltaX/deltaX);
+            shouldRemove = true;
+        }
+
+//(1+r)/2*V*T * (1/2)*V*(T-T1) = S
+//V=S/(((1+r)/2)*T1 +(1/2)*(T-T1))
+
+        //最大速度
+        var V = S/(((1+r)/2)*T1 +(1/2)*(T-T1));
+        //初始速度
+        var V0 = V * r;
+
+        var S1 = ((V + V0)*T1)/2;
+        var S2 = S - S1;
+        var T2 = T - T1;
+
+        var action;
+        if(shouldRemove){
+            var move1 = cc.moveBy(T1, S1, 0);
+            move1.easing(cc.easeAcceleration(V0, V));
+            var move2 = cc.moveBy(T2, S2, 0);
+            move2.easing(cc.easeAcceleration(V, 0));
+            var callBack = cc.callFunc(this.removeActor, this);
+            action = cc.sequence(move1, move2, callBack);
+
+        }else{
+            var move1 = cc.moveBy(T1, S1, 0);
+            move1.easing(cc.easeAcceleration(V0, V));
+            var move2 = cc.moveBy(T2, S2, 0);
+            move2.easing(cc.easeAcceleration(V, 0));
+            action = cc.sequence(move1, move2);
+        }
+
+        box.runAction(action);
+        return shouldRemove;
+    },
+    /*
+    *匀速的combo击退动画
+    *
+    repelEnemyBox:function(box){
+
+        this._enemBoxBackTime;
+        this._enemBoxBackTimeT1;
+        this._enemBoxBackSpeed;
+
         var shouldRemove = false;
         var comboNum = this._hero._comboNumber;
         var repelDistance = this._repelDistance + (comboNum - MAX_BOX_COUNT)*this._repelDistanceAdditional;
@@ -489,10 +599,10 @@ var AttackBoxController = cc.Class.extend({
             shouldRemove = false;
         }
 
-
         box.runAction(action);
         return shouldRemove;
     },
+    */
     removeActor:function(sender){
         sender.removeFromParent();
     }
