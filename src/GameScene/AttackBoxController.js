@@ -54,10 +54,6 @@ var AttackBoxController = cc.Node.extend({
     //记录还需生成的敌人特殊方块数
     _enemySpecialBoxLeft: 0,
 
-    _enemySpecialBoxLeft: 0,
-
-    _enemySpecialBoxLeft: 0,
-
     //
     _enemBoxBackTime: 0,
     _enemBoxBackTimeT1: 0,
@@ -198,9 +194,7 @@ var AttackBoxController = cc.Node.extend({
                     boxes.splice(subidx, 1);
                     subidx--;
                     var isCritical = box._actionType === ActionType.EnemyCriticalAttack;
-                    var attackNum = this._enemy.attack(isCritical);
-                    this._hero._currentHP = this._hero._currentHP - attackNum;
-                    this._hero._comboNumber = 0;
+                    this._enemy.attack(isCritical, this._hero);
                 }
             }
         }
@@ -497,7 +491,7 @@ var AttackBoxController = cc.Node.extend({
     },
     /*
      *
-     *匀速的combo击退动画
+     *combo击退动画, 匀加速＋匀减速 后退
      */
     repelEnemyBox:function(box){
 
@@ -518,8 +512,6 @@ var AttackBoxController = cc.Node.extend({
 
         //位移
         var S = repelDistance;
-
-        var duration = PLAY_COMBO_TIME;
 
         var x = box.getPosition().x;
         var maxDeltaX = (ATTACK_HOLDER_MAX_X - box.getContentSize().width/2 - x);
@@ -552,7 +544,6 @@ var AttackBoxController = cc.Node.extend({
             move2.easing(cc.easeAcceleration(V, 0));
             var callBack = cc.callFunc(this.removeActor, this);
             action = cc.sequence(move1, move2, callBack);
-
         }else{
             var move1 = cc.moveBy(T1, S1, 0);
             move1.easing(cc.easeAcceleration(V0, V));
@@ -605,6 +596,9 @@ var AttackBoxController = cc.Node.extend({
     */
     removeActor:function(sender){
         sender.removeFromParent();
+    },
+    callBackAction:function(sender){
+
     }
 });
 

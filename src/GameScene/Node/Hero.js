@@ -37,12 +37,30 @@ var Hero = BaseActor.extend({
     idle : function(){
         this.playAction(0,10,true);
     },
-    attack : function(isCritical){
+    attack : function(isCritical, target){
         this.playAction(110,137,false);
-        return this._super(isCritical);
+        this._super(isCritical, target);
     },
     die : function(target,callback) {
         this.playAction(35, 57, false, target,callback);
+    },
+    beAttacked : function(isCritical, attackNum){
+        this._super(isCritical, attackNum);
+        this._comboNumber = 0;
+        var str = "-" + attackNum;
+        var textLabel = new cc.LabelTTF(str,  "GUBBLABLO", 25);
+        textLabel.setColor(cc.color.BLACK);
+        textLabel.setPosition(this.getContentSize().width/2, this.getContentSize().height/2);
+        this.addChild(textLabel);
+        this.beAttackedAction(textLabel);
+    },
+    block : function(){
+        var str = "BLOCK!";
+        var textLabel = new cc.LabelTTF(str,  "GUBBLABLO", 25);
+        textLabel.setColor(cc.color.BLACK);
+        textLabel.setPosition(this.getContentSize().width/2, this.getContentSize().height/2);
+        this.addChild(textLabel);
+        this.beAttackedAction(textLabel);
     },
     getMaxHP : function(){
         return this.getValueByLevel("def_maxhp","hero_maxhp_level","max_hp");

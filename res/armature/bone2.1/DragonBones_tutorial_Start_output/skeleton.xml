@@ -1,0 +1,122 @@
+<skeleton name="DragonBones_tutorial_Start" frameRate="24" version="2.1">
+  <armatures>
+    <armature name="Dragon">
+      <b name="tailTip" x="161" y="-166.05" kX="0" kY="0" cX="1" cY="1" pX="23.25" pY="93.1" z="0">
+        <d name="parts-tailTip" pX="0" pY="0"/>
+      </b>
+      <b name="armUpperL" x="-19.15" y="-173.7" kX="-60" kY="-60" cX="1" cY="1" pX="42.7" pY="16.55" z="1">
+        <d name="parts-armUpperL" pX="0" pY="0"/>
+      </b>
+      <b name="armL" x="-26.65" y="-137.05" kX="-105" kY="-105" cX="1" cY="1" pX="14.5" pY="26.1" z="2">
+        <d name="parts-armL" pX="0" pY="0"/>
+      </b>
+      <b name="handL" x="-47.35" y="-127.95" kX="-45" kY="-45" cX="1" cY="1" pX="38.9" pY="28.5" z="3">
+        <d name="parts-handL" pX="0" pY="0"/>
+      </b>
+      <b name="legL" x="2.05" y="-99" kX="0" kY="0" cX="1" cY="1" pX="91.6" pY="14.8" z="4">
+        <d name="parts-legL" pX="0" pY="0"/>
+      </b>
+      <b name="body" x="29" y="-137" kX="0" kY="0" cX="1" cY="1" pX="58.65" pY="86.55" z="5">
+        <d name="parts-body" pX="0" pY="0"/>
+      </b>
+      <b name="head" x="14.45" y="-224.1" kX="0" kY="0" cX="1" cY="1" pX="115.4" pY="156.9" z="6">
+        <d name="parts-head" pX="0" pY="0"/>
+      </b>
+      <b name="tail" x="71" y="-81.7" kX="0" kY="0" cX="1" cY="1" pX="11.5" pY="176.3" z="7">
+        <d name="parts-tail" pX="0" pY="-63.8"/>
+      </b>
+      <b name="legR" x="38.4" y="-100.3" kX="-15" kY="-15" cX="1" cY="1" pX="44.9" pY="16.6" z="8">
+        <d name="parts-legR" pX="0" pY="0"/>
+      </b>
+      <b name="armUpperR" x="37.4" y="-170.7" kX="45" kY="45" cX="1" cY="1" pX="11.45" pY="29.65" z="9">
+        <d name="parts-armUpperR" pX="0" pY="0"/>
+      </b>
+      <b name="armR" x="92.7" y="-141" kX="30" kY="30" cX="1" cY="1" pX="12.25" pY="12.4" z="10">
+        <d name="parts-armR" pX="0" pY="0"/>
+      </b>
+      <b name="handR" x="74.3" y="-133.75" kX="30" kY="30" cX="1" cY="1" pX="26.6" pY="2.9" z="11">
+        <d name="parts-handR" pX="0" pY="0"/>
+      </b>
+    </armature>
+  </armatures>
+  <animations>
+    <animation name="Dragon">
+      <mov name="walk" dr="9" to="6" drTW="9" lp="0" twE="NaN">
+        <b name="tailTip" sc="1" dl="0">
+          <f x="161" y="-166.05" cocos2d_x="137.75" cocos2d_y="-259.15" kX="0" kY="0" cX="1" cY="1" pX="23.25" pY="93.1" z="0" dI="0" dr="4"/>
+          <f x="171.95" y="-125.05" cocos2d_x="198.4" cocos2d_y="-217.3" kX="30" kY="30" cX="1" cY="1" pX="23.25" pY="93.15" z="0" dI="0" dr="4"/>
+          <f x="161" y="-166.05" cocos2d_x="137.75" cocos2d_y="-259.15" kX="0" kY="0" cX="1" cY="1" pX="23.25" pY="93.1" z="0" dI="0" dr="1"/>
+        </b>
+        <b name="armUpperL" sc="1" dl="0">
+          <f x="-19.15" y="-173.7" cocos2d_x="-54.85" cocos2d_y="-145.05" kX="-60" kY="-60" cX="1" cY="1" pX="42.7" pY="16.55" z="1" dI="0" dr="4"/>
+          <f x="-19.2" y="-173.75" cocos2d_x="-61.85" cocos2d_y="-190.3" kX="0" kY="0" cX="1" cY="1" pX="42.65" pY="16.55" z="1" dI="0" dr="4"/>
+          <f x="-19.15" y="-173.7" cocos2d_x="-54.85" cocos2d_y="-145.05" kX="-60" kY="-60" cX="1" cY="1" pX="42.7" pY="16.55" z="1" dI="0" dr="1"/>
+        </b>
+        <b name="armL" sc="1" dl="0">
+          <f x="-26.65" y="-137.05" cocos2d_x="-48.15" cocos2d_y="-116.3" kX="-105" kY="-105" cX="1" cY="1" pX="14.5" pY="26.1" z="2" dI="0" dr="4"/>
+          <f x="-61.05" y="-155.4" cocos2d_x="-86.65" cocos2d_y="-170.75" kX="-30" kY="-30" cX="1" cY="1" pX="14.5" pY="26.05" z="2" dI="0" dr="4"/>
+          <f x="-26.65" y="-137.05" cocos2d_x="-48.15" cocos2d_y="-116.3" kX="-105" kY="-105" cX="1" cY="1" pX="14.5" pY="26.1" z="2" dI="0" dr="1"/>
+        </b>
+        <b name="handL" sc="1" dl="0">
+          <f x="-47.35" y="-127.95" cocos2d_x="-95" cocos2d_y="-120.55" kX="-45" kY="-45" cX="1" cY="1" pX="38.9" pY="28.5" z="3" dI="0" dr="4"/>
+          <f x="-79.35" y="-166.7" cocos2d_x="-109.65" cocos2d_y="-204.25" kX="15" kY="15" cX="1" cY="1" pX="38.95" pY="28.45" z="3" dI="0" dr="4"/>
+          <f x="-47.35" y="-127.95" cocos2d_x="-95" cocos2d_y="-120.55" kX="-45" kY="-45" cX="1" cY="1" pX="38.9" pY="28.5" z="3" dI="0" dr="1"/>
+        </b>
+        <b name="legL" sc="1" dl="0">
+          <f x="2.05" y="-99" cocos2d_x="-89.55" cocos2d_y="-113.8" kX="0" kY="0" cX="1" cY="1" pX="91.6" pY="14.8" z="4" dI="0" dr="4"/>
+          <f x="-8.95" y="-86" cocos2d_x="0.45" cocos2d_y="6.3" kX="-105" kY="-105" cX="1" cY="1" pX="91.55" pY="14.8" z="4" dI="0" dr="4"/>
+          <f x="2.05" y="-99" cocos2d_x="-89.55" cocos2d_y="-113.8" kX="0" kY="0" cX="1" cY="1" pX="91.6" pY="14.8" z="4" dI="0" dr="1"/>
+        </b>
+        <b name="body" sc="1" dl="0">
+          <f x="29" y="-137" cocos2d_x="-29.65" cocos2d_y="-223.55" kX="0" kY="0" cX="1" cY="1" pX="58.65" pY="86.55" z="5" dI="0" dr="4"/>
+          <f x="7.75" y="-178.1" cocos2d_x="-24.9" cocos2d_y="-227.1" kX="5.75" kY="5.75" cX="1" cY="1" pX="37.35" pY="45.45" z="5" dI="0" dr="4"/>
+          <f x="29" y="-137" cocos2d_x="-29.65" cocos2d_y="-223.55" kX="0" kY="0" cX="1" cY="1" pX="58.65" pY="86.55" z="5" dI="0" dr="1"/>
+        </b>
+        <b name="head" sc="1" dl="0">
+          <f x="14.45" y="-224.1" cocos2d_x="-100.95" cocos2d_y="-381" kX="0" kY="0" cX="1" cY="1" pX="115.4" pY="156.9" z="6" dI="0" dr="4"/>
+          <f x="14.45" y="-221.1" cocos2d_x="-118.15" cocos2d_y="-363.75" kX="-6.57" kY="-6.57" cX="1" cY="1" pX="115.45" pY="156.85" z="6" dI="0" dr="4"/>
+          <f x="14.45" y="-224.1" cocos2d_x="-100.95" cocos2d_y="-381" kX="0" kY="0" cX="1" cY="1" pX="115.4" pY="156.9" z="6" dI="0" dr="1"/>
+        </b>
+        <b name="tail" sc="1" dl="0">
+          <f x="71" y="-81.7" cocos2d_x="59.5" cocos2d_y="-258" kX="0" kY="0" cX="1" cY="1" pX="11.5" pY="176.3" z="7" dI="0" dr="4"/>
+          <f x="51.95" y="-80.2" cocos2d_x="112.15" cocos2d_y="-246.35" kX="23.64" kY="23.64" cX="1" cY="1" pX="11.5" pY="176.35" z="7" dI="0" dr="4"/>
+          <f x="71" y="-81.7" cocos2d_x="59.5" cocos2d_y="-258" kX="0" kY="0" cX="1" cY="1" pX="11.5" pY="176.3" z="7" dI="0" dr="1"/>
+        </b>
+        <b name="legR" sc="1" dl="0">
+          <f x="38.4" y="-100.3" cocos2d_x="-9.25" cocos2d_y="-104.7" kX="-15" kY="-15" cX="1" cY="1" pX="44.9" pY="16.6" z="8" dI="0" dr="4"/>
+          <f x="45.5" y="-87.4" cocos2d_x="34" cocos2d_y="-133.9" kX="55.93" kY="55.93" cX="1" cY="1" pX="44.95" pY="16.5" z="8" dI="0" dr="4"/>
+          <f x="38.4" y="-100.3" cocos2d_x="-9.25" cocos2d_y="-104.7" kX="-15" kY="-15" cX="1" cY="1" pX="44.9" pY="16.6" z="8" dI="0" dr="1"/>
+        </b>
+        <b name="armUpperR" sc="1" dl="0">
+          <f x="37.4" y="-170.7" cocos2d_x="50.3" cocos2d_y="-199.75" kX="45" kY="45" cX="1" cY="1" pX="11.45" pY="29.65" z="9" dI="0" dr="4"/>
+          <f x="37.45" y="-170.65" cocos2d_x="34.15" cocos2d_y="-202.25" kX="15" kY="15" cX="1" cY="1" pX="11.35" pY="29.65" z="9" dI="0" dr="4"/>
+          <f x="37.4" y="-170.7" cocos2d_x="50.3" cocos2d_y="-199.75" kX="45" kY="45" cX="1" cY="1" pX="11.45" pY="29.65" z="9" dI="0" dr="1"/>
+        </b>
+        <b name="armR" sc="1" dl="0">
+          <f x="92.7" y="-141" cocos2d_x="88.3" cocos2d_y="-157.85" kX="30" kY="30" cX="1" cY="1" pX="12.25" pY="12.4" z="10" dI="0" dr="4"/>
+          <f x="100.35" y="-173.25" cocos2d_x="83.45" cocos2d_y="-177.95" kX="-30" kY="-30" cX="1" cY="1" pX="12.3" pY="12.5" z="10" dI="0" dr="4"/>
+          <f x="92.7" y="-141" cocos2d_x="88.3" cocos2d_y="-157.85" kX="30" kY="30" cX="1" cY="1" pX="12.25" pY="12.4" z="10" dI="0" dr="1"/>
+        </b>
+        <b name="handR" sc="1" dl="0">
+          <f x="74.3" y="-133.75" cocos2d_x="52.75" cocos2d_y="-149.6" kX="30" kY="30" cX="1" cY="1" pX="26.6" pY="2.9" z="11" dI="0" dr="4"/>
+          <f x="104.25" y="-153.3" cocos2d_x="77.9" cocos2d_y="-149.35" kX="-15" kY="-15" cX="1" cY="1" pX="26.45" pY="3" z="11" dI="0" dr="4"/>
+          <f x="74.3" y="-133.75" cocos2d_x="52.75" cocos2d_y="-149.6" kX="30" kY="30" cX="1" cY="1" pX="26.6" pY="2.9" z="11" dI="0" dr="1"/>
+        </b>
+      </mov>
+    </animation>
+  </animations>
+  <TextureAtlas name="DragonBones_tutorial_Start" width="512" height="512">
+    <SubTexture name="parts-handR" width="49" height="29" cocos2d_pX="0" cocos2d_pY="0" x="50" y="199"/>
+    <SubTexture name="parts-armR" width="23" height="39" cocos2d_pX="0" cocos2d_pY="0" x="127" y="199"/>
+    <SubTexture name="parts-armUpperR" width="80" height="47" cocos2d_pX="0" cocos2d_pY="0" x="424" y="152"/>
+    <SubTexture name="parts-legR" width="90" height="116" cocos2d_pX="0" cocos2d_pY="0" x="332" y="141"/>
+    <SubTexture name="parts-tail" width="108" height="139" cocos2d_pX="0" cocos2d_pY="-63.8" x="332" y="0"/>
+    <SubTexture name="parts-head" width="210" height="197" cocos2d_pX="0" cocos2d_pY="0" x="0" y="0"/>
+    <SubTexture name="parts-body" width="118" height="174" cocos2d_pX="0" cocos2d_pY="0" x="212" y="0"/>
+    <SubTexture name="parts-legL" width="102" height="90" cocos2d_pX="0" cocos2d_pY="0" x="212" y="176"/>
+    <SubTexture name="parts-handL" width="48" height="39" cocos2d_pX="0" cocos2d_pY="0" x="0" y="199"/>
+    <SubTexture name="parts-armL" width="24" height="40" cocos2d_pX="0" cocos2d_pY="0" x="101" y="199"/>
+    <SubTexture name="parts-armUpperL" width="56" height="43" cocos2d_pX="0" cocos2d_pY="0" x="442" y="107"/>
+    <SubTexture name="parts-tailTip" width="56" height="105" cocos2d_pX="0" cocos2d_pY="0" x="442" y="0"/>
+  </TextureAtlas>
+</skeleton>

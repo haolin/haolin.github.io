@@ -97,5 +97,5 @@ var PLAY_COMBO_TIME = 0.5;
 //触发combo最低点数
 var MAX_BOX_COUNT = 5;
 
-//触发combo最低点数
+//未知血量
 var ACTOR_HP_UNDEFINE = -1;

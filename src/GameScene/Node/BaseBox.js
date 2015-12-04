@@ -19,9 +19,10 @@ var BaseBox = BaseObject.extend({
     onClick : function(){
     },
     removeFromParent:function(){
-        this.scaleX = 0.08;
+        this.stopAllActions();
+        this.scaleX = 9/this.getContentSize().width;
         this.scaleY = 1.5;
-        var ac1 = cc.scaleTo(0.1, 0, 2);
+        var ac1 = cc.scaleTo(0.15, 0, 2);
         var ac2 = cc.callFunc(this._super, this);
         var ac = cc.sequence(ac1, ac2);
         this.runAction(ac);

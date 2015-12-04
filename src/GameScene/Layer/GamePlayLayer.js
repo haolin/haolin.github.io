@@ -71,7 +71,9 @@ var GamePlayLayer = cc.Layer.extend({
         cc.spriteFrameCache.addSpriteFrames(res.Enemy_plist);
         cc.spriteFrameCache.addSpriteFrames(res.tp_slider_plist);
         cc.spriteFrameCache.addSpriteFrames(res.tp_ui_plist);
-        ccs.armatureDataManager.addArmatureFileInfo(res.at_achievement_png, res.at_achievement_plist, res.at_achievement_xml);
+        //ccs.armatureDataManager.addArmatureFileInfo(res.at_achievement_png, res.at_achievement_plist, res.at_achievement_xml);
+        //ccs.armatureDataManager.addArmatureFileInfo(res.at_dragon_png, res.at_dragon_plist, res.at_dragon_xml);
+        //ccs.armatureDataManager.addArmatureFileInfo(res.at_dragonbone_png, res.at_dragonbone_plist, res.at_dragonbone_xml);
     },
     loadActors : function(){
 
@@ -89,12 +91,19 @@ var GamePlayLayer = cc.Layer.extend({
         this.addChild(this.enemy, 201);
         this._attackBoxController.loadDataByEnemy(this.enemy);
 
+
         //test armature
-        //var armature = new ccs.Armature("achievement_logindown");
-        //armature.getAnimation().play("achievement_logindown");
+        //var armature = new ccs.Armature("Dragon");
+        //armature.getAnimation().play("walk");
+        ////armature.getAnimation().setSpeedScale(10/60);
+        //this.addChild(armature, 10000);
+        //armature.setPosition(ScreenSize.width / 2, 0);
+
+        //var armature = new ccs.Armature("Dragon");
+        //armature.getAnimation().play("fall");
         //armature.getAnimation().setSpeedScale(10/60);
         //this.addChild(armature, 10000);
-        //armature.setPosition(ScreenSize.width / 2, ScreenSize.height / 2);
+        //armature.setPosition(ScreenSize.width / 2, 0);
     },
     loadUI : function(){
         //slider
@@ -293,21 +302,21 @@ var GamePlayLayer = cc.Layer.extend({
     },
     comboAction:function(){
         var attackNum = this._hero._comboAttack * this._hero._comboNumber;
-        this.enemyBeAttack(attackNum);
+        this.enemy.beAttacked(false, attackNum);
+        this.enemyBeAttack();
 
         if(this._gameSceneController.getStatus() !== GameStatus.Upgrade){
             this._attackBoxController.comboAction();
             this.sliderCtl.reset();
             this._gameSceneController.setStatus(GameStatus.Combo);
-            this._comboTime = PLAY_COMBO_TIME;
+            this._comboTime = this._attackBoxController._enemBoxBackTime;
         }
 
         this._hero._comboNumber = 0;
     },
-    enemyBeAttack :function(attackNum){
+    enemyBeAttack :function(){
         this.sliderCtl.speedUp();
 
-        this.enemy._currentHP = this.enemy._currentHP - attackNum;
         if(this.enemy._currentHP <= 0){
             this.sliderCtl.reset();
             this.enemy.die(this, this.nextBattle);
@@ -315,14 +324,11 @@ var GamePlayLayer = cc.Layer.extend({
             this._attackBoxController.cleanEnemyBoxes();
         }
     },
-    heroBeAttack :function(attackNum){
-        this._hero._currentHP = this._hero._currentHP - attackNum;
+    heroBeAttack :function(){
         if(this._hero._currentHP <= 0){
             this.gameOver();
             this._gameSceneController.setStatus(GameStatus.GameOver);
-            this._attackBoxController.cleanEnemyBoxes();
         }
-        this._hero._comboNumber = 0;
     },
     bindTouchListener : function(){
         var listener = cc.EventListener.create({
@@ -356,17 +362,18 @@ var GamePlayLayer = cc.Layer.extend({
 
         if(actionType === ActionType.HeroDefence){
             target._hero._comboNumber++;
+            target._hero.block();
             target.sliderCtl.speedUp();
         }else if(actionType === ActionType.HeroNormalAttack || actionType === ActionType.HeroCriticalAttack ){
             target._hero._comboNumber++;
             target.sliderCtl.speedUp();
             var isCritical = actionType === ActionType.HeroCriticalAttack;
-            var attackNum = target._hero.attack(isCritical);
-            target.enemyBeAttack(attackNum);
+            target._hero.attack(isCritical, target.enemy);
+            target.enemyBeAttack();
         }else{
             target.sliderCtl.slowDown();
-            var attackNum = target.enemy.attack();
-            target.heroBeAttack(attackNum);
+            target.enemy.attack(false, target._hero);
+            target.heroBeAttack();
         }
 
         return true;

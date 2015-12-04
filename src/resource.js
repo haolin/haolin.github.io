@@ -34,7 +34,23 @@ var res = {
     //
     at_achievement_plist : "res/armature/achievement_logindown.plist",
     at_achievement_png : "res/armature/achievement_logindown.png",
-    at_achievement_xml : "res/armature/achievement_logindown.xml"
+    at_achievement_xml : "res/armature/achievement_logindown.xml",
+
+    at_dragon_plist : "res/armature/dragon.plist",
+    at_dragon_png : "res/armature/dragon.png",
+    at_dragon_xml : "res/armature/dragon.xml",
+
+    at_dragonbone_plist : "res/armature/DragonBones.plist",
+    at_dragonbone_png : "res/armature/DragonBones.png",
+    at_dragonbone_xml : "res/armature/DragonBones.xml",
+
+    at_skeleton_plist : "res/armature/bone2.1/skeleton.plist",
+    at_skeleton_png : "res/armature/bone2.1/skeleton.png",
+    at_skeleton_xml : "res/armature/bone2.1/skeleton.xml",
+
+    at_skeleton1_plist : "res/armature/bone2.1/skeleton1.plist",
+    at_skeleton1_png : "res/armature/bone2.1/skeleton1.png",
+    at_skeleton1_xml : "res/armature/bone2.1/skeleton1.xml"
 };
 
 var g_resources = [

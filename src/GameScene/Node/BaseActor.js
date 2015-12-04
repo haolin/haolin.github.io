@@ -30,15 +30,51 @@ var BaseActor = BaseObject.extend({
     },
     idle : function(){
     },
-    attack : function(isCritical){
+    attack : function(isCritical, target){
         var attackNum = util.getRandomNumber(this._minAttack, this._maxAttack);
         if(isCritical){
-            attackNum *= 2;
+            attackNum *= 1.5;
         }
-        return attackNum;
+
+        attackNum = Math.floor(attackNum+0.5);
+
+        target.beAttacked(isCritical, attackNum);
     },
     die : function(){
 
+    },
+    beAttacked : function(isCritical, attackNum){
+        var currentHP = this._currentHP - attackNum;
+        if(currentHP <0 ){
+            currentHP = 0;
+        }
+        this._currentHP = currentHP;
+    },
+    beAttackedAction : function(text){
+        var x = this.getContentSize().width * (Math.random() - 0.5);
+        var xAction  = cc.moveBy(0.85, x, 0);
+
+        var y1 = this.getContentSize().height/3;
+        var y1Action  = cc.moveBy(0.25, 0, y1);
+        y1Action.easing(cc.easeOut(2.0));
+
+        var y2 = -this.getContentSize().height;
+        var y2Action  = cc.moveBy(0.6, 0, y2);
+        y2Action.easing(cc.easeIn(2.0));
+        var fadeOut = cc.fadeOut(0.6);
+        var y2Action  = cc.spawn(y2Action, fadeOut);
+
+
+        var yAction = cc.sequence(y1Action, y2Action);
+
+        var ac = cc.spawn(xAction, yAction);
+
+        var callBack = cc.callFunc(this.removeActor, text);
+        ac = cc.sequence(ac, callBack);
+        text.runAction(ac);
+    },
+    removeActor:function(sender){
+        sender.removeFromParent();
     },
     playAction : function(startIdx, endIdx, isRepeat,target,callback){
         this.stopAllActions();

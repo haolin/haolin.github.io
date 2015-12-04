@@ -69,13 +69,22 @@ var Enemy = BaseActor.extend({
     idle : function(){
         this.playAction(25,28,true);
     },
-    attack : function(isCritical){
+    attack : function(isCritical, target){
         this.playAction(29,42,false);
-        return this._super(isCritical);
+        this._super(isCritical, target);
     },
     die : function(target,callback){
         this._status = ActorStatus.Death;
         this.playAction(43,53,false, target,callback);
+    },
+    beAttacked : function(isCritical, attackNum){
+        this._super(isCritical, attackNum);
+        var str = attackNum;
+        var textLabel = new cc.LabelTTF(str,  "GUBBLABLO", 25);
+        textLabel.setColor(cc.color.BLACK);
+        textLabel.setPosition(this.getContentSize().width/2, this.getContentSize().height/2);
+        this.addChild(textLabel);
+        this.beAttackedAction(textLabel);
     },
     update:function(dt){
 
