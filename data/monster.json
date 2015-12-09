@@ -1,0 +1,403 @@
+﻿[
+	{
+		"lv": "1",
+		"id_enemy": "1,1",
+		"hp_ulimit": "10",
+		"hp_dlimit": "-5",
+		"att_ulimit": "1",
+		"att_dlimit": "-1"
+	},
+	{
+		"lv": "2",
+		"id_enemy": "1,1,1",
+		"hp_ulimit": "20",
+		"hp_dlimit": "-5",
+		"att_ulimit": "2",
+		"att_dlimit": "-1"
+	},
+	{
+		"lv": "3",
+		"id_enemy": "1,1",
+		"hp_ulimit": "30",
+		"hp_dlimit": "-5",
+		"att_ulimit": "3",
+		"att_dlimit": "-1"
+	},
+	{
+		"lv": "4",
+		"id_enemy": "1,1",
+		"hp_ulimit": "31",
+		"hp_dlimit": "-5",
+		"att_ulimit": "4",
+		"att_dlimit": "-1"
+	},
+	{
+		"lv": "5",
+		"id_enemy": "1,1",
+		"hp_ulimit": "32",
+		"hp_dlimit": "-5",
+		"att_ulimit": "5",
+		"att_dlimit": "-2"
+	},
+	{
+		"lv": "6",
+		"id_enemy": "1,1",
+		"hp_ulimit": "33",
+		"hp_dlimit": "-5",
+		"att_ulimit": "6",
+		"att_dlimit": "-2"
+	},
+	{
+		"lv": "7",
+		"id_enemy": "1,1",
+		"hp_ulimit": "34",
+		"hp_dlimit": "-3",
+		"att_ulimit": "7",
+		"att_dlimit": "-2"
+	},
+	{
+		"lv": "8",
+		"id_enemy": "1,1",
+		"hp_ulimit": "35",
+		"hp_dlimit": "-10",
+		"att_ulimit": "8",
+		"att_dlimit": "-2"
+	},
+	{
+		"lv": "9",
+		"id_enemy": "1,1",
+		"hp_ulimit": "36",
+		"hp_dlimit": "-10",
+		"att_ulimit": "9",
+		"att_dlimit": "-2"
+	},
+	{
+		"lv": "10",
+		"id_enemy": "1,1",
+		"hp_ulimit": "37",
+		"hp_dlimit": "-10",
+		"att_ulimit": "10",
+		"att_dlimit": "2"
+	},
+	{
+		"lv": "11",
+		"id_enemy": "1,1",
+		"hp_ulimit": "38",
+		"hp_dlimit": "-10",
+		"att_ulimit": "11",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "12",
+		"id_enemy": "1,1",
+		"hp_ulimit": "39",
+		"hp_dlimit": "-10",
+		"att_ulimit": "12",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "13",
+		"id_enemy": "1,1",
+		"hp_ulimit": "40",
+		"hp_dlimit": "-10",
+		"att_ulimit": "13",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "14",
+		"id_enemy": "1,1",
+		"hp_ulimit": "41",
+		"hp_dlimit": "-10",
+		"att_ulimit": "14",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "15",
+		"id_enemy": "1,1",
+		"hp_ulimit": "42",
+		"hp_dlimit": "-10",
+		"att_ulimit": "15",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "16",
+		"id_enemy": "1,1",
+		"hp_ulimit": "43",
+		"hp_dlimit": "-10",
+		"att_ulimit": "16",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "17",
+		"id_enemy": "1,1",
+		"hp_ulimit": "44",
+		"hp_dlimit": "-10",
+		"att_ulimit": "17",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "18",
+		"id_enemy": "1,1",
+		"hp_ulimit": "45",
+		"hp_dlimit": "-10",
+		"att_ulimit": "18",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "19",
+		"id_enemy": "1,1",
+		"hp_ulimit": "46",
+		"hp_dlimit": "-10",
+		"att_ulimit": "19",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "20",
+		"id_enemy": "1,1",
+		"hp_ulimit": "47",
+		"hp_dlimit": "-10",
+		"att_ulimit": "20",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "21",
+		"id_enemy": "1,1",
+		"hp_ulimit": "48",
+		"hp_dlimit": "-10",
+		"att_ulimit": "21",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "22",
+		"id_enemy": "1,1",
+		"hp_ulimit": "49",
+		"hp_dlimit": "-10",
+		"att_ulimit": "22",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "23",
+		"id_enemy": "1,1",
+		"hp_ulimit": "50",
+		"hp_dlimit": "-10",
+		"att_ulimit": "23",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "24",
+		"id_enemy": "1,1",
+		"hp_ulimit": "51",
+		"hp_dlimit": "-10",
+		"att_ulimit": "24",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "25",
+		"id_enemy": "1,1",
+		"hp_ulimit": "52",
+		"hp_dlimit": "-10",
+		"att_ulimit": "25",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "26",
+		"id_enemy": "1,1",
+		"hp_ulimit": "53",
+		"hp_dlimit": "-10",
+		"att_ulimit": "26",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "27",
+		"id_enemy": "1,1",
+		"hp_ulimit": "54",
+		"hp_dlimit": "-10",
+		"att_ulimit": "27",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "28",
+		"id_enemy": "1,1",
+		"hp_ulimit": "55",
+		"hp_dlimit": "-10",
+		"att_ulimit": "28",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "29",
+		"id_enemy": "1,1",
+		"hp_ulimit": "56",
+		"hp_dlimit": "-10",
+		"att_ulimit": "29",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "30",
+		"id_enemy": "1,1",
+		"hp_ulimit": "57",
+		"hp_dlimit": "-10",
+		"att_ulimit": "30",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "31",
+		"id_enemy": "1,1",
+		"hp_ulimit": "58",
+		"hp_dlimit": "-10",
+		"att_ulimit": "31",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "32",
+		"id_enemy": "1,1",
+		"hp_ulimit": "59",
+		"hp_dlimit": "-10",
+		"att_ulimit": "32",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "33",
+		"id_enemy": "1,1",
+		"hp_ulimit": "60",
+		"hp_dlimit": "-10",
+		"att_ulimit": "33",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "34",
+		"id_enemy": "1,1",
+		"hp_ulimit": "61",
+		"hp_dlimit": "-10",
+		"att_ulimit": "34",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "35",
+		"id_enemy": "1,1",
+		"hp_ulimit": "62",
+		"hp_dlimit": "-10",
+		"att_ulimit": "35",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "36",
+		"id_enemy": "1,1",
+		"hp_ulimit": "63",
+		"hp_dlimit": "-10",
+		"att_ulimit": "36",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "37",
+		"id_enemy": "1,1",
+		"hp_ulimit": "64",
+		"hp_dlimit": "-10",
+		"att_ulimit": "37",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "38",
+		"id_enemy": "1,1",
+		"hp_ulimit": "65",
+		"hp_dlimit": "-10",
+		"att_ulimit": "38",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "39",
+		"id_enemy": "1,1",
+		"hp_ulimit": "66",
+		"hp_dlimit": "-10",
+		"att_ulimit": "39",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "40",
+		"id_enemy": "1,1",
+		"hp_ulimit": "67",
+		"hp_dlimit": "-10",
+		"att_ulimit": "40",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "41",
+		"id_enemy": "1,1",
+		"hp_ulimit": "68",
+		"hp_dlimit": "-10",
+		"att_ulimit": "41",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "42",
+		"id_enemy": "1,1",
+		"hp_ulimit": "69",
+		"hp_dlimit": "-10",
+		"att_ulimit": "42",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "43",
+		"id_enemy": "1,1",
+		"hp_ulimit": "70",
+		"hp_dlimit": "-10",
+		"att_ulimit": "43",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "44",
+		"id_enemy": "1,1",
+		"hp_ulimit": "71",
+		"hp_dlimit": "-10",
+		"att_ulimit": "44",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "45",
+		"id_enemy": "1,1",
+		"hp_ulimit": "72",
+		"hp_dlimit": "-10",
+		"att_ulimit": "45",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "46",
+		"id_enemy": "1,1",
+		"hp_ulimit": "73",
+		"hp_dlimit": "-10",
+		"att_ulimit": "46",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "47",
+		"id_enemy": "1,1",
+		"hp_ulimit": "74",
+		"hp_dlimit": "-10",
+		"att_ulimit": "47",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "48",
+		"id_enemy": "1,1",
+		"hp_ulimit": "75",
+		"hp_dlimit": "-10",
+		"att_ulimit": "48",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "49",
+		"id_enemy": "1,1",
+		"hp_ulimit": "76",
+		"hp_dlimit": "-10",
+		"att_ulimit": "49",
+		"att_dlimit": "-5"
+	},
+	{
+		"lv": "50",
+		"id_enemy": "1,1",
+		"hp_ulimit": "77",
+		"hp_dlimit": "-10",
+		"att_ulimit": "50",
+		"att_dlimit": "-5"
+	}
+]
+

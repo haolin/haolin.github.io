@@ -15,7 +15,7 @@ var res = {
 
     GUBBLO___ttf : "res/font/GUBBLO___.ttf",
 
-    //plist
+    //plist｀
     ActorRun_plist : "res/actor_run.plist",
     ActorRun_png : "res/actor_run.png",
     Enemy_plist : "res/enemy.plist",
@@ -29,7 +29,7 @@ var res = {
     dt_config : "data/config.json",
     dt_enemy : "data/enemy.json",
     dt_hero : "data/hero.json",
-
+    dt_level : "data/monster.json",
 
     //
     at_achievement_plist : "res/armature/achievement_logindown.plist",

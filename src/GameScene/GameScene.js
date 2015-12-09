@@ -14,7 +14,6 @@ var GameScene = cc.Scene.extend({
         this._super();
 
 
-
         //ccs.armatureDataManager.addArmatureFileInfo(res.at_dragonbone_png, res.at_dragonbone_plist, res.at_dragonbone_xml);
         //var armature = new ccs.Armature("Dragon");
         //armature.getAnimation().play("walk");
@@ -22,8 +21,6 @@ var GameScene = cc.Scene.extend({
         //this.addChild(armature, 10000);
         //armature.setPosition(ScreenSize.width / 2, 0);
         //return;
-
-
 
 
         DataHandler.getInstance().reset();
@@ -39,10 +36,9 @@ var GameScene = cc.Scene.extend({
 
         this.scheduleUpdate();
 
-
         //ccs.armatureDataManager.addArmatureFileInfo
     },
-    update:function(dt){
+    update:function(dt) {
         if(this._gameSceneController.getStatus() === GameStatus.GameOver){
             this.unscheduleUpdate();
             return;

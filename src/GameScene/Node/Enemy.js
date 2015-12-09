@@ -5,7 +5,12 @@
 
 var Enemy = BaseActor.extend({
     _status : ActorStatus.Enter,
-    _lv : 0,
+
+    //第几大关
+    _level : 0,
+    //第几波怪物
+    _stage : 0,
+
     _stage1Speed : 0,
     _stage1Cd : 0,
 
@@ -24,20 +29,34 @@ var Enemy = BaseActor.extend({
     _bossSpeed : 0,
     //蓝色光标速度
     _sliderSpeed: 0,
-    ctor : function(lv){
-        this._lv = lv;
+    ctor : function(level, stage){
+        this._level = level;
+        this._stage = stage;
 
         this._super("#moster0025.png");
         return true;
     },
     loadConfig : function(){
         var dataHandler = DataHandler.getInstance();
-        this._data = dataHandler.getEnemyData(this._lv);
+        this._data = dataHandler.getEnemyData(this._level);
 
         this._speed = cc.p(-80, 0);
         this._maxHP = parseInt(this._data["max_hp"]);
         this._minAttack = parseInt(this._data["min_damage"]);
         this._maxAttack = parseInt(this._data["max_damage"]);
+
+
+        if(this._stage > 0){
+            var maxHPAdditional = parseInt(this._data["hp_ulimit"]);
+            var minHPAdditional = parseInt(this._data["hp_dlimit"]);
+            var maxAttackAdditional = parseInt(this._data["att_ulimit"]);
+            var minAttackAdditional = parseInt(this._data["att_dlimit"]);
+            var hpAdditional =  util.getRandomNumber(minHPAdditional, maxHPAdditional);
+            var attackAdditional =  util.getRandomNumber(minAttackAdditional, maxAttackAdditional);
+            this._maxHP += hpAdditional;
+            this._maxAttack += attackAdditional;
+            this._minAttack += attackAdditional;
+        }
 
         this._stage1Speed = util.getValueByPercentage(this._data["stage1_speed"]);
         this._stage1Cd = parseFloat(this._data["stage1_cd"]);

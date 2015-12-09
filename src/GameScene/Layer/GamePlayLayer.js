@@ -18,7 +18,8 @@ var GamePlayLayer = cc.Layer.extend({
 
     _gameSceneController: null,
     _attackBoxController:null,
-    _enemyNumber : 0,
+    _curLevel : 0,
+    _curStage : 0,
 
     //ui
     heroHPCtl : null,
@@ -52,10 +53,11 @@ var GamePlayLayer = cc.Layer.extend({
     onEnter:function () {
         this._super();
 
-
         //todo scheduler不支持repeat和delay
         //this._attackBoxController.initBoxs();
+        //初始的4个英雄方块
         this.schedule(this.addHeroBox, 0.08, 3, 0);
+
     },
     addHeroBox : function() {
         this._attackBoxController.addHeroBox(false);
@@ -63,7 +65,6 @@ var GamePlayLayer = cc.Layer.extend({
     loadConfig : function() {
         this._gameSceneController = GameSceneController.getInstance();
         this._attackBoxController = new AttackBoxController(this);
-        this._enemyNumber = 1;
         this._comboTime = 0;
     },
     loadResource : function(){
@@ -84,12 +85,14 @@ var GamePlayLayer = cc.Layer.extend({
         this.addChild(this._hero, 200);
         this._attackBoxController.setHero(this._hero);
 
+        this.addNextEnemy();
+
         //enemy
-        this.enemy = new Enemy(this._enemyNumber);
-        this.enemy.setPosition(ScreenSize.width + 20, 120 + 55);
-        this.enemy.idle();
-        this.addChild(this.enemy, 201);
-        this._attackBoxController.loadDataByEnemy(this.enemy);
+        //this.enemy = new Enemy(this._enemyNumber);
+        //this.enemy.setPosition(ScreenSize.width + 20, 120 + 55);
+        //this.enemy.idle();
+        //this.addChild(this.enemy, 201);
+        //this._attackBoxController.loadDataByEnemy(this.enemy);
 
 
         //test armature
@@ -172,11 +175,12 @@ var GamePlayLayer = cc.Layer.extend({
         this.addChild(enemyHPIcon, 300);
 
         //enemy Number
-        this._enemyNumberLabel = new cc.LabelTTF("1",  "GUBBLABLO", 18);
+        this._enemyNumberLabel = new cc.LabelTTF("0",  "GUBBLABLO", 18);
         this._enemyNumberLabel.setPosition( ScreenSize.width/2 + hpCtlWidth/2 + 10, ScreenSize.height - 18);
         this._enemyNumberLabel.setColor(cc.color.WHITE);
         this._enemyNumberLabel.setFontFillColor(cc.color.BLACK);
         this.addChild(this._enemyNumberLabel, 201);
+        this.updateEnemyNumberLabel();
 
         //enemy attack
         var enemyDamageIcon = new cc.Sprite("#damageIcon.png");
@@ -220,6 +224,7 @@ var GamePlayLayer = cc.Layer.extend({
             case  GameStatus.NextEmeny :
                 this._hero.run();
                 this.addNextEnemy();
+                this.updateEnemyNumberLabel();
                 this._gameSceneController.setStatus(GameStatus.Move);
                 break;
             case  GameStatus.Combo :
@@ -242,18 +247,25 @@ var GamePlayLayer = cc.Layer.extend({
         }
     },
     addNextEnemy:function(){
-        this._enemyNumber += 1;
-        this._enemyNumberLabel.setString(this._enemyNumber);
+        this._gameSceneController.nextStage();
+        this._curLevel = this._gameSceneController.getCurrentLevel();
+        this._curStage = this._gameSceneController.getCurrentStage();
         this._comboTime = 0;
 
-        this.enemy = new Enemy(this._enemyNumber);
+        this.enemy = new Enemy(this._curLevel, this._curStage);
         this.enemy.setPosition(ScreenSize.width + 20, 120 + 55);
         this.enemy.idle();
         this.addChild(this.enemy, 201);
 
+        this._attackBoxController.loadDataByEnemy(this.enemy);
+    },
+    updateEnemyNumberLabel :function(){
+        this._curLevel = this._gameSceneController.getCurrentLevel();
+        this._curStage = this._gameSceneController.getCurrentStage();
+        var str  = (this._curLevel + 1) + "-" + (this._curStage + 1);
+        this._enemyNumberLabel.setString(str);
         this.sliderCtl.loadConfigByEnemy(this.enemy);
 
-        this._attackBoxController.loadDataByEnemy(this.enemy);
     },
     updateUI:function(dt){
         var str = this._hero._minAttack + "-" + this._hero._maxAttack;
@@ -288,13 +300,19 @@ var GamePlayLayer = cc.Layer.extend({
         this.enemyHPCtl.currentHP = enemyCurrentHP;
         this.enemyHPCtl.update();
     },
-    nextBattle:function(sender){
+    showUpgradeUI:function(sender){
         sender.removeFromParent();
         this.sliderCtl.reset();
         var upgradeLayer = new UpgradeLayer(this._hero);
         this.addChild(upgradeLayer, 1000);
         this._hero.idle();
 
+    },
+    nextBattle:function(sender){
+        sender.removeFromParent();
+        this.sliderCtl.reset();
+        this._hero.run();
+        this._gameSceneController.setStatus(GameStatus.NextEmeny);
     },
     gameOver:function(){
         var gameOverLayer = new GameOverLayer();
@@ -318,10 +336,17 @@ var GamePlayLayer = cc.Layer.extend({
         this.sliderCtl.speedUp();
 
         if(this.enemy._currentHP <= 0){
-            this.sliderCtl.reset();
-            this.enemy.die(this, this.nextBattle);
-            this._gameSceneController.setStatus(GameStatus.Upgrade);
-            this._attackBoxController.cleanEnemyBoxes();
+            if(this._gameSceneController.isNextStageExist()){
+                this.sliderCtl.reset();
+                this.enemy.die(this, this.nextBattle);
+                this._gameSceneController.setStatus(GameStatus.Upgrade);
+                this._attackBoxController.cleanEnemyBoxes();
+            }else{
+                this.sliderCtl.reset();
+                this.enemy.die(this, this.showUpgradeUI);
+                this._gameSceneController.setStatus(GameStatus.Upgrade);
+                this._attackBoxController.cleanEnemyBoxes();
+            }
         }
     },
     heroBeAttack :function(){
@@ -356,6 +381,8 @@ var GamePlayLayer = cc.Layer.extend({
             target.comboAction();
             return true;
         }
+
+        cc.director.drawScene();
 
         var location = target.sliderCtl.getPosition().x;
         var actionType =  target._attackBoxController.clickAt(location);

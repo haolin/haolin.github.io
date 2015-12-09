@@ -11,7 +11,6 @@ var PauseLayer = cc.LayerColor.extend({
     loadUI : function(){
         var size = cc.winSize;
 
-
     },
     update:function(dt){
 

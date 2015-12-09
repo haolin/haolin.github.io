@@ -11,7 +11,7 @@ var DataHandler = (function () {
         // 子弹[数组]
         this._enemysData = null;
         // 子弹[数组]
-        this._enemyData = null;
+        this._levelsData = null;
 
 
         this.reload = function(){
@@ -63,14 +63,39 @@ var DataHandler = (function () {
                 var data = cc.loader._loadTxtSync(res.dt_enemy);
                 var array = JSON.parse(data);
                 this._enemysData = array;
+
+                for(var idx = 0 ; idx < this._enemysData.length;  idx++){
+                    var enemyIds = this._enemysData[idx]["id_enemy"];
+                    var idArray = enemyIds.split(",");
+                    this._enemysData[idx]["enemyIDArray"] = idArray;
+                }
             }
 
-            var idx = lv - 1;
-            if (idx >= this._enemysData.length){
-                idx = this._enemysData.length - 1;
+            if (lv >= this._enemysData.length){
+                lv = this._enemysData.length - 1;
             }
 
-            return this._enemysData[idx];
+            return this._enemysData[lv];
+        };
+
+        this.getLevelData = function(lv){
+            if(this._levelsData === null){
+                var data = cc.loader._loadTxtSync(res.dt_level);
+                var array = JSON.parse(data);
+                this._levelsData = array;
+                for(var idx = 0 ; idx < this._levelsData.length;  idx++){
+                    var enemyIds = this._levelsData[idx]["id_enemy"];
+                    var idArray = enemyIds.split(",");
+                    this._levelsData[idx]["enemyIDArray"] = idArray;
+                }
+            }
+
+            if (lv >= this._levelsData.length){
+                lv = this._levelsData.length - 1;
+            }
+
+
+            return this._levelsData[lv];
         };
 
     }

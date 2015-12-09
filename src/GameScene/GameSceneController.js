@@ -4,49 +4,28 @@
 var GameSceneController = (function () {
 
     function _GameSceneController() {
-        // 敌人[波组]
-        this._groupVector = [];
-        // 敌人[数组]
-        this._enemyVector = [];
-        // 子弹[数组]
-        this._bulletVector = [];
-        // 移动点集合[数组]
-        this._pointVector = [];
+        // 当前
+
+        this._LevelData = null;
 
         this._status = GameStatus.Move;
 
-        // 当前[背景]
-        this._curBgName = "";
-        // 当前[关卡]
-        this._curLevel = 0;
+        this._currentLevel = DATA_UNDEFINE;
+        this._currentStage = DATA_UNDEFINE;
+        //当前level最大stage
+        this._maxStage = DATA_UNDEFINE;
 
-        // 当前[血量]
-        this._curHp = 100;
-
-        // [血量]
-        this._maxHp = 100;
-
-        // 当前[血量]
-        this._minDamage = 2;
-
-        // [血量]
-        this._maxDamage = 5;
 
         this.clear = function(){
-            this._groupVector = [];
-            this._enemyVector = [];
-            this._bulletVector = [];
-            this._pointVector = [];
+            this._LevelData = null;
         };
 
         this.reset = function(){
             this.clear();
             this._status = GameStatus.Move;
-            this._curLevel = 0;
-            this._curHp = 100;
-            this._maxHp = 100;
-            this._minDamage = 2;
-            this._maxDamage = 5;
+            this._LevelData = null;
+            this._currentLevel = DATA_UNDEFINE;
+            this._currentStage = DATA_UNDEFINE;
         };
         // ==============[getter && setter]==============
         this.getGroupVector = function(){
@@ -56,75 +35,48 @@ var GameSceneController = (function () {
             this._groupVector = groupVector;
         };
 
-        this.getEnemyVector = function(){
-            return this._enemyVector;
-        };
-        this.setEnemyVector = function(enemyVector){
-            this._enemyVector = enemyVector;
-        };
-
-        this.getBulletVector = function(){
-            return this._bulletVector;
-        };
-        this.setBulletVector = function(bulletVector){
-            this._bulletVector = bulletVector;
-        };
-
-        this.getPointVector = function(){
-            return this._pointVector;
-        };
-        this.setPointVector = function(pointVector){
-            this._pointVector = pointVector;
+        this.nextStage = function(groupVector){
+            if(this._currentLevel === DATA_UNDEFINE && this._currentStage === DATA_UNDEFINE ){
+                this._currentLevel = 0;
+                this._currentStage = 0;
+                this._LevelData = DataHandler.getInstance().getEnemyData(this._currentLevel);
+                this._maxStage = this._LevelData["enemyIDArray"].length - 1;
+            }else{
+                this._currentStage ++;
+                if(this._currentStage > this._maxStage){
+                    this._currentStage = 0;
+                    this._currentLevel++;
+                    this._LevelData = DataHandler.getInstance().getEnemyData(this._currentLevel);
+                    this._maxStage = this._LevelData["enemyIDArray"].length - 1;
+                }
+            }
         };
 
         this.getStatus = function(){
             return this._status;
         };
-        this.setStatus = function(status){
-            this._status = status;
+        this.setStatus = function(st){
+            this._status = st;
         };
 
-
-        this.getCurBgName = function(){
-            return this._curBgName;
+        this.getCurrentLevel = function(){
+            return this._currentLevel;
         };
-        this.setCurBgName = function(curBgName){
-            this._curBgName = curBgName;
+        this.setCurrentLevel = function(lv){
+            this._currentLevel = lv;
         };
-
-        this.getCurLevel = function(){
-            return this._curLevel;
+        this.getCurrentStage = function(){
+            return this._currentStage;
         };
-        this.setCurLevel = function(level){
-            this._curLevel = level;
+        this.setCurrentStage = function(st){
+            this._currentStage = st;
         };
 
-        this.getCurHp = function(){
-            return this._curHp;
-        };
-        this.setCurHp = function(curHp){
-            this._curHp = curHp;
+        //判断当前level是否还有下一stage
+        this.isNextStageExist = function(){
+            return (this._currentStage < this._maxStage);
         };
 
-        this.getMaxHp = function(){
-            return this._maxHp;
-        };
-        this.setMaxHp = function(maxHp){
-            this._maxHp = maxHp;
-        };
-
-        this.getMinDamage = function(){
-            return this._minDamage;
-        };
-        this.setMinDamage = function(minDamage){
-            this._minDamage = minDamage;
-        };
-        this.getMaxDamage = function(){
-            return this._maxDamage;
-        };
-        this.setMaxDamage = function(maxDamage){
-            this._maxDamage = maxDamage;
-        };
     }
     //实例容器
     var instance;

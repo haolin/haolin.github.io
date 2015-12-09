@@ -44,7 +44,7 @@ var CtlHP = cc.Sprite.extend({
         this.addChild(this.greenBar,1);
     },
     update : function() {
-        if(this.maxHP === ACTOR_HP_UNDEFINE && this.currentHP === ACTOR_HP_UNDEFINE){
+        if(this.maxHP === DATA_UNDEFINE && this.currentHP === DATA_UNDEFINE){
             this.textLabel.setString("???/???");
             return;
         }
