@@ -19,6 +19,11 @@ var BaseBox = BaseObject.extend({
     onClick : function(){
     },
     removeFromParent:function(){
+        //加消除粒子
+        var particle = new cc.ParticleSystem(res.pt_boxdisappear_plist);
+        particle.setPosition(this.getPosition().x, this.getPosition().y);
+        this.getParent().addChild(particle, 10);
+
         this.stopAllActions();
         this.scaleX = 9/this.getContentSize().width;
         this.scaleY = 1.5;
@@ -26,5 +31,7 @@ var BaseBox = BaseObject.extend({
         var ac2 = cc.callFunc(this._super, this);
         var ac = cc.sequence(ac1, ac2);
         this.runAction(ac);
+
+
     }
 });

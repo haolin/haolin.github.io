@@ -105,7 +105,7 @@ sp.Skeleton = cc.Node.extend(/** @lends sp.Skeleton# */{
      */
     init: function () {
         cc.Node.prototype.init.call(this);
-        //this.setOpacityModifyRGB(true);
+        this.setOpacityModifyRGB(true);
         this._blendFunc.src = cc.ONE;
         this._blendFunc.dst = cc.ONE_MINUS_SRC_ALPHA;
         this.scheduleUpdate();

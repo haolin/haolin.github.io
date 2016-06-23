@@ -1,0 +1,107 @@
+﻿[
+	{
+		"id": "1",
+		"unlock_level": "1",
+		"unlock_cost": "0",
+		"round": "1,2,3",
+		"dungeon_exp": "26",
+		"dungeon_money": "50"
+	},
+	{
+		"id": "2",
+		"unlock_level": "4",
+		"unlock_cost": "200",
+		"round": "4,5,6",
+		"dungeon_exp": "38",
+		"dungeon_money": "80"
+	},
+	{
+		"id": "3",
+		"unlock_level": "7",
+		"unlock_cost": "400",
+		"round": "7,8,9,10",
+		"dungeon_exp": "54",
+		"dungeon_money": "120"
+	},
+	{
+		"id": "4",
+		"unlock_level": "11",
+		"unlock_cost": "720",
+		"round": "11,12,13,14",
+		"dungeon_exp": "83",
+		"dungeon_money": "170"
+	},
+	{
+		"id": "5",
+		"unlock_level": "15",
+		"unlock_cost": "1250",
+		"round": "15,16,17,18",
+		"dungeon_exp": "125",
+		"dungeon_money": "230"
+	},
+	{
+		"id": "6",
+		"unlock_level": "19",
+		"unlock_cost": "2120",
+		"round": "19,20,21,22",
+		"dungeon_exp": "188",
+		"dungeon_money": "300"
+	},
+	{
+		"id": "7",
+		"unlock_level": "23",
+		"unlock_cost": "3500",
+		"round": "23,24,25,26",
+		"dungeon_exp": "284",
+		"dungeon_money": "380"
+	},
+	{
+		"id": "8",
+		"unlock_level": "27",
+		"unlock_cost": "5780",
+		"round": "27,28,29,30",
+		"dungeon_exp": "425",
+		"dungeon_money": "470"
+	},
+	{
+		"id": "9",
+		"unlock_level": "31",
+		"unlock_cost": "9470",
+		"round": "31,32,33,34",
+		"dungeon_exp": "639",
+		"dungeon_money": "570"
+	},
+	{
+		"id": "10",
+		"unlock_level": "35",
+		"unlock_cost": "14870",
+		"round": "35,36,37,38",
+		"dungeon_exp": "960",
+		"dungeon_money": "680"
+	},
+	{
+		"id": "11",
+		"unlock_level": "39",
+		"unlock_cost": "24680",
+		"round": "39,40,41,42",
+		"dungeon_exp": "1445",
+		"dungeon_money": "700"
+	},
+	{
+		"id": "12",
+		"unlock_level": "43",
+		"unlock_cost": "39700",
+		"round": "43,44,45,46",
+		"dungeon_exp": "2175",
+		"dungeon_money": "830"
+	},
+	{
+		"id": "13",
+		"unlock_level": "47",
+		"unlock_cost": "56830",
+		"round": "47,48,49,50",
+		"dungeon_exp": "3275",
+		"dungeon_money": "970"
+	}
+]
+

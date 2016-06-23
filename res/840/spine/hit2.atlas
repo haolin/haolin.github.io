@@ -1,0 +1,34 @@
+
+hit2.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+texiao/hit/asdadsd_00000
+  rotate: false
+  xy: 2, 2
+  size: 92, 89
+  orig: 92, 89
+  offset: 0, 0
+  index: -1
+texiao/hit/he_00000
+  rotate: false
+  xy: 2, 93
+  size: 130, 135
+  orig: 130, 135
+  offset: 0, 0
+  index: -1
+texiao/hit/he_00001
+  rotate: false
+  xy: 134, 93
+  size: 130, 135
+  orig: 130, 135
+  offset: 0, 0
+  index: -1
+wuqi/kongbai
+  rotate: false
+  xy: 266, 190
+  size: 139, 38
+  orig: 139, 38
+  offset: 0, 0
+  index: -1

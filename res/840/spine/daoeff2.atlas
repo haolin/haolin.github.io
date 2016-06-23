@@ -1,0 +1,55 @@
+
+daoeff2.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/texiao/dg_02/daoeff2 (1)
+  rotate: true
+  xy: 2, 42
+  size: 202, 129
+  orig: 202, 129
+  offset: 0, 0
+  index: -1
+image/texiao/dg_02/daoeff2 (2)
+  rotate: true
+  xy: 133, 42
+  size: 202, 129
+  orig: 202, 129
+  offset: 0, 0
+  index: -1
+image/texiao/dg_02/daoeff2 (3)
+  rotate: true
+  xy: 264, 42
+  size: 202, 129
+  orig: 202, 129
+  offset: 0, 0
+  index: -1
+image/texiao/dg_02/daoeff2 (4)
+  rotate: true
+  xy: 395, 42
+  size: 202, 129
+  orig: 202, 129
+  offset: 0, 0
+  index: -1
+image/texiao/dg_02/daoeff2 (5)
+  rotate: true
+  xy: 526, 42
+  size: 202, 129
+  orig: 202, 129
+  offset: 0, 0
+  index: -1
+image/texiao/dg_02/daoeff2 (6)
+  rotate: true
+  xy: 657, 42
+  size: 202, 129
+  orig: 202, 129
+  offset: 0, 0
+  index: -1
+image/wuqi/kongbai
+  rotate: false
+  xy: 2, 2
+  size: 139, 38
+  orig: 139, 38
+  offset: 0, 0
+  index: -1

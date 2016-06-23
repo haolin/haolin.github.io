@@ -3,10 +3,11 @@
 
 var AttackBoxController = cc.Node.extend({
     _gameSceneController: null,
-    _currentLayer : null,
+    _target : null,
     _heroBoxes : [],
     _enemyBoxes : [],
 
+    //英雄方块重生间隔
     _judgeTime: 0,
     _judgeTimePeriod: 0,
     _boxWeight : 0,
@@ -26,7 +27,6 @@ var AttackBoxController = cc.Node.extend({
     //当前最大权重值
     _maxBoxWeight : 0,
 
-
     //暴击方块出现几率
     _criticalBoxChance:0,
 
@@ -45,8 +45,12 @@ var AttackBoxController = cc.Node.extend({
     //当前敌人产生的攻击盒子个数
     _enemyBoxCount: 0,
     _enemy: null,
+    //敌人方块重生间隔
     _enemyJudgeTime: 0,
     _enemyJudgeTimePeriod: 0,
+    //敌人技能释放间隔
+    _enemySkillJudgeTime: 0,
+    _enemySkillJudgeTimePeriod: 0,
     _enemyStage: 1,
 
     _hero: null,
@@ -60,9 +64,9 @@ var AttackBoxController = cc.Node.extend({
     _enemBoxBackSpeed: 0,
 
     //_sliderAccelerationPerStage : 0,
-    ctor: function (layer) {
+    ctor: function (target) {
 
-        this._currentLayer = layer;
+        this._target = target;
         this.loadConfig();
     },
     loadConfig : function(){
@@ -89,7 +93,10 @@ var AttackBoxController = cc.Node.extend({
         this._enemBoxBackTimeT1 = parseFloat(this._data["red_back1"]);
         this._enemBoxBackSpeed = parseFloat(this._data["red_back2"]);
 
-        this._heroBoxes = [[],[]];
+        this._heroBoxes = [];
+        for(var idx = 0; idx < util.getPropertyCount(HeroBoxType); idx++){
+            this._heroBoxes.push([]);
+        }
         this._boxWeight = 0;
         this._maxBoxWeight = this._defWeight;
         this._judgeTimePeriod = 0;
@@ -116,9 +123,15 @@ var AttackBoxController = cc.Node.extend({
         this._judgeTimePeriod = 0;
         this._judgeTime = this.getRandomJudgeTime();
 
-        this._enemyBoxes = [[],[],[],[],[]];
+        this._enemyBoxes = [];
+        for(var idx = 0; idx < util.getPropertyCount(EmenyBoxType); idx++){
+            this._enemyBoxes.push([]);
+        }
+
         this._enemyJudgeTime = this.getEnemyRandomJudgeTime();
         this._enemyJudgeTimePeriod = 0;
+        this._enemySkillJudgeTime = this._enemy._skillCd;
+        this._enemySkillJudgeTimePeriod = 0;
         this._enemyStage = 1;
         this._enemyBoxCount = 0;
         this._enemySpecialBoxLeft = 0;
@@ -173,10 +186,20 @@ var AttackBoxController = cc.Node.extend({
             this._judgeTime = this.getRandomJudgeTime();
             var deltaWeight = this._maxBoxWeight - this._boxWeight;
             if(deltaWeight > 3){
-                this.addHeroBox(true);
-                this.addHeroBox(true);
+                if(this._gameSceneController.getBattleType() === BattleType.Chest){
+                    this.addHeroHealBox(true);
+                    this.addHeroHealBox(true);
+                }else{
+                    this.addHeroBox(true);
+                    this.addHeroBox(true);
+                }
+
             }else if(deltaWeight > 0){
-                this.addHeroBox(true);
+                if(this._gameSceneController.getBattleType() === BattleType.Chest){
+                    this.addHeroHealBox(true);
+                }else{
+                    this.addHeroBox(true);
+                }
             }
         }
     },
@@ -193,8 +216,26 @@ var AttackBoxController = cc.Node.extend({
                     box.removeFromParent();
                     boxes.splice(subidx, 1);
                     subidx--;
-                    var isCritical = box._actionType === ActionType.EnemyCriticalAttack;
-                    this._enemy.attack(isCritical, this._hero);
+
+                    var attackType = AttackType.NormalAttack;
+                    if(box._actionType === ActionType.EnemyCriticalAttack){
+                        attackType = AttackType.CriticalAttack;
+                    }
+                    this._enemy.attack(attackType, this._hero);
+                    this._target.updateUI();
+                }
+            }
+        }
+
+        //敌人释放技能逻辑
+        if(this._enemyStage === 2){
+            this._enemySkillJudgeTimePeriod += dt;
+            if(this._enemySkillJudgeTimePeriod >= this._enemySkillJudgeTime){
+                this._enemySkillJudgeTimePeriod -= this._enemySkillJudgeTime;
+                if(util.getRandomProbability(this._enemy._skillChance)){
+                    //var skillId = parseInt(util.getRandomElement(this._enemy._skillArray));
+                    //this.enemyCastingSkill(skillId);
+
                 }
             }
         }
@@ -206,14 +247,22 @@ var AttackBoxController = cc.Node.extend({
             this._enemyJudgeTime = this.getEnemyRandomJudgeTime();
 
             if(this._enemyStage === 1){
-                this.addEnemyBox();
+                if(this._gameSceneController.getBattleType() === BattleType.Chest){
+                    this.addChestBox();
+                }else{
+                    this.addEnemyBox();
+                }
 
                 this._enemyBoxCount++;
                 if(this._enemyBoxCount >= this._enemy._stage1BoxNumber){
                     this._enemyStage = 2;
                 }
             }else{
-                this.addEnemyBox();
+                if(this._gameSceneController.getBattleType() === BattleType.Chest){
+                    this.addChestBox();
+                }else{
+                    this.addEnemyBox();
+                }
             }
         }
     },
@@ -251,21 +300,92 @@ var AttackBoxController = cc.Node.extend({
             boxSize = util.getRandomElement([BoxSize.Middle, BoxSize.Large]);
         }
 
+        this.addHeroBoxWithConfig(boxType, boxSize);
+    },
+    addHeroHealBox : function(randomType){
 
+        var deltaWeight = this._maxBoxWeight - this._boxWeight;
+        //控制当前权重不超过最大权重
+        if(deltaWeight < this._criticalBoxWeight){
+            randomType = false;
+        }else if(deltaWeight < this._normalBoxWeight){
+            return;
+        }
+
+        var boxType;
+        var boxSize;
+
+        if(randomType){
+
+            var box1Change = this._enemy._goldBox1Change;
+            var box2Change = this._enemy._goldBox2Change;
+            //0~box1Change: 金币方块1几率
+            //box1Change~box2Change: 金币方块2几率
+            //box2Change~1: 金币方块3几率
+
+            var random = Math.random();
+            if(random < box1Change){
+                boxType = HeroBoxType.Gold1;
+            }else{
+                boxType = HeroBoxType.Gold2;
+            }
+        }else{
+            boxType = HeroBoxType.Gold1;
+        }
+
+        boxSize = BoxSize.Middle;
+        if(boxType === HeroBoxType.Gold2){
+            boxSize = BoxSize.Large;
+        }
+        this.addHeroBoxWithConfig(boxType, boxSize);
+    },
+    addHeroBoxWithConfig : function(boxType, boxSize){
         var box = new HeroBox(boxType, boxSize);
+
+        if(boxType === HeroBoxType.Gold1){
+            box._goldCount = util.getRandomNumber(this._enemy._goldBox1MinGold, this._enemy._goldBox1MinGold);
+        }else if(boxType === HeroBoxType.Gold2){
+            box._goldCount = util.getRandomNumber(this._enemy._goldBox2MinGold, this._enemy._goldBox2MinGold);
+        }
+
         var minX = ATTACK_HOLDER_MIN_X + box.getContentSize().width/2;
         var manX = ATTACK_HOLDER_MAX_X - box.getContentSize().width/2;
         var x = Math.random()*(manX - minX) + minX;
-        box.setPosition(x, 90);
+        box.setPosition(x, 0.26786*ScreenSize.height);
         this._boxWeight += box.getWeight();
 
-        if(boxType === HeroBoxType.Normal){
-            this._currentLayer.addChild(box, 0);
-
-        }else{
-            this._currentLayer.addChild(box, 1);
-        }
+        var zOrder = boxType;
+        this._target.addChild(box, zOrder);
         this._heroBoxes[box._type].push(box);
+    },
+    addChestBox : function(){
+
+        var boxType;
+        var boxSize = BoxSize.Middle;
+
+        var box1Change = this._enemy._healBox1Change;
+        var box2Change = this._enemy._healBox2Change;
+        //0~box1Change: 金币方块1几率
+        //box1Change~box2Change: 金币方块2几率
+        //box2Change~1: 金币方块3几率
+
+        var random = Math.random();
+        if(random < box1Change){
+            boxType = EmenyBoxType.Heal1;
+        }else{
+            boxType = EmenyBoxType.Heal2;
+        }
+
+        this.addChestBoxWithConfig(boxType, boxSize);
+    },
+    addChestBoxWithConfig : function(boxType, boxSize){
+        var box = new ChestBox(boxType, boxSize, this._enemy);
+        var x = ATTACK_HOLDER_MAX_X - box.getContentSize().width/2;
+        box.setPosition(x, 0.26786*ScreenSize.height);
+
+        var zOrder = 50 + box._type;
+        this._target.addChild(box, zOrder);
+        this._enemyBoxes[box._type].push(box);
     },
     addEnemyBox : function(){
         var generateSpecialBox = false;
@@ -281,7 +401,7 @@ var AttackBoxController = cc.Node.extend({
                 generateSpecialBox = false;
             }
         }else{
-            var special1 = this._enemy._stage1SpecialChance;
+            var special1 = this._enemy._stage2SpecialChance;
             var special2 = special1 + this._enemy._stage2DoubleChance;
             var special3 = special2 + this._enemy._stage2TripleChance;
             //0~special1: 1块特殊方块几率
@@ -294,7 +414,7 @@ var AttackBoxController = cc.Node.extend({
             }else if(random < special2){
                 generateSpecialBox = true;
                 this._enemySpecialBoxLeft = 1;
-            }else if(random < special2){
+            }else if(random < special3){
                 generateSpecialBox = true;
                 this._enemySpecialBoxLeft = 2;
             }else{
@@ -314,36 +434,49 @@ var AttackBoxController = cc.Node.extend({
             //boxSize = util.getRandomElement([BoxSize.Small, BoxSize.Middle, BoxSize.Large]);
         }
 
-        //test
-        //boxType = EmenyBoxType.Speed;
-
+        this.addEnemyBoxWithConfig(boxType, boxSize);
+    },
+    addEnemyBoxWithConfig : function(boxType, boxSize){
         var box = new EnemyBox(boxType, boxSize, this._enemy);
         var x = ATTACK_HOLDER_MAX_X - box.getContentSize().width/2;
-        box.setPosition(x, 90);
+        box.setPosition(x, 0.26786*ScreenSize.height);
 
-        var zOrder = 50;
-        switch(box._type){
-            case EmenyBoxType.Normal:
-                zOrder = 50;
+        var zOrder = 50 + box._type;
+        this._target.addChild(box, zOrder);
+        this._enemyBoxes[box._type].push(box);
+    },
+
+    /**
+     * 怪物释放技能
+     * @param {Int} skillId   技能Id
+     */
+    enemyCastingSkill : function(skillId) {
+        var convertId = skillId + 3101;
+        switch(convertId){
+            case ObjectId.Crital:
+                this.addEnemyBoxWithConfig(EmenyBoxType.Crital, BoxSize.Middle);
                 break;
-            case EmenyBoxType.Shield:
-                zOrder = 51;
+            case ObjectId.Purple:
+                this.addEnemyBoxWithConfig(EmenyBoxType.Purple, BoxSize.Middle);
                 break;
-            case EmenyBoxType.Bomb:
-                zOrder = 52;
+            case ObjectId.PurpleSlow:
+                this.addEnemyBoxWithConfig(EmenyBoxType.PurpleSlow, BoxSize.Middle);
                 break;
-            case EmenyBoxType.Speed:
-                zOrder = 53;
+            case ObjectId.Swap:
                 break;
-            case EmenyBoxType.Boss:
-                zOrder = 54;
+            case ObjectId.AttackCurse:
                 break;
-            default :
+            case ObjectId.DefenseCurse:
+                break;
+            case ObjectId.Long:
+                break;
+            case ObjectId.Ice:
+                break;
+            case ObjectId.Stone:
+                break;
+            default:
                 break;
         }
-
-        this._currentLayer.addChild(box, zOrder);
-        this._enemyBoxes[box._type].push(box);
     },
 
     cleanEnemyBoxes : function() {
@@ -359,10 +492,25 @@ var AttackBoxController = cc.Node.extend({
         }
     },
 
+    cleanHeroBoxes : function() {
+        for (var idx = 0; idx < this._heroBoxes.length; idx++) {
+            var boxes = this._heroBoxes[idx];
+
+            for (var subidx = 0; subidx < boxes.length; subidx++) {
+                var emenyBox = boxes[subidx];
+                emenyBox.removeFromParent();
+                boxes.splice(subidx, 1);
+                subidx--;
+            }
+        }
+
+        this._boxWeight = 0;
+    },
+
     /**
      * 判定谁攻击谁
      * @param {Float} location   -点击的位置x坐标
-     * * @return {ActionType}
+     * *@return {Array} 0:ActionType  1:data
      */
     clickAt : function(location) {
         if(this._maxBoxWeight < this._defMaxWeight){
@@ -373,29 +521,28 @@ var AttackBoxController = cc.Node.extend({
             }
         }
 
-        var actionType = ActionType.NullAction;
-        var len = this._enemyBoxes.length;
-        actionType = this.collisionWithBoxes(location, this._enemyBoxes);
+        var result = this.collisionWithBoxes(location, this._enemyBoxes);
 
-        if(actionType === ActionType.NullAction){
-            actionType = this.collisionWithBoxes(location, this._heroBoxes);
+        if(result[0] === ActionType.NullAction){
+            result = this.collisionWithBoxes(location, this._heroBoxes);
         }
 
-        if(actionType === ActionType.NullAction){
-            actionType = ActionType.EnemyAttack;
+        if(result[0] === ActionType.NullAction){
+            result = [ActionType.EnemyAttack, null];
         }
 
-        return actionType;
+        return result;
     },
     /**
      * 判定蓝光标和盒子的碰撞
      * @param {Float} location   -点击位置x坐标
      * @param {Array} boxes   -待检测的盒子
      * @param {Boolean} isHeroBoxes   -区分英雄和敌人的方块
-     * @return {ActionType}
+     * @return {Array} 0:ActionType  1:data
      */
     collisionWithBoxes :function(location, boxes){
         var actionType = ActionType.NullAction;
+        var data = null;
         var len = boxes.length;
         var clickedBox = false;
         for(var idx = len - 1; idx >= 0; idx--) {
@@ -411,9 +558,11 @@ var AttackBoxController = cc.Node.extend({
                         this._boxWeight -= box.getWeight();
                         box.removeFromParent();
                         subboxes.splice(subidx, 1);
-
                         actionType = box._actionType;
-                    }else{
+
+                        data = box._goldCount;
+
+                    }else if(box._objectId === ObjectId.EnemyBox){
                         var shouldRemove = box.onClick();
 
                         if(shouldRemove){
@@ -429,6 +578,20 @@ var AttackBoxController = cc.Node.extend({
                         }
 
                         actionType = ActionType.HeroDefence;
+                    }else if(box._objectId === ObjectId.ChestBox){
+                        var shouldRemove = box.onClick();
+
+                        if(shouldRemove){
+                            box.removeFromParent();
+                            subboxes.splice(subidx, 1);
+                        }
+
+                        if(box._type === EmenyBoxType.Heal1 ||
+                            box._type === EmenyBoxType.Heal2){
+                            data = box._recoverHp;
+                        }
+
+                        actionType = ActionType.AddHP;
                     }
 
                     clickedBox = true;
@@ -441,7 +604,7 @@ var AttackBoxController = cc.Node.extend({
             }
         }
 
-        return actionType;
+        return [actionType, data];
     },
     removeBoxesByRect:function(rect){
         for (var idx = 0; idx < this._enemyBoxes.length; idx++) {
@@ -556,44 +719,44 @@ var AttackBoxController = cc.Node.extend({
         return shouldRemove;
     },
     /*
-    *匀速的combo击退动画
-    *
-    repelEnemyBox:function(box){
+     *匀速的combo击退动画
+     *
+     repelEnemyBox:function(box){
 
-        this._enemBoxBackTime;
-        this._enemBoxBackTimeT1;
-        this._enemBoxBackSpeed;
+     this._enemBoxBackTime;
+     this._enemBoxBackTimeT1;
+     this._enemBoxBackSpeed;
 
-        var shouldRemove = false;
-        var comboNum = this._hero._comboNumber;
-        var repelDistance = this._repelDistance + (comboNum - MAX_BOX_COUNT)*this._repelDistanceAdditional;
+     var shouldRemove = false;
+     var comboNum = this._hero._comboNumber;
+     var repelDistance = this._repelDistance + (comboNum - MAX_BOX_COUNT)*this._repelDistanceAdditional;
 
-        if(repelDistance > this._defMaxRepelDistance){
-            repelDistance = this._defMaxRepelDistance;
-        }
+     if(repelDistance > this._defMaxRepelDistance){
+     repelDistance = this._defMaxRepelDistance;
+     }
 
-        var action;
-        var duration = PLAY_COMBO_TIME;
-        var x = box.getPosition().x;
-        var maxDeltaX = (ATTACK_HOLDER_MAX_X - box.getContentSize().width/2 - x);
-        var deltaX = repelDistance;
-        if(deltaX >= maxDeltaX){
-            duration = PLAY_COMBO_TIME * (maxDeltaX/deltaX);
-            var move = cc.moveBy(duration, maxDeltaX, 0);
-            move.easing(cc.easeInOut(1.0));
-            var callBack = cc.callFunc(this.removeActor, this);
-            action = cc.sequence(move, callBack);
-            shouldRemove = true;
-        }else{
-            action = cc.moveBy(duration, deltaX, 0);
-            action.easing(cc.easeInOut(1.0));
-            shouldRemove = false;
-        }
+     var action;
+     var duration = PLAY_COMBO_TIME;
+     var x = box.getPosition().x;
+     var maxDeltaX = (ATTACK_HOLDER_MAX_X - box.getContentSize().width/2 - x);
+     var deltaX = repelDistance;
+     if(deltaX >= maxDeltaX){
+     duration = PLAY_COMBO_TIME * (maxDeltaX/deltaX);
+     var move = cc.moveBy(duration, maxDeltaX, 0);
+     move.easing(cc.easeInOut(1.0));
+     var callBack = cc.callFunc(this.removeActor, this);
+     action = cc.sequence(move, callBack);
+     shouldRemove = true;
+     }else{
+     action = cc.moveBy(duration, deltaX, 0);
+     action.easing(cc.easeInOut(1.0));
+     shouldRemove = false;
+     }
 
-        box.runAction(action);
-        return shouldRemove;
-    },
-    */
+     box.runAction(action);
+     return shouldRemove;
+     },
+     */
     removeActor:function(sender){
         sender.removeFromParent();
     },

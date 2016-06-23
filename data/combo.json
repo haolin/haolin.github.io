@@ -1,0 +1,31 @@
+﻿[
+	{
+		"lv": "1,10",
+		"min_damage": "1",
+		"max_damage": "1",
+		"combo_lz": "coblz1",
+		"weapon_lz": "wuqilz1"
+	},
+	{
+		"lv": "10,20",
+		"min_damage": "1",
+		"max_damage": "2",
+		"combo_lz": "coblz2",
+		"weapon_lz": "wuqilz2"
+	},
+	{
+		"lv": "20,50",
+		"min_damage": "1",
+		"max_damage": "3",
+		"combo_lz": "coblz3",
+		"weapon_lz": "wuqilz3"
+	},
+	{
+		"lv": "51",
+		"min_damage": "2",
+		"max_damage": "0",
+		"combo_lz": "coblz3",
+		"weapon_lz": "wuqilz3"
+	}
+]
+

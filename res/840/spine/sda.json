@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"NF7dLBoUjzat8Vgg4q0Oz3Rnjlg","spine":"3.1.02","width":840,"height":470,"images":"../"},"bones":[{"name":"root"}],"slots":[{"name":"UI/zhujiemian","bone":"root","attachment":"UI/zhujiemian"}],"skins":{"default":{"UI/zhujiemian":{"UI/zhujiemian":{"x":-9.47,"y":16.2,"width":840,"height":470}}}},"animations":{"animation":{}}}

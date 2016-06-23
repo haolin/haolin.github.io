@@ -1,0 +1,38 @@
+[
+  {
+    "id": "2",
+    "boss": "ren_03",
+    "boos_skin": "-1",
+    "boss_act": "gj1"
+  },
+  {
+    "id": "3",
+    "boss": "ren_04",
+    "boos_skin": "ren_0401",
+    "boss_act": "gj1"
+  },
+  {
+    "id": "4",
+    "boss": "ren_04",
+    "boos_skin": "ren_0402",
+    "boss_act": "gj2"
+  },
+  {
+    "id": "5",
+    "boss": "ren_04",
+    "boos_skin": "ren_0401",
+    "boss_act": "gj1"
+  },
+  {
+    "id": "6",
+    "boss": "ren_03",
+    "boos_skin": "-1",
+    "boss_act": "gj1"
+  },
+  {
+    "id": "7",
+    "boss": "ren_04",
+    "boos_skin": "ren_0402",
+    "boss_act": "gj2"
+  }
+]

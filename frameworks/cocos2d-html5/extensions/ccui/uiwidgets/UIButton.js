@@ -116,7 +116,7 @@ ccui.Button = ccui.Widget.extend(/** @lends ccui.Button# */{
      * @override
      */
     init: function (normalImage, selectedImage,disableImage, texType) {
-        if (ccui.Widget.prototype.init.call(this)) {
+            if (ccui.Widget.prototype.init.call(this)) {
             if(normalImage === undefined)
                 return true;
             this.loadTextures(normalImage, selectedImage,disableImage, texType);

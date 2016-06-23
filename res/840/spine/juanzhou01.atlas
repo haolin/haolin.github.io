@@ -1,0 +1,20 @@
+
+juanzhou01.png
+size: 128,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+UI/juanzhou
+  rotate: false
+  xy: 2, 2
+  size: 70, 188
+  orig: 70, 188
+  offset: 0, 0
+  index: -1
+UI/zhupian
+  rotate: false
+  xy: 74, 14
+  size: 38, 176
+  orig: 38, 176
+  offset: 0, 0
+  index: -1

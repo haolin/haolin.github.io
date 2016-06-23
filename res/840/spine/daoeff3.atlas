@@ -1,0 +1,20 @@
+
+daoeff3.png
+size: 256,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/texiao/dg_03/daoeff3
+  rotate: false
+  xy: 2, 42
+  size: 177, 15
+  orig: 177, 15
+  offset: 0, 0
+  index: -1
+image/wuqi/kongbai
+  rotate: false
+  xy: 2, 2
+  size: 139, 38
+  orig: 139, 38
+  offset: 0, 0
+  index: -1

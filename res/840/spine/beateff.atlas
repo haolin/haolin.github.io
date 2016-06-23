@@ -1,0 +1,48 @@
+
+beateff.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+texiao/beateff/beateff (1)
+  rotate: false
+  xy: 2, 2
+  size: 113, 104
+  orig: 113, 104
+  offset: 0, 0
+  index: -1
+texiao/beateff/beateff (2)
+  rotate: false
+  xy: 117, 2
+  size: 113, 104
+  orig: 113, 104
+  offset: 0, 0
+  index: -1
+texiao/beateff/beateff (3)
+  rotate: false
+  xy: 232, 2
+  size: 113, 104
+  orig: 113, 104
+  offset: 0, 0
+  index: -1
+texiao/beateff/beateff (4)
+  rotate: false
+  xy: 347, 2
+  size: 113, 104
+  orig: 113, 104
+  offset: 0, 0
+  index: -1
+texiao/beateff/beateff (5)
+  rotate: false
+  xy: 462, 2
+  size: 113, 104
+  orig: 113, 104
+  offset: 0, 0
+  index: -1
+wuqi/kongbai
+  rotate: false
+  xy: 577, 68
+  size: 139, 38
+  orig: 139, 38
+  offset: 0, 0
+  index: -1

@@ -13,9 +13,7 @@ var CtlSlider = cc.Sprite.extend({
     //加速度
     _acceleration : 0,
 
-    //血条动画是否反方向，用于怪物血条
-    reverse: false,
-    ctor : function(isReverse){
+    ctor : function(){
         this._super("#movingBarBlue.png");
         this.loadConfig();
         this.initialize();

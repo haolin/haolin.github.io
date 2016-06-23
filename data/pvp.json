@@ -1,0 +1,39 @@
+﻿[
+	{
+		"pvp_lv": "6",
+		"pvp_star": "2",
+		"star_level": "0",
+		"pvp_1": "10"
+	},
+	{
+		"pvp_lv": "5",
+		"pvp_star": "3",
+		"star_level": "2",
+		"pvp_1": "10"
+	},
+	{
+		"pvp_lv": "4",
+		"pvp_star": "3",
+		"star_level": "2",
+		"pvp_1": "10"
+	},
+	{
+		"pvp_lv": "3",
+		"pvp_star": "3",
+		"star_level": "0",
+		"pvp_1": "10"
+	},
+	{
+		"pvp_lv": "2",
+		"pvp_star": "4",
+		"star_level": "0",
+		"pvp_1": "10"
+	},
+	{
+		"pvp_lv": "1",
+		"pvp_star": "5",
+		"star_level": "0",
+		"pvp_1": "10"
+	}
+]
+

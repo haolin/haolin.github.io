@@ -1,0 +1,30 @@
+[
+  {
+    "string_key": "str_game_s",
+    "string_id": "单机游戏"
+  },
+  {
+    "string_key": "tr_game_g",
+    "string_id": "联机游戏"
+  },
+  {
+    "string_key": "str_game_retry",
+    "string_id": "重新游戏"
+  },
+  {
+    "string_key": "str_mixpower",
+    "string_id": "最小攻击力"
+  },
+  {
+    "string_key": "str_maxpower",
+    "string_id": "最大攻击力"
+  },
+  {
+    "string_key": "str_maxhp",
+    "string_id": "最大生命值"
+  },
+  {
+    "string_key": "str_combo",
+    "string_id": "魔法值"
+  }
+]

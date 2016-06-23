@@ -1,0 +1,230 @@
+
+ren_04.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ren_01/ren_yingzi_0101
+  rotate: false
+  xy: 2, 21
+  size: 74, 7
+  orig: 74, 7
+  offset: 0, 0
+  index: -1
+ren_04/ren_bizi_0102
+  rotate: true
+  xy: 295, 169
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_bizi_0202
+  rotate: true
+  xy: 380, 169
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_body_0101
+  rotate: false
+  xy: 2, 120
+  size: 104, 88
+  orig: 104, 88
+  offset: 0, 0
+  index: -1
+ren_04/ren_body_0201
+  rotate: false
+  xy: 2, 30
+  size: 104, 88
+  orig: 104, 88
+  offset: 0, 0
+  index: -1
+ren_04/ren_huzi_0101
+  rotate: true
+  xy: 465, 169
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_zui_0101
+  rotate: true
+  xy: 465, 169
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_huzi_0201
+  rotate: true
+  xy: 550, 169
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_jianbang_0101
+  rotate: false
+  xy: 226, 140
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+ren_04/ren_jianbang_0102
+  rotate: false
+  xy: 108, 29
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+ren_04/ren_jianbang_0201
+  rotate: false
+  xy: 382, 118
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+ren_04/ren_jianbang_0202
+  rotate: false
+  xy: 553, 129
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+ren_04/ren_jiao_0101
+  rotate: false
+  xy: 148, 191
+  size: 35, 17
+  orig: 35, 17
+  offset: 0, 0
+  index: -1
+ren_04/ren_jiao_0201
+  rotate: false
+  xy: 2, 2
+  size: 35, 17
+  orig: 35, 17
+  offset: 0, 0
+  index: -1
+ren_04/ren_shou_0101
+  rotate: false
+  xy: 226, 30
+  size: 28, 23
+  orig: 28, 23
+  offset: 0, 0
+  index: -1
+ren_04/ren_shou_0102
+  rotate: false
+  xy: 304, 61
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+ren_04/ren_shoubi_0101
+  rotate: true
+  xy: 443, 127
+  size: 40, 53
+  orig: 40, 53
+  offset: 0, 0
+  index: -1
+ren_04/ren_shoubi_0102
+  rotate: true
+  xy: 975, 211
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+ren_04/ren_shoubi_0201
+  rotate: true
+  xy: 498, 127
+  size: 40, 53
+  orig: 40, 53
+  offset: 0, 0
+  index: -1
+ren_04/ren_shoubi_0202
+  rotate: true
+  xy: 975, 175
+  size: 34, 47
+  orig: 34, 47
+  offset: 0, 0
+  index: -1
+ren_04/ren_tou_0101
+  rotate: true
+  xy: 635, 169
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_toufa_0101
+  rotate: true
+  xy: 720, 169
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_toufa_0102
+  rotate: true
+  xy: 805, 169
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_toufa_0201
+  rotate: true
+  xy: 890, 169
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_toufa_0202
+  rotate: false
+  xy: 148, 106
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_tui_0401
+  rotate: false
+  xy: 382, 103
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+ren_04/ren_yanjing_0101
+  rotate: false
+  xy: 148, 21
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_yanjing_0201
+  rotate: false
+  xy: 226, 55
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/ren_zui_0201
+  rotate: false
+  xy: 304, 84
+  size: 76, 83
+  orig: 76, 83
+  offset: 0, 0
+  index: -1
+ren_04/wuqi_0101
+  rotate: false
+  xy: 2, 210
+  size: 181, 35
+  orig: 181, 35
+  offset: 0, 0
+  index: -1
+ren_04/wuqi_0201
+  rotate: false
+  xy: 185, 191
+  size: 108, 54
+  orig: 108, 54
+  offset: 0, 0
+  index: -1
+wuqi/kongbai
+  rotate: true
+  xy: 108, 69
+  size: 139, 38
+  orig: 139, 38
+  offset: 0, 0
+  index: -1

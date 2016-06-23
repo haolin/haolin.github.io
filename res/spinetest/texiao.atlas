@@ -1,0 +1,33 @@
+
+texiao.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+daoju/texiaodao/dao0101
+  rotate: false
+  xy: 148, 2
+  size: 36, 28
+  orig: 37, 28
+  offset: 1, 0
+  index: -1
+daoju/texiaodao/dao0102
+  rotate: true
+  xy: 76, 10
+  size: 20, 70
+  orig: 20, 70
+  offset: 0, 0
+  index: -1
+daoju/texiaodao/qiang0101
+  rotate: false
+  xy: 2, 4
+  size: 72, 26
+  orig: 72, 26
+  offset: 0, 0
+  index: -1
+renshe/wuqi/kongbai
+  rotate: false
+  xy: 186, 25
+  size: 5, 5
+  orig: 139, 38
+  offset: 2, 1
+  index: -1

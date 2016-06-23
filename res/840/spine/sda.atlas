@@ -1,0 +1,13 @@
+
+sda.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+UI/zhujiemian
+  rotate: false
+  xy: 2, 2
+  size: 840, 470
+  orig: 840, 470
+  offset: 0, 0
+  index: -1

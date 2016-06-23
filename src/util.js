@@ -67,12 +67,51 @@ util.getRandomFloat = function(Min,Max)
     return(Min + Rand * Range);
 };
 
-util.createButton = function(frameName, text,target,callback){
-    var button = new cc.MenuItemImage(frameName,frameName,frameName, callback, target);
-    var text = new cc.LabelTTF(text,  "GUBBLABLO", 20);
+util.createButton = function(normalImg, selectedImg, three, four, five, six, seven){
+    var normalImage = null,
+        selectedImage = null,
+        disabledImage = null,
+        callback = null,
+        target = null,
+        text = null,
+        fontName = null;
+
+    normalImage = selectedImage = disabledImage = normalImg;
+    fontName = "GUBBLABLO";
+
+    if (five === undefined) {
+        text = selectedImg;
+        target = three;
+        callback = four;
+    } else if (six === undefined) {
+        selectedImage = selectedImg;
+        text = three;
+        target = four;
+        callback = five;
+    } else if (six === undefined) {
+        selectedImage = selectedImg;
+        disabledImage = three;
+        text = four;
+        target = five;
+        callback = six;
+    }else{
+        selectedImage = selectedImg;
+        disabledImage = three;
+        text = four;
+        target = five;
+        callback = six;
+        fontName = seven;
+    }
+
+    var button = new cc.MenuItemImage(normalImage,selectedImage,disabledImage, callback, target);
+    var text = new cc.LabelTTF(text,  fontName, 0.0333333*ScreenSize.width);
     text.setPosition(button.getContentSize().width/2, button.getContentSize().height/2);
     button.addChild(text);
     return button;
+};
+
+util.createButtonWithFontName = function(imageName, text, fontName, target, callback ){
+    return util.createButton(imageName, imageName, imageName, text, target, callback, fontName);
 };
 
 util.getRandomElements = function(array, count){
@@ -80,7 +119,7 @@ util.getRandomElements = function(array, count){
         return null;
     }
 
-    if(count >= array.length){
+    if(count > array.length){
         return null;
     }
 
@@ -116,6 +155,20 @@ util.getRandomBool = function(){
 
 /**
  * 将攻击方块的百分比速度转化为实际速度
+ * @param {Float} p   - 0到1
+ * @return {Boolen}
+ */
+util.getRandomProbability = function(p){
+    var random = Math.random();
+    if(random < p){
+        return true;
+    }else{
+        return false;
+    }
+};
+
+/**
+ * 将攻击方块的百分比速度转化为实际速度
  * @param {String} percentage   -点击位置x坐标
  * @return {Float}
  */
@@ -123,4 +176,38 @@ util.getValueByPercentage = function(percentage){
     var percentageValue = parseFloat(percentage);
     var value = ATTACK_HOLDER_WIDTH * (percentageValue / 100);
     return value;
-}
+};
+
+util.getPropertyCount = function(o){
+    var n, count = 0;
+    for(n in o){
+        if(o.hasOwnProperty(n)){
+            count++;
+        }
+    }
+    return count;
+};
+
+util.parseSringForLabel = function(str){
+    if(str){
+        str = str.replace(/_/,"@");
+        str = str.replace(/-/,"?");
+        str = str.replace(/\+/,">");
+        str = str.replace(/\//,"=");
+        str = str.replace(/x/,"<");
+        str = str.replace(/:/,";");
+        str = str.replace(/,/,":");
+    }
+    return str;
+};
+util.getLoadingValue = function(value){
+    if(value <= 0){
+        return 9;
+    }
+    else if(value >= 100){
+        return 100;
+    }
+    else {
+        return  Math.ceil( 9 + value * (100 - 9)/100);
+    }
+};

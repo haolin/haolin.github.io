@@ -1,0 +1,397 @@
+
+skeleton.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ren01/ren_body_0101
+  rotate: true
+  xy: 518, 42
+  size: 48, 40
+  orig: 48, 42
+  offset: 0, 2
+  index: -1
+ren01/ren_jianbang_0101
+  rotate: false
+  xy: 828, 10
+  size: 26, 20
+  orig: 34, 25
+  offset: 4, 2
+  index: -1
+ren01/ren_jiao_0101
+  rotate: true
+  xy: 692, 37
+  size: 15, 6
+  orig: 19, 9
+  offset: 2, 1
+  index: -1
+ren01/ren_shou_0101
+  rotate: true
+  xy: 249, 40
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+ren01/ren_shou_0102
+  rotate: false
+  xy: 264, 40
+  size: 13, 12
+  orig: 13, 12
+  offset: 0, 0
+  index: -1
+ren01/ren_shoubi_0101
+  rotate: false
+  xy: 828, 32
+  size: 22, 26
+  orig: 22, 27
+  offset: 0, 1
+  index: -1
+ren01/ren_shoubi_0102
+  rotate: false
+  xy: 915, 67
+  size: 25, 25
+  orig: 25, 27
+  offset: 0, 1
+  index: -1
+ren01/ren_tou_0101
+  rotate: false
+  xy: 453, 40
+  size: 63, 50
+  orig: 69, 57
+  offset: 6, 0
+  index: -1
+ren01/ren_toufa_0101
+  rotate: false
+  xy: 851, 65
+  size: 30, 27
+  orig: 69, 57
+  offset: 0, 30
+  index: -1
+ren01/ren_toufa_0102
+  rotate: false
+  xy: 520, 9
+  size: 52, 31
+  orig: 69, 57
+  offset: 9, 14
+  index: -1
+ren01/ren_tui_0101
+  rotate: true
+  xy: 185, 40
+  size: 14, 12
+  orig: 14, 12
+  offset: 0, 0
+  index: -1
+ren01/ren_yingzi_0101
+  rotate: false
+  xy: 2, 5
+  size: 74, 7
+  orig: 74, 7
+  offset: 0, 0
+  index: -1
+ren02/ren_body_0201
+  rotate: false
+  xy: 574, 7
+  size: 48, 41
+  orig: 48, 42
+  offset: 0, 1
+  index: -1
+ren02/ren_jianbang_0201
+  rotate: false
+  xy: 673, 5
+  size: 25, 19
+  orig: 34, 25
+  offset: 5, 2
+  index: -1
+ren02/ren_jiao_0201
+  rotate: false
+  xy: 386, 5
+  size: 15, 6
+  orig: 19, 9
+  offset: 2, 1
+  index: -1
+ren02/ren_shoubi_0201
+  rotate: false
+  xy: 669, 26
+  size: 21, 26
+  orig: 22, 27
+  offset: 0, 0
+  index: -1
+ren02/ren_shoubi_0202
+  rotate: true
+  xy: 942, 68
+  size: 24, 26
+  orig: 25, 27
+  offset: 1, 1
+  index: -1
+ren02/ren_toufa_0201
+  rotate: true
+  xy: 799, 21
+  size: 31, 27
+  orig: 69, 57
+  offset: 0, 30
+  index: -1
+ren02/ren_toufa_0202
+  rotate: false
+  xy: 971, 96
+  size: 51, 30
+  orig: 69, 57
+  offset: 10, 14
+  index: -1
+ren02/ren_tui_0201
+  rotate: true
+  xy: 140, 40
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+ren03/ren_body_0301
+  rotate: false
+  xy: 750, 11
+  size: 47, 41
+  orig: 48, 42
+  offset: 1, 0
+  index: -1
+ren03/ren_jianbang_0301
+  rotate: true
+  xy: 878, 37
+  size: 26, 19
+  orig: 34, 25
+  offset: 5, 2
+  index: -1
+ren03/ren_jiao_0301
+  rotate: false
+  xy: 750, 55
+  size: 15, 7
+  orig: 19, 9
+  offset: 3, 0
+  index: -1
+ren03/ren_shoubi_0301
+  rotate: false
+  xy: 645, 26
+  size: 22, 26
+  orig: 22, 27
+  offset: 0, 0
+  index: -1
+ren03/ren_shoubi_0302
+  rotate: false
+  xy: 856, 10
+  size: 23, 25
+  orig: 25, 27
+  offset: 1, 1
+  index: -1
+ren03/ren_toufa_0301
+  rotate: true
+  xy: 822, 60
+  size: 31, 27
+  orig: 69, 57
+  offset: 0, 30
+  index: -1
+ren03/ren_toufa_0302
+  rotate: true
+  xy: 208, 2
+  size: 52, 39
+  orig: 69, 57
+  offset: 9, 14
+  index: -1
+ren03/ren_tui_0301
+  rotate: true
+  xy: 155, 40
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+ren04/ren_body_0401
+  rotate: false
+  xy: 700, 20
+  size: 48, 42
+  orig: 48, 42
+  offset: 0, 0
+  index: -1
+ren04/ren_jianbang_0401
+  rotate: true
+  xy: 624, 21
+  size: 27, 19
+  orig: 34, 25
+  offset: 5, 2
+  index: -1
+ren04/ren_jiao_0401
+  rotate: true
+  xy: 700, 2
+  size: 16, 7
+  orig: 19, 9
+  offset: 2, 0
+  index: -1
+ren04/ren_shoubi_0401
+  rotate: true
+  xy: 645, 2
+  size: 22, 26
+  orig: 22, 27
+  offset: 0, 0
+  index: -1
+ren04/ren_shoubi_0402
+  rotate: false
+  xy: 852, 37
+  size: 24, 26
+  orig: 25, 27
+  offset: 0, 0
+  index: -1
+ren04/ren_toufa_0401
+  rotate: false
+  xy: 883, 66
+  size: 30, 26
+  orig: 69, 57
+  offset: 0, 31
+  index: -1
+ren04/ren_toufa_0402
+  rotate: false
+  xy: 767, 54
+  size: 53, 37
+  orig: 69, 57
+  offset: 9, 15
+  index: -1
+ren04/ren_tui_0401
+  rotate: true
+  xy: 170, 40
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+wuqi/wuqi_0101
+  rotate: false
+  xy: 557, 93
+  size: 136, 33
+  orig: 139, 38
+  offset: 0, 1
+  index: -1
+wuqi/wuqi_0102
+  rotate: false
+  xy: 695, 93
+  size: 136, 33
+  orig: 139, 38
+  offset: 1, 1
+  index: -1
+wuqi/wuqi_0103
+  rotate: false
+  xy: 833, 94
+  size: 136, 32
+  orig: 139, 38
+  offset: 1, 2
+  index: -1
+wuqi/wuqi_0104
+  rotate: false
+  xy: 279, 92
+  size: 137, 34
+  orig: 139, 38
+  offset: 0, 1
+  index: -1
+wuqi/wuqi_0105
+  rotate: false
+  xy: 418, 92
+  size: 137, 34
+  orig: 139, 38
+  offset: 0, 1
+  index: -1
+wuqi/wuqi_0106
+  rotate: false
+  xy: 139, 92
+  size: 138, 34
+  orig: 139, 38
+  offset: 0, 1
+  index: -1
+wuqi/wuqi_0107
+  rotate: false
+  xy: 2, 51
+  size: 136, 35
+  orig: 139, 38
+  offset: 2, 1
+  index: -1
+wuqi/wuqi_0108
+  rotate: false
+  xy: 140, 56
+  size: 135, 34
+  orig: 139, 38
+  offset: 2, 1
+  index: -1
+wuqi/wuqi_0109
+  rotate: false
+  xy: 2, 88
+  size: 135, 38
+  orig: 139, 38
+  offset: 3, 0
+  index: -1
+wuqi/wuqi_0110
+  rotate: false
+  xy: 2, 14
+  size: 135, 35
+  orig: 139, 38
+  offset: 3, 2
+  index: -1
+wuqi/wuqi_0201
+  rotate: false
+  xy: 453, 12
+  size: 65, 26
+  orig: 86, 48
+  offset: 1, 5
+  index: -1
+wuqi/wuqi_0202
+  rotate: false
+  xy: 386, 13
+  size: 65, 27
+  orig: 86, 48
+  offset: 2, 5
+  index: -1
+wuqi/wuqi_0203
+  rotate: false
+  xy: 700, 64
+  size: 65, 27
+  orig: 86, 48
+  offset: 2, 5
+  index: -1
+wuqi/wuqi_0204
+  rotate: false
+  xy: 318, 2
+  size: 66, 36
+  orig: 86, 48
+  offset: 2, 4
+  index: -1
+wuqi/wuqi_0205
+  rotate: false
+  xy: 139, 2
+  size: 67, 36
+  orig: 86, 48
+  offset: 1, 4
+  index: -1
+wuqi/wuqi_0206
+  rotate: false
+  xy: 249, 2
+  size: 67, 36
+  orig: 86, 48
+  offset: 1, 4
+  index: -1
+wuqi/wuqi_0207
+  rotate: false
+  xy: 631, 54
+  size: 67, 37
+  orig: 86, 48
+  offset: 0, 3
+  index: -1
+wuqi/wuqi_0208
+  rotate: false
+  xy: 560, 50
+  size: 69, 41
+  orig: 86, 48
+  offset: 0, 3
+  index: -1
+wuqi/wuqi_0209
+  rotate: false
+  xy: 277, 54
+  size: 86, 36
+  orig: 86, 48
+  offset: 0, 3
+  index: -1
+wuqi/wuqi_0210
+  rotate: false
+  xy: 365, 42
+  size: 86, 48
+  orig: 86, 48
+  offset: 0, 0
+  index: -1

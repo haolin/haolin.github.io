@@ -1,0 +1,43 @@
+<skeleton name="hero" frameRate="24" version="2.1">
+ <armatures>
+  <armature name="Hero">
+   <b name="body3" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="parts-body3" pX="17.5" pY="40"/>
+   </b>
+   <b name="body2" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="parts-body2" pX="17.5" pY="40"/>
+   </b>
+   <b name="body1" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+    <d name="parts-body1" pX="17.5" pY="40"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="Hero">
+   <mov name="walk" dr="25" to="6" drTW="25" lp="1" twE="NaN">
+    <b name="body3" sc="1" dl="0">
+     <f dr="15" dI="-1"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+     <f dr="5" dI="-1"/>
+    </b>
+    <b name="body2" sc="1" dl="0">
+     <f dr="5" dI="-1"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+     <f dr="15" dI="-1"/>
+    </b>
+    <b name="body1" sc="1" dl="0">
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+     <f dr="5" dI="-1"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+     <f dr="5" dI="-1"/>
+     <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="hero" width="128" height="128">
+  <SubTexture name="parts-body1" width="35" height="80" cocos2d_pX="17.5" cocos2d_pY="40" x="74" y="0"/>
+  <SubTexture name="parts-body2" width="35" height="80" cocos2d_pX="17.5" cocos2d_pY="40" x="37" y="0"/>
+  <SubTexture name="parts-body3" width="35" height="80" cocos2d_pX="17.5" cocos2d_pY="40" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

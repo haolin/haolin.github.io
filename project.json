@@ -8,7 +8,7 @@
     "renderMode" : 0,
     "engineDir":"frameworks/cocos2d-html5",
 
-    "modules" : ["cocos2d", "cocostudio"],
+    "modules" : ["cocos2d", "cocostudio", "gui", "spine"],
 
     "jsList" : [
         "src/resource.js",
@@ -24,6 +24,7 @@
         "src/GameScene/Layer/PauseLayer.js",
         "src/GameScene/Layer/GameOverLayer.js",
         "src/GameScene/Layer/UpgradeLayer.js",
+        "src/GameScene/Layer/LevelCompleteLayer.js",
         "src/GameScene/Node/BaseObject.js",
         "src/GameScene/Node/BaseActor.js",
         "src/GameScene/Node/BaseBox.js",
@@ -31,8 +32,19 @@
         "src/GameScene/Node/HeroBox.js",
         "src/GameScene/Node/Enemy.js",
         "src/GameScene/Node/EnemyBox.js",
+        "src/GameScene/Node/Chest.js",
+        "src/GameScene/Node/ChestBox.js",
         "src/GameScene/UI/CtlHP.js",
         "src/GameScene/UI/CtlCombo.js",
-        "src/GameScene/UI/CtlSlider.js"
+        "src/GameScene/UI/CtlSlider.js",
+
+        "src/MapScene/MapScene.js",
+        "src/MapScene/Layer/MapLayer.js",
+        "src/MapScene/Layer/AllocatePointsLayer.js",
+
+        "src/StartScene/StartScene.js",
+        "src/StartScene/Layer/StartLayer.js",
+
+        "src/LoadingScene/LoadingScene.js"
     ]
 }

@@ -1,0 +1,55 @@
+
+skeleton.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+daoju/baoxiang/baoxiang_0101
+  rotate: false
+  xy: 148, 16
+  size: 73, 39
+  orig: 73, 39
+  offset: 0, 0
+  index: -1
+daoju/baoxiang/baoxiang_0102
+  rotate: false
+  xy: 2, 11
+  size: 71, 44
+  orig: 71, 44
+  offset: 0, 0
+  index: -1
+daoju/baoxiang/baoxiang_0103
+  rotate: false
+  xy: 298, 7
+  size: 64, 48
+  orig: 64, 48
+  offset: 0, 0
+  index: -1
+daoju/baoxiang/baoxiang_0201
+  rotate: false
+  xy: 223, 16
+  size: 73, 39
+  orig: 73, 39
+  offset: 0, 0
+  index: -1
+daoju/baoxiang/baoxiang_0202
+  rotate: false
+  xy: 75, 11
+  size: 71, 44
+  orig: 71, 44
+  offset: 0, 0
+  index: -1
+daoju/baoxiang/baoxiang_0203
+  rotate: false
+  xy: 364, 7
+  size: 64, 48
+  orig: 64, 48
+  offset: 0, 0
+  index: -1
+renshe/ren01/ren_yingzi_0101
+  rotate: false
+  xy: 2, 2
+  size: 74, 7
+  orig: 74, 7
+  offset: 0, 0
+  index: -1

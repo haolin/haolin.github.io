@@ -1,0 +1,93 @@
+<skeleton name="hero" frameRate="24" version="2.1">
+  <armatures>
+    <armature name="Hero">
+      <b name="sword" x="16" y="-43" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+        <d name="parts-sword" pX="8" pY="60"/>
+      </b>
+      <b name="body3" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+        <d name="parts-body3" pX="17.5" pY="40"/>
+      </b>
+      <b name="body2" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+        <d name="parts-body2" pX="17.5" pY="40"/>
+      </b>
+      <b name="body1" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+        <d name="parts-body1" pX="17.5" pY="40"/>
+      </b>
+      <b name="helm" x="3" y="-6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2">
+        <d name="parts-helm" pX="16" pY="16"/>
+      </b>
+      <b name="shield" x="-6" y="2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3">
+        <d name="parts-shield" pX="11.5" pY="40"/>
+      </b>
+      <b name="body5" x="0" y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+        <d name="parts-body5" pX="17.5" pY="40"/>
+      </b>
+    </armature>
+  </armatures>
+  <animations>
+    <animation name="Hero">
+      <mov name="run" dr="20" to="6" drTW="20" lp="1" twE="NaN">
+        <b name="sword" sc="1" dl="0">
+          <f x="16" y="-43" cocos2d_x="16" cocos2d_y="-43" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+          <f x="22" y="-43" cocos2d_x="22" cocos2d_y="-43" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+          <f x="17" y="-43" cocos2d_x="17" cocos2d_y="-43" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+          <f x="22" y="-43" cocos2d_x="22" cocos2d_y="-43" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+        </b>
+        <b name="body3" sc="1" dl="0">
+          <f dr="15" dI="-1"/>
+          <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="5"/>
+        </b>
+        <b name="body2" sc="1" dl="0">
+          <f dr="5" dI="-1"/>
+          <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="5"/>
+          <f dr="10" dI="-1"/>
+        </b>
+        <b name="body1" sc="1" dl="0">
+          <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="5"/>
+          <f dr="5" dI="-1"/>
+          <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="5"/>
+          <f dr="5" dI="-1"/>
+        </b>
+        <b name="helm" sc="1" dl="0">
+          <f x="3" y="-6" cocos2d_x="3" cocos2d_y="-6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="5"/>
+          <f x="2" y="-10" cocos2d_x="2" cocos2d_y="-10" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="5"/>
+          <f x="3" y="-6" cocos2d_x="3" cocos2d_y="-6" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="5"/>
+          <f x="3" y="-10" cocos2d_x="3" cocos2d_y="-10" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="2" dI="0" dr="5"/>
+        </b>
+        <b name="shield" sc="1" dl="0">
+          <f x="-6" y="2" cocos2d_x="-6" cocos2d_y="2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="5"/>
+          <f x="-13" y="0" cocos2d_x="-13" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="5"/>
+          <f x="-6" y="2" cocos2d_x="-6" cocos2d_y="2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="5"/>
+          <f x="-6.5" y="0" cocos2d_x="-6.5" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="5"/>
+        </b>
+      </mov>
+      <mov name="attack" dr="19" to="6" drTW="19" lp="0" twE="NaN">
+        <b name="body5" sc="1" dl="0">
+          <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+          <f x="27" y="0" cocos2d_x="27" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="5"/>
+          <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="2"/>
+          <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="11"/>
+        </b>
+        <b name="shield" sc="1" dl="0">
+          <f x="-12" y="2" cocos2d_x="-12" cocos2d_y="2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="1"/>
+          <f x="13" y="2" cocos2d_x="13" cocos2d_y="2" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="4"/>
+          <f dr="14" dI="-1"/>
+        </b>
+      </mov>
+      <mov name="walk" dr="1" to="6">
+        <b name="body5" sc="1" dl="0">
+          <f x="0" y="0" cocos2d_x="0" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="1"/>
+        </b>
+      </mov>
+    </animation>
+  </animations>
+  <TextureAtlas name="hero" width="128" height="256">
+    <SubTexture name="parts-body5" width="35" height="80" cocos2d_pX="17.5" cocos2d_pY="40" x="55" y="82"/>
+    <SubTexture name="parts-shield" width="23" height="80" cocos2d_pX="11.5" cocos2d_pY="40" x="92" y="0"/>
+    <SubTexture name="parts-helm" width="32" height="32" cocos2d_pX="16" cocos2d_pY="16" x="92" y="82"/>
+    <SubTexture name="parts-body1" width="35" height="80" cocos2d_pX="17.5" cocos2d_pY="40" x="18" y="0"/>
+    <SubTexture name="parts-body2" width="35" height="80" cocos2d_pX="17.5" cocos2d_pY="40" x="55" y="0"/>
+    <SubTexture name="parts-body3" width="35" height="80" cocos2d_pX="17.5" cocos2d_pY="40" x="18" y="82"/>
+    <SubTexture name="parts-sword" width="16" height="120" cocos2d_pX="8" cocos2d_pY="60" x="0" y="0"/>
+  </TextureAtlas>
+</skeleton>

@@ -1,0 +1,32 @@
+[
+  {
+    "m_id": "0",
+    "m_description": "背景音乐",
+    "m_name": "bgm"
+  },
+  {
+    "m_id": "1",
+    "m_description": "主角攻击",
+    "m_name": "attack"
+  },
+  {
+    "m_id": "2",
+    "m_description": "敌人攻击",
+    "m_name": "hurt"
+  },
+  {
+    "m_id": "3",
+    "m_description": "combo攻击",
+    "m_name": "bisha"
+  },
+  {
+    "m_id": "4",
+    "m_description": "主角防御",
+    "m_name": "defense"
+  },
+  {
+    "m_id": "5",
+    "m_description": "按钮音",
+    "m_name": "anniu"
+  }
+]

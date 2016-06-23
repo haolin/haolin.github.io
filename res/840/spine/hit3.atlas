@@ -1,0 +1,41 @@
+
+hit3.png
+size: 1024,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+texiao/hit/bigl (1)
+  rotate: false
+  xy: 2, 2
+  size: 137, 59
+  orig: 137, 59
+  offset: 0, 0
+  index: -1
+texiao/hit/bigl (2)
+  rotate: false
+  xy: 141, 2
+  size: 137, 59
+  orig: 137, 59
+  offset: 0, 0
+  index: -1
+texiao/hit/bigl (3)
+  rotate: false
+  xy: 280, 2
+  size: 137, 59
+  orig: 137, 59
+  offset: 0, 0
+  index: -1
+texiao/hit/bigl (4)
+  rotate: false
+  xy: 419, 2
+  size: 137, 59
+  orig: 137, 59
+  offset: 0, 0
+  index: -1
+wuqi/kongbai
+  rotate: false
+  xy: 558, 23
+  size: 139, 38
+  orig: 139, 38
+  offset: 0, 0
+  index: -1

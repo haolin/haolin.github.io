@@ -328,8 +328,7 @@ cc.async = /** @lends cc.async# */{
      * Do tasks by iterator.
      * @param {Array|Object} tasks
      * @param {function|Object} iterator
-     * @param {function} [callback]
-     * @param {Object} [target]
+                                  * @param {Object} [target]
      * @return {cc.AsyncPool}
      */
     map : function(tasks, iterator, callback, target){

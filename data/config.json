@@ -1,12 +1,12 @@
 ﻿[
 	{
-		"def_maxhp": "100",
-		"def_mindamage": "2",
-		"def_maxdamage": "5",
-		"def_mgcdamage": "5",
-		"repel_range": "10",
-		"combo_repel": "3",
-		"max_repel": "80",
+		"def_maxhp": "165",
+		"def_mindamage": "1",
+		"def_maxdamage": "1",
+		"def_mgcdamage": "4",
+		"repel_range": "7",
+		"combo_repel": "2",
+		"max_repel": "70",
 		"ysquare_weight": "1",
 		"gsquare_weight": "1.5",
 		"gsquare_percent": "0.3",
@@ -15,10 +15,18 @@
 		"max_weight": "5",
 		"judgetime_low": "0.8",
 		"judgetime_hight": "1.5",
-		"blue_speedup1": "5",
+		"blue_speedup1": "6",
 		"red_back": "2",
 		"red_back1": "0.4",
-		"red_back2": "0.8"
+		"red_back2": "0.8",
+		"cln_lv": "5",
+		"cln_money": "100",
+		"pvp_lv": "1",
+		"star_up": "1",
+		"square_3": "2",
+		"square_4": "5",
+		"combo_gold": "1",
+		"combo_miss": "0"
 	}
 ]
 
