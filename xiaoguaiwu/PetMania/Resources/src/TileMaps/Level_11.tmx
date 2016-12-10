@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="11" tilewidth="68" tileheight="68">
+ <properties>
+  <property name="Connect" value="07,52,1|17,62,1|27,72,1|37,82,1"/>
+ </properties>
+ <tileset firstgid="1" name="game_grid1" tilewidth="68" tileheight="68">
+  <image source="game_grid1.png" width="68" height="68"/>
+ </tileset>
+ <tileset firstgid="2" name="map" tilewidth="68" tileheight="68">
+  <image source="map.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Valid" width="9" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAMGNEwsWrQxYaiGnLDgxwAADE8ADk=
+  </data>
+ </layer>
+ <objectgroup name="BottomObj" width="9" height="11"/>
+ <objectgroup name="MiddleObj" width="9" height="11"/>
+ <objectgroup color="#000000" name="TopObj" width="9" height="11">
+  <object name="10" type="Factory_Normal" x="0" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Pink,Purple"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="68" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Pink,Purple"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="136" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Pink,Purple"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="204" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Pink,Purple"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,155 @@
+<skeleton name="pink_3d_new" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="logo_new_pink_3d_1">
+   <b name="logo_new_pink_3d_shadow" x="-1.8" y="15.7" kX="0" kY="0" cX="0.74" cY="0.74" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="logo_new_pink_cell-logo_new_pink_3d_shadow"/>
+   </b>
+   <b name="logo_new_pink_3d_body" x="0" y="-2.05" kX="0" kY="0" cX="0.74" cY="0.74" alpha="100" red="100" green="100" blue="100" z="1">
+    <d name="logo_new_pink_cell-logo_new_pink_3d_body"/>
+   </b>
+   <b name="logo_new_pink_3d_eye_white" x="-2.85" y="-5.35" kX="0" kY="0" cX="0.74" cY="0.74" alpha="100" red="100" green="100" blue="100" z="2">
+    <d name="logo_new_pink_cell-logo_new_pink_3d_eye_white"/>
+   </b>
+   <b name="logo_new_pink_3d_eyeball" x="-3.65" y="-5.4" kX="0" kY="0" cX="0.74" cY="0.74" alpha="100" red="100" green="100" blue="100" z="3">
+    <d name="logo_new_pink_cell-logo_new_pink_3d_eyeball"/>
+   </b>
+   <b name="logo_new_pink_3d_mouth" x="-3.95" y="4.95" kX="0" kY="0" cX="0.74" cY="0.74" alpha="100" red="100" green="100" blue="100" z="4">
+    <d name="logo_new_pink_cell-logo_new_pink_3d_mouth"/>
+   </b>
+   <b name="logo_new_pink_3d_whites" x="-2.05" y="-6.8" kX="10.2" kY="0" cX="0.6" cY="0.81" alpha="100" red="100" green="100" blue="100" z="2">
+    <d name="logo_new_pink_cell-logo_new_pink_3d_whites"/>
+   </b>
+   <b name="logo_new_pink_3d_eyeball_small" x="-3.9" y="-6.35" kX="7.43" kY="0" cX="0.47" cY="0.68" alpha="100" red="100" green="100" blue="100" z="3">
+    <d name="logo_new_pink_cell-logo_new_pink_3d_eyeball_small"/>
+   </b>
+   <b name="logo_new_pink_3d_highlight" x="-4.55" y="-9.75" kX="7.44" kY="0" cX="0.4" cY="0.49" alpha="100" red="100" green="100" blue="100" z="4">
+    <d name="logo_new_pink_cell-logo_new_pink_3d_highlight"/>
+   </b>
+   <b name="logo_new_pink_3d_mouth_o" x="-4.7" y="4.85" kX="-2.3" kY="0" cX="0.52" cY="0.52" alpha="100" red="100" green="100" blue="100" z="5">
+    <d name="logo_new_pink_cell-logo_new_pink_3d_mouth_o"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="logo_new_pink_3d_1">
+   <mov name="pink_3d" dr="125" to="0" drTW="125" lp="0" twE="NaN">
+    <b name="logo_new_pink_3d_shadow" sc="1" dl="0">
+     <f x="-1.8" y="15.7" kX="0" kY="0" cX="0.74" cY="0.74" z="0" pX="2.05" pY="5" width="17" height="8" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-1.9" y="15.95" kX="0" kY="0" cX="0.76" cY="0.68" z="0" pX="2.1" pY="4.6" width="17" height="7" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-1.8" y="15.7" kX="0" kY="0" cX="0.74" cY="0.74" z="0" pX="2.05" pY="5" width="17" height="8" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-1.9" y="15.95" kX="0" kY="0" cX="0.76" cY="0.68" z="0" pX="2.1" pY="4.6" width="17" height="7" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-1.8" y="15.7" kX="0" kY="0" cX="0.74" cY="0.74" z="0" pX="2.05" pY="5" width="17" height="8" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-1.9" y="15.95" kX="0" kY="0" cX="0.76" cY="0.68" z="0" pX="2.1" pY="4.6" width="17" height="7" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="6"/>
+     <f x="-1.85" y="15.9" kX="0" kY="0" cX="0.76" cY="0.7" z="0" pX="2.1" pY="4.75" width="17" height="8" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="7"/>
+     <f x="-1.8" y="15.7" kX="0" kY="0" cX="0.74" cY="0.74" z="0" pX="2.05" pY="5" width="17" height="8" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-1.8" y="15.7" kX="0" kY="0" cX="0.74" cY="0.74" z="0" pX="2.05" pY="5" width="17" height="8" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="-1.9" y="15.95" kX="0" kY="0" cX="0.76" cY="0.68" z="0" pX="2.1" pY="4.6" width="17" height="7" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-1.8" y="15.7" kX="0" kY="0" cX="0.74" cY="0.74" z="0" pX="2.05" pY="5" width="17" height="8" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="-1.9" y="15.95" kX="0" kY="0" cX="0.76" cY="0.68" z="0" pX="2.1" pY="4.6" width="17" height="7" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-1.8" y="15.7" kX="0" kY="0" cX="0.74" cY="0.74" z="0" pX="2.05" pY="5" width="17" height="8" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="1"/>
+    </b>
+    <b name="logo_new_pink_3d_body" sc="1" dl="0">
+     <f x="0" y="-2.05" kX="0" kY="0" cX="0.74" cY="0.74" z="1" pX="14.05" pY="17.75" width="29" height="36" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="0" y="-0.4" kX="0" kY="0" cX="0.76" cY="0.68" z="1" pX="14.5" pY="16.4" width="29" height="33" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="0" y="-2.05" kX="0" kY="0" cX="0.74" cY="0.74" z="1" pX="14.05" pY="17.75" width="29" height="36" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="0" y="-0.4" kX="0" kY="0" cX="0.76" cY="0.68" z="1" pX="14.5" pY="16.4" width="29" height="33" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="0" y="-2.05" kX="0" kY="0" cX="0.74" cY="0.74" z="1" pX="14.05" pY="17.75" width="29" height="36" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="0" y="-0.4" kX="0" kY="0" cX="0.76" cY="0.68" z="1" pX="14.5" pY="16.4" width="29" height="33" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="6"/>
+     <f x="0" y="-1" kX="0" kY="0" cX="0.76" cY="0.7" z="1" pX="14.35" pY="16.85" width="29" height="34" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="7"/>
+     <f x="0" y="-2.05" kX="0" kY="0" cX="0.74" cY="0.74" z="1" pX="14.05" pY="17.75" width="29" height="36" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="0" y="-2.05" kX="0" kY="0" cX="0.74" cY="0.74" z="1" pX="14.05" pY="17.75" width="29" height="36" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="0" y="-0.4" kX="0" kY="0" cX="0.76" cY="0.68" z="1" pX="14.5" pY="16.4" width="29" height="33" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="0" y="-2.05" kX="0" kY="0" cX="0.74" cY="0.74" z="1" pX="14.05" pY="17.75" width="29" height="36" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="0" y="-0.4" kX="0" kY="0" cX="0.76" cY="0.68" z="1" pX="14.5" pY="16.4" width="29" height="33" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="0" y="-2.05" kX="0" kY="0" cX="0.74" cY="0.74" z="1" pX="14.05" pY="17.75" width="29" height="36" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="1"/>
+    </b>
+    <b name="logo_new_pink_3d_eye_white" sc="1" dl="0">
+     <f x="-2.85" y="-5.35" kX="0" kY="0" cX="0.74" cY="0.74" z="2" pX="5.55" pY="5.9" width="12" height="12" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-2.9" y="-3.45" kX="0" kY="0" cX="0.76" cY="0.68" z="2" pX="5.75" pY="5.45" width="12" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-2.85" y="-5.35" kX="0" kY="0" cX="0.74" cY="0.74" z="2" pX="5.55" pY="5.9" width="12" height="12" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-2.9" y="-3.45" kX="0" kY="0" cX="0.76" cY="0.68" z="2" pX="5.75" pY="5.45" width="12" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-2.85" y="-5.35" kX="0" kY="0" cX="0.74" cY="0.74" z="2" pX="5.55" pY="5.9" width="12" height="12" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-2.9" y="-3.45" kX="0" kY="0" cX="0.76" cY="0.68" z="2" pX="5.75" pY="5.45" width="12" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="-2.9" y="-4.25" kX="0" kY="0" cX="0.75" cY="0.71" z="2" pX="5.65" pY="5.65" width="12" height="12" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f dr="8" dI="-1"/>
+     <f x="-2.85" y="-5.35" kX="0" kY="0" cX="0.74" cY="0.74" z="2" pX="5.55" pY="5.9" width="12" height="12" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="-2.9" y="-3.45" kX="0" kY="0" cX="0.76" cY="0.68" z="2" pX="5.75" pY="5.45" width="12" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-2.85" y="-5.35" kX="0" kY="0" cX="0.74" cY="0.74" z="2" pX="5.55" pY="5.9" width="12" height="12" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="-2.9" y="-3.45" kX="0" kY="0" cX="0.76" cY="0.68" z="2" pX="5.75" pY="5.45" width="12" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-2.85" y="-5.35" kX="0" kY="0" cX="0.74" cY="0.74" z="2" pX="5.55" pY="5.9" width="12" height="12" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="1"/>
+    </b>
+    <b name="logo_new_pink_3d_eyeball" sc="1" dl="0">
+     <f x="-3.65" y="-5.4" kX="0" kY="0" cX="0.74" cY="0.74" z="3" pX="4.8" pY="5.2" width="10" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-3.75" y="-3.55" kX="0" kY="0" cX="0.76" cY="0.68" z="3" pX="4.95" pY="4.8" width="10" height="10" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-3.65" y="-5.4" kX="0" kY="0" cX="0.74" cY="0.74" z="3" pX="4.8" pY="5.2" width="10" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-3.75" y="-3.55" kX="0" kY="0" cX="0.76" cY="0.68" z="3" pX="4.95" pY="4.8" width="10" height="10" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-3.65" y="-5.4" kX="0" kY="0" cX="0.74" cY="0.74" z="3" pX="4.8" pY="5.2" width="10" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-3.75" y="-3.55" kX="0" kY="0" cX="0.76" cY="0.68" z="3" pX="4.95" pY="4.8" width="10" height="10" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="-3.75" y="-4.3" kX="0" kY="0" cX="0.75" cY="0.71" z="3" pX="4.9" pY="4.95" width="10" height="10" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f dr="8" dI="-1"/>
+     <f x="-3.65" y="-5.4" kX="0" kY="0" cX="0.74" cY="0.74" z="3" pX="4.8" pY="5.2" width="10" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="-3.75" y="-3.55" kX="0" kY="0" cX="0.76" cY="0.68" z="3" pX="4.95" pY="4.8" width="10" height="10" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-3.65" y="-5.4" kX="0" kY="0" cX="0.74" cY="0.74" z="3" pX="4.8" pY="5.2" width="10" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="-3.75" y="-3.55" kX="0" kY="0" cX="0.76" cY="0.68" z="3" pX="4.95" pY="4.8" width="10" height="10" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-3.65" y="-5.4" kX="0" kY="0" cX="0.74" cY="0.74" z="3" pX="4.8" pY="5.2" width="10" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="1"/>
+    </b>
+    <b name="logo_new_pink_3d_mouth" sc="1" dl="0">
+     <f x="-3.95" y="4.95" kX="0" kY="0" cX="0.74" cY="0.74" z="4" pX="4.45" pY="2.6" width="9" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-4.05" y="6.05" kX="0" kY="0" cX="0.86" cY="0.77" z="4" pX="5.15" pY="2.7" width="11" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-3.95" y="4.95" kX="0" kY="0" cX="0.74" cY="0.74" z="4" pX="4.45" pY="2.6" width="9" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-4.05" y="6.05" kX="0" kY="0" cX="0.86" cY="0.77" z="4" pX="5.15" pY="2.7" width="11" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-3.95" y="4.95" kX="0" kY="0" cX="0.74" cY="0.74" z="4" pX="4.45" pY="2.6" width="9" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="12"/>
+     <f x="-4.05" y="6.05" kX="0" kY="0" cX="0.86" cY="0.77" z="4" pX="5.15" pY="2.7" width="11" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="-4.05" y="5.55" kX="0" kY="0" cX="0.81" cY="0.76" z="4" pX="4.85" pY="2.65" width="10" height="6" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f dr="8" dI="-1"/>
+     <f x="-3.95" y="4.95" kX="0" kY="0" cX="0.74" cY="0.74" z="4" pX="4.45" pY="2.6" width="9" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="-4.05" y="6.05" kX="0" kY="0" cX="0.86" cY="0.77" z="4" pX="5.15" pY="2.7" width="11" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-3.95" y="4.95" kX="0" kY="0" cX="0.74" cY="0.74" z="4" pX="4.45" pY="2.6" width="9" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="13"/>
+     <f x="-4.05" y="6.05" kX="0" kY="0" cX="0.86" cY="0.77" z="4" pX="5.15" pY="2.7" width="11" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="12"/>
+     <f x="-3.95" y="4.95" kX="0" kY="0" cX="0.74" cY="0.74" z="4" pX="4.45" pY="2.6" width="9" height="6" alpha="100" red="100" green="100" blue="100" dI="0" twE="0.96" dr="1"/>
+    </b>
+    <b name="logo_new_pink_3d_whites" sc="1" dl="0">
+     <f dr="66" dI="-1"/>
+     <f x="-2.05" y="-6.8" kX="10.2" kY="0" cX="0.6" cY="0.81" z="2" pX="6.7" pY="6.7" width="14" height="14" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-3.3" y="-4.8" kX="12.67" kY="9.49" cX="0.68" cY="0.42" z="2" pX="6.85" pY="4.45" width="14" height="9" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-3.05" y="-5.65" kX="2.53" kY="0" cX="0.57" cY="0.64" z="2" pX="5.45" pY="5.3" width="11" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-2.75" y="-5.95" kX="3.81" kY="0" cX="0.57" cY="0.65" z="2" pX="5.55" pY="5.45" width="12" height="11" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f dr="51" dI="-1"/>
+    </b>
+    <b name="logo_new_pink_3d_eyeball_small" sc="1" dl="0">
+     <f dr="66" dI="-1"/>
+     <f x="-3.9" y="-6.35" kX="7.43" kY="0" cX="0.47" cY="0.68" z="3" pX="3.75" pY="4.65" width="9" height="10" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-5.35" y="-4.95" kX="7.18" kY="9.49" cX="0.53" cY="0.36" z="3" pX="3.8" pY="3" width="9" height="7" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-4.75" y="-5.25" kX="-0.52" kY="0" cX="0.44" cY="0.54" z="3" pX="3.05" pY="3.7" width="7" height="8" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-4.5" y="-5.55" kX="0.5" kY="0" cX="0.44" cY="0.55" z="3" pX="3.05" pY="3.75" width="7" height="8" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f dr="51" dI="-1"/>
+    </b>
+    <b name="logo_new_pink_3d_highlight" sc="1" dl="0">
+     <f dr="66" dI="-1"/>
+     <f x="-4.55" y="-9.75" kX="7.44" kY="0" cX="0.4" cY="0.49" z="4" pX="1.2" pY="1.2" width="3" height="3" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-6.35" y="-6.9" kX="7.18" kY="9.5" cX="0.45" cY="0.26" z="4" pX="1.25" pY="0.8" width="3" height="2" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-5.8" y="-7.95" kX="-0.52" kY="0" cX="0.38" cY="0.39" z="4" pX="1" pY="0.95" width="2" height="2" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-5.5" y="-8.35" kX="0.5" kY="0" cX="0.38" cY="0.4" z="4" pX="1" pY="0.95" width="2" height="2" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f dr="51" dI="-1"/>
+    </b>
+    <b name="logo_new_pink_3d_mouth_o" sc="1" dl="0">
+     <f dr="66" dI="-1"/>
+     <f x="-4.7" y="4.85" kX="-2.3" kY="0" cX="0.52" cY="0.52" z="5" pX="1.1" pY="1.25" width="3" height="4" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="7"/>
+     <f x="-4.6" y="4.75" kX="0.5" kY="0" cX="0.52" cY="0.55" z="5" pX="1.05" pY="1.3" width="3" height="4" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f dr="51" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="pink_3d_new" width="512" height="64">
+  <SubTexture name="logo_new_pink_cell-logo_new_pink_3d_mouth_o" pX="2" pY="2.4" width="4" height="7" x="156" y="0"/>
+  <SubTexture name="logo_new_pink_cell-logo_new_pink_3d_highlight" pX="2.6" pY="2.4" width="6" height="5" x="148" y="0"/>
+  <SubTexture name="logo_new_pink_cell-logo_new_pink_3d_eyeball_small" pX="6.75" pY="6.85" width="15" height="14" x="102" y="0"/>
+  <SubTexture name="logo_new_pink_cell-logo_new_pink_3d_whites" pX="9.1" pY="8.35" width="19" height="17" x="40" y="0"/>
+  <SubTexture name="logo_new_pink_cell-logo_new_pink_3d_mouth" pX="6" pY="3.5" width="12" height="7" x="134" y="0"/>
+  <SubTexture name="logo_new_pink_cell-logo_new_pink_3d_eyeball" pX="6.5" pY="7" width="13" height="14" x="119" y="0"/>
+  <SubTexture name="logo_new_pink_cell-logo_new_pink_3d_eye_white" pX="7.5" pY="8" width="15" height="16" x="85" y="0"/>
+  <SubTexture name="logo_new_pink_cell-logo_new_pink_3d_body" pX="19" pY="24" width="38" height="48" x="0" y="0"/>
+  <SubTexture name="logo_new_pink_cell-logo_new_pink_3d_shadow" pX="2.75" pY="6.75" width="22" height="10" x="61" y="0"/>
+ </TextureAtlas>
+</skeleton>

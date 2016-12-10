@@ -1,0 +1,84 @@
+<skeleton name="logo_new_meteor" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="logo_new_meteor">
+   <b name="logo_new_meteor_1" x="846.2" y="-290.9" kX="-9.53" kY="-9.53" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="logo_new_meteor_star_cell-logo_new_meteor_meteor_1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="logo_new_meteor">
+   <mov name="logo_new_meteor" dr="125" to="6" drTW="125" lp="0" twE="NaN">
+    <b name="logo_new_meteor_1" sc="1" dl="0">
+     <f dr="17" dI="-1"/>
+     <f x="846.2" y="-290.9" kX="-9.53" kY="-9.53" cX="1" cY="1" z="0" pX="190.2" pY="18.65" width="250" height="59" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="819.55" y="-286.85" kX="-10.02" kY="-10.02" cX="1" cY="1" z="0" pX="189.85" pY="19.1" width="249" height="61" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="792.9" y="-282.6" kX="-10.53" kY="-10.53" cX="1" cY="1" z="0" pX="189.65" pY="19.6" width="249" height="63" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="766.35" y="-278.1" kX="-11.05" kY="-11.05" cX="1" cY="1" z="0" pX="189.4" pY="20.1" width="249" height="66" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="739.9" y="-273.3" kX="-11.56" kY="-11.56" cX="1" cY="1" z="0" pX="189.1" pY="20.55" width="249" height="68" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="713.4" y="-268.25" kX="-12.07" kY="-12.07" cX="1" cY="1" z="0" pX="188.85" pY="21.1" width="248" height="70" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="686.95" y="-263.4" kX="-12.77" kY="-12.77" cX="1" cY="1" z="0" pX="188.45" pY="21.75" width="248" height="73" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="660.55" y="-257.85" kX="-13.28" kY="-13.28" cX="1" cY="1" z="0" pX="188.15" pY="22.25" width="247" height="75" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="634.3" y="-251.9" kX="-13.79" kY="-13.79" cX="1" cY="1" z="0" pX="187.75" pY="22.75" width="247" height="77" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="608.1" y="-245.7" kX="-14.3" kY="-14.3" cX="1" cY="1" z="0" pX="187.45" pY="23.2" width="247" height="79" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="582" y="-239.3" kX="-14.81" kY="-14.81" cX="1" cY="1" z="0" pX="187.05" pY="23.7" width="246" height="81" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="555.7" y="-233.1" kX="-15.51" kY="-15.51" cX="1" cY="1" z="0" pX="186.55" pY="24.35" width="246" height="84" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="529.7" y="-226.2" kX="-16.03" kY="-16.03" cX="1" cY="1" z="0" pX="186.15" pY="24.85" width="245" height="86" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="503.85" y="-218.9" kX="-16.54" kY="-16.54" cX="1" cY="1" z="0" pX="185.7" pY="25.3" width="245" height="88" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="478" y="-211.5" kX="-17.05" kY="-17.05" cX="1" cY="1" z="0" pX="185.3" pY="25.8" width="244" height="90" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="452.15" y="-203.75" kX="-17.56" kY="-17.56" cX="1" cY="1" z="0" pX="184.9" pY="26.25" width="244" height="93" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="426.45" y="-195.7" kX="-18.07" kY="-18.07" cX="1" cY="1" z="0" pX="184.4" pY="26.75" width="243" height="95" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="400.75" y="-188.1" kX="-18.77" kY="-18.77" cX="1" cY="1" z="0" pX="183.75" pY="27.35" width="242" height="97" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="375.2" y="-179.55" kX="-19.28" kY="-19.28" cX="1" cY="1" z="0" pX="183.3" pY="27.85" width="242" height="100" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="349.8" y="-170.8" kX="-19.79" kY="-19.79" cX="1" cY="1" z="0" pX="182.75" pY="28.3" width="241" height="102" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="324.4" y="-161.85" kX="-20.31" kY="-20.31" cX="1" cY="1" z="0" pX="182.25" pY="28.75" width="241" height="104" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="299.2" y="-152.55" kX="-20.82" kY="-20.82" cX="1" cY="1" z="0" pX="181.7" pY="29.2" width="240" height="106" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="274.05" y="-143.1" kX="-21.33" kY="-21.33" cX="1" cY="1" z="0" pX="181.15" pY="29.65" width="239" height="108" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="248.7" y="-133.95" kX="-22.03" kY="-22.03" cX="1" cY="1" z="0" pX="180.4" pY="30.25" width="238" height="110" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="223.75" y="-124.05" kX="-22.54" kY="-22.54" cX="1" cY="1" z="0" pX="179.8" pY="30.75" width="238" height="112" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="198.8" y="-113.85" kX="-23.05" kY="-23.05" cX="1" cY="1" z="0" pX="179.2" pY="31.2" width="237" height="114" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="174.05" y="-103.5" kX="-23.57" kY="-23.57" cX="1" cY="1" z="0" pX="178.6" pY="31.65" width="236" height="116" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="149.45" y="-92.9" kX="-24.08" kY="-24.08" cX="1" cY="1" z="0" pX="178" pY="32.1" width="235" height="118" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="124.8" y="-82.05" kX="-24.59" kY="-24.59" cX="1" cY="1" z="0" pX="177.3" pY="32.5" width="234" height="120" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="100.15" y="-71.6" kX="-25.29" kY="-25.29" cX="1" cY="1" z="0" pX="176.4" pY="33.1" width="233" height="123" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="75.95" y="-60.4" kX="-25.82" kY="-25.82" cX="1" cY="1" z="0" pX="175.95" pY="33.6" width="233" height="125" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="51.55" y="-48.75" kX="-26.32" kY="-26.32" cX="1" cY="1" z="0" pX="175.1" pY="34" width="232" height="127" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="27.35" y="-37" kX="-26.83" kY="-26.83" cX="1" cY="1" z="0" pX="174.35" pY="34.4" width="231" height="129" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="3.25" y="-25.1" kX="-27.34" kY="-27.34" cX="1" cY="1" z="0" pX="173.7" pY="34.8" width="230" height="131" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-21.05" y="-13.55" kX="-28.04" kY="-28.04" cX="1" cY="1" z="0" pX="172.7" pY="35.4" width="229" height="133" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-45" y="-1.1" kX="-28.56" kY="-28.56" cX="1" cY="1" z="0" pX="171.95" pY="35.85" width="228" height="135" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-68.65" y="11.4" kX="-29.07" kY="-29.07" cX="1" cY="1" z="0" pX="171.25" pY="36.3" width="227" height="137" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-92.4" y="24.15" kX="-29.58" kY="-29.58" cX="1" cY="1" z="0" pX="170.45" pY="36.7" width="226" height="139" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-116" y="37.25" kX="-30.09" kY="-30.09" cX="1" cY="1" z="0" pX="169.7" pY="37.1" width="225" height="141" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-139.4" y="50.4" kX="-30.61" kY="-30.61" cX="1" cY="1" z="0" pX="168.9" pY="37.5" width="224" height="143" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-163.05" y="63.3" kX="-31.31" kY="-31.31" cX="1" cY="1" z="0" pX="167.8" pY="38.05" width="223" height="145" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-186.15" y="76.85" kX="-31.82" kY="-31.82" cX="1" cY="1" z="0" pX="166.95" pY="38.45" width="222" height="147" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-209.25" y="90.7" kX="-32.34" kY="-32.34" cX="1" cY="1" z="0" pX="166.15" pY="38.9" width="221" height="149" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-232.25" y="104.65" kX="-32.85" kY="-32.85" cX="1" cY="1" z="0" pX="165.3" pY="39.3" width="220" height="151" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-255.1" y="118.9" kX="-33.36" kY="-33.36" cX="1" cY="1" z="0" pX="164.4" pY="39.7" width="218" height="152" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-278.15" y="132.85" kX="-34.06" kY="-34.06" cX="1" cY="1" z="0" pX="163.2" pY="40.2" width="217" height="155" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-300.7" y="147.4" kX="-34.58" kY="-34.58" cX="1" cY="1" z="0" pX="162.3" pY="40.6" width="216" height="156" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-323.2" y="162.2" kX="-35.09" kY="-35.09" cX="1" cY="1" z="0" pX="161.45" pY="41" width="215" height="158" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-345.5" y="177.2" kX="-35.61" kY="-35.61" cX="1" cY="1" z="0" pX="160.5" pY="41.35" width="213" height="160" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-367.75" y="192.35" kX="-36.12" kY="-36.12" cX="1" cY="1" z="0" pX="159.55" pY="41.75" width="212" height="162" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-390.2" y="207.2" kX="-36.82" kY="-36.82" cX="1" cY="1" z="0" pX="158.25" pY="42.25" width="211" height="164" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-412.2" y="222.8" kX="-37.33" kY="-37.33" cX="1" cY="1" z="0" pX="157.35" pY="42.65" width="209" height="166" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-434" y="238.55" kX="-37.85" kY="-37.85" cX="1" cY="1" z="0" pX="156.35" pY="43" width="208" height="167" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-455.65" y="254.5" kX="-38.36" kY="-38.36" cX="1" cY="1" z="0" pX="155.35" pY="43.35" width="207" height="169" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-477.2" y="270.5" kX="-38.87" kY="-38.87" cX="1" cY="1" z="0" pX="154.35" pY="43.75" width="206" height="171" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-498.55" y="286.75" kX="-39.39" kY="-39.39" cX="1" cY="1" z="0" pX="153.35" pY="44.1" width="204" height="172" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-520.35" y="302.7" kX="-40.09" kY="-40.09" cX="1" cY="1" z="0" pX="151.9" pY="44.55" width="203" height="175" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-541.45" y="319.4" kX="-40.6" kY="-40.6" cX="1" cY="1" z="0" pX="150.9" pY="44.9" width="201" height="176" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-562.5" y="336.05" kX="-41.11" kY="-41.11" cX="1" cY="1" z="0" pX="149.85" pY="45.25" width="200" height="178" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-583.35" y="353.05" kX="-41.63" kY="-41.63" cX="1" cY="1" z="0" pX="148.8" pY="45.6" width="199" height="179" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-604.1" y="370.15" kX="-42.14" kY="-42.14" cX="1" cY="1" z="0" pX="147.7" pY="45.9" width="197" height="181" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-624.6" y="386.95" kX="-42.78" kY="-42.78" cX="1" cY="1" z="0" pX="146.6" pY="46.4" width="196" height="183" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f dr="46" dI="-1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="logo_new_meteor" width="512" height="32">
+  <SubTexture name="logo_new_meteor_star_cell-logo_new_meteor_meteor_1" pX="191.35" pY="9.05" width="250" height="18" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="11" tilewidth="68" tileheight="68">
+ <properties>
+  <property name="Connect" value="06,12,1|17,23,1|28,61,1|66,72,1|77,83,1"/>
+ </properties>
+ <tileset firstgid="1" name="game_grid1" tilewidth="68" tileheight="68">
+  <image source="game_grid1.png" width="68" height="68"/>
+ </tileset>
+ <tileset firstgid="2" name="map" tilewidth="68" tileheight="68">
+  <image source="map.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Valid" width="9" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAMGHHwGdHE0Pno4oxY+Oji9FSDzX3E+IcBizg1AAAnBAAt
+  </data>
+ </layer>
+ <objectgroup name="BottomObj" width="9" height="11">
+  <object name="Jelly" type="Floor" gid="33" x="408" y="136">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="408" y="204">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="408" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="408" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="408" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="408" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="476" y="204">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="476" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="476" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="476" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="476" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="476" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="544" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="544" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="544" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="544" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="544" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="544" y="612">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="32" x="272" y="272">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="32" x="272" y="340">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="32" x="272" y="408">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="32" x="272" y="476">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="0" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="136" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="0" y="136">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="68" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="136" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="0" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="68" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="68" y="204">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="136" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="0" y="204">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="68" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="136" y="612">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="0" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="136" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="68" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="136" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="0" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly" type="Floor" gid="33" x="68" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="MiddleObj" width="9" height="11"/>
+ <objectgroup color="#000000" name="TopObj" width="9" height="11">
+  <object name="10" type="Factory_Normal" x="0" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Pink,Blue,Green,Yellow"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="272" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Pink,Blue,Green,Yellow"/>
+   </properties>
+  </object>
+  <object name="Ice" type="Ice" x="136" y="544" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="CeilObj" width="9" height="11"/>
+</map>

@@ -1,0 +1,148 @@
+<skeleton name="second" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="second">
+   <b name="second_1" x="-755.4" y="-166.65" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="second_cell-second_1"/>
+   </b>
+   <b name="second_1-1" x="-384.95" y="-230.2" kX="0" kY="180" cX="0.16" cY="0.16" alpha="0" red="100" green="100" blue="100" z="1">
+    <d name="second_cell-second_1_1"/>
+   </b>
+   <b name="second_1-2" x="-193" y="-151.8" kX="0" kY="0" cX="0.16" cY="0.16" alpha="0" red="100" green="100" blue="100" z="1">
+    <d name="second_cell-second_1_2"/>
+   </b>
+   <b name="second_2" x="-133.3" y="-127.55" kX="0" kY="0" cX="0.2" cY="0.2" alpha="0" red="100" green="100" blue="100" z="2">
+    <d name="second_cell-second_2"/>
+   </b>
+   <b name="second_2_1" x="671.65" y="-426.85" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="3">
+    <d name="second_cell-second_2_1"/>
+   </b>
+   <b name="second_2_2" x="297.1" y="-72.4" kX="0" kY="0" cX="0.04" cY="0.08" alpha="100" red="100" green="100" blue="100" z="4">
+    <d name="second_cell-second_2_2"/>
+   </b>
+   <b name="second_3" x="673.5" y="153.7" kX="0" kY="0" cX="1" cY="1" alpha="0" red="100" green="100" blue="100" z="6">
+    <d name="second_cell-second_3"/>
+   </b>
+   <b name="second_6" x="-652.55" y="239.85" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="7">
+    <d name="second_cell-second_6"/>
+   </b>
+   <b name="second_4" x="-87.45" y="71.7" kX="0" kY="0" cX="0.2" cY="0.2" alpha="0" red="100" green="100" blue="100" z="7">
+    <d name="second_cell-second_4"/>
+   </b>
+   <b name="second_4_1" x="-1.25" y="500.85" kX="0" kY="0" cX="1" cY="1" alpha="0" red="100" green="100" blue="100" z="8">
+    <d name="second_cell-second_4_1"/>
+   </b>
+   <b name="second_7" x="250.55" y="502.4" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="10">
+    <d name="second_cell-second_7"/>
+   </b>
+   <b name="second_7-1" x="147.35" y="178.85" kX="0" kY="0" cX="8" cY="8" alpha="0" red="100" green="100" blue="100" z="11">
+    <d name="second_cell-second_7_1"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="second">
+   <mov name="second" dr="230" to="0" drTW="230" lp="0" twE="NaN">
+    <b name="second_1" sc="1" dl="0">
+     <f x="-755.4" y="-166.65" kX="0" kY="0" cX="1" cY="1" z="0" pX="269.9" pY="145.1" width="538" height="256" alpha="100" red="100" green="100" blue="100" dI="0" twE="1" dr="3"/>
+     <f x="-149.4" y="-166.65" kX="0" kY="0" cX="1" cY="1" z="0" pX="269.9" pY="145.1" width="538" height="256" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="-221" y="-166.65" kX="0" kY="0" cX="1" cY="1" z="0" pX="269.9" pY="145.1" width="538" height="256" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-199" y="-166.65" kX="0" kY="0" cX="1" cY="1" z="0" pX="269.9" pY="145.1" width="538" height="256" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-209" y="-166.65" kX="0" kY="0" cX="1" cY="1" z="0" pX="269.9" pY="145.1" width="538" height="256" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-205" y="-166.65" kX="0" kY="0" cX="1" cY="1" z="0" pX="269.9" pY="145.1" width="538" height="256" alpha="100" red="100" green="100" blue="100" dI="0" dr="214"/>
+    </b>
+    <b name="second_1-1" sc="1" dl="0">
+     <f dr="76" dI="-1"/>
+     <f x="-384.95" y="-230.2" kX="0" kY="180" cX="0.16" cY="0.16" z="1" pX="5.35" pY="5.2" width="11" height="11" alpha="0" red="100" green="100" blue="100" dI="0" twE="1" dr="4"/>
+     <f x="-433.55" y="-267.35" kX="0" kY="180" cX="0.96" cY="0.96" z="1" pX="32.15" pY="31.2" width="65" height="63" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-429.75" y="-259.65" kX="0" kY="180" cX="0.8" cY="0.8" z="1" pX="26.8" pY="26" width="54" height="52" alpha="100" red="100" green="100" blue="100" dI="0" dr="147"/>
+    </b>
+    <b name="second_1-2" sc="1" dl="0">
+     <f dr="18" dI="-1"/>
+     <f x="-193" y="-151.8" kX="0" kY="0" cX="0.16" cY="0.16" z="1" pX="5.5" pY="14.1" width="13" height="14" alpha="0" red="100" green="100" blue="100" dI="0" twE="1" dr="5"/>
+     <f x="-190.45" y="-201.15" kX="0" kY="0" cX="0.96" cY="0.96" z="1" pX="33" pY="84.5" width="76" height="80" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-193.3" y="-198.05" kX="0" kY="0" cX="0.8" cY="0.8" z="2" pX="27.5" pY="70.4" width="64" height="67" alpha="100" red="100" green="100" blue="100" dI="0" dr="204"/>
+    </b>
+    <b name="second_2" sc="1" dl="0">
+     <f dr="36" dI="-1"/>
+     <f x="-133.3" y="-127.55" kX="0" kY="0" cX="0.2" cY="0.2" z="2" pX="56.45" pY="29.4" width="116" height="51" alpha="0" red="100" green="100" blue="100" dI="0" twE="1" dr="7"/>
+     <f x="178" y="-166.15" kX="0" kY="0" cX="1.02" cY="1.02" z="2" pX="287.9" pY="150.05" width="590" height="261" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="166.8" y="-166.15" kX="0" kY="0" cX="0.99" cY="0.99" z="2" pX="278.4" pY="145.1" width="571" height="252" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="170.8" y="-166.15" kX="0" kY="0" cX="1.01" cY="1.01" z="2" pX="286.1" pY="149.1" width="586" height="259" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="166.8" y="-166.15" kX="0" kY="0" cX="1" cY="1" z="3" pX="282.25" pY="147.1" width="578" height="255" alpha="100" red="100" green="100" blue="100" dI="0" dr="178"/>
+    </b>
+    <b name="second_2_1" sc="1" dl="0">
+     <f dr="54" dI="-1"/>
+     <f x="671.65" y="-426.85" kX="0" kY="0" cX="1" cY="1" z="3" pX="52.5" pY="57.5" width="105" height="115" alpha="100" red="100" green="100" blue="100" dI="0" twE="1" dr="5"/>
+     <f x="402.65" y="-223.9" kX="0" kY="0" cX="1" cY="1" z="3" pX="52.5" pY="57.5" width="105" height="115" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="445.65" y="-248.85" kX="0" kY="0" cX="1" cY="1" z="3" pX="52.5" pY="57.5" width="105" height="115" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="441.65" y="-246.85" kX="0" kY="0" cX="1" cY="1" z="4" pX="52.5" pY="57.5" width="105" height="115" alpha="100" red="100" green="100" blue="100" dI="0" dr="163"/>
+    </b>
+    <b name="second_2_2" sc="1" dl="0">
+     <f dr="63" dI="-1"/>
+     <f x="297.1" y="-72.4" kX="0" kY="0" cX="0.04" cY="0.08" z="4" pX="3.55" pY="5.05" width="8" height="11" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="385.05" y="-128.85" kX="0" kY="0" cX="1.13" cY="1.13" z="4" pX="101.55" pY="67.5" width="204" height="135" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="383.05" y="-126.85" kX="0" kY="0" cX="1" cY="1" z="5" pX="89.5" pY="59.5" width="179" height="119" alpha="100" red="100" green="100" blue="100" dI="0" dr="158"/>
+    </b>
+    <b name="second_3" sc="1" dl="0">
+     <f dr="87" dI="-1"/>
+     <f x="673.5" y="153.7" kX="0" kY="0" cX="1" cY="1" z="6" pX="171.7" pY="215" width="300" height="322" alpha="0" red="100" green="100" blue="100" dI="0" twE="1" dr="7"/>
+     <f x="-320.1" y="153.7" kX="0" kY="0" cX="1" cY="1" z="6" pX="171.7" pY="215" width="300" height="322" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-302.5" y="153.7" kX="0" kY="0" cX="1" cY="1" z="6" pX="171.7" pY="215" width="300" height="322" alpha="100" red="100" green="100" blue="100" dI="0" dr="133"/>
+    </b>
+    <b name="second_6" sc="1" dl="0">
+     <f dr="140" dI="-1"/>
+     <f x="-652.55" y="239.85" kX="0" kY="0" cX="1" cY="1" z="7" pX="114.5" pY="75" width="229" height="150" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="6"/>
+     <f x="-280.55" y="246.55" kX="0" kY="0" cX="1" cY="1" z="7" pX="114.5" pY="75" width="229" height="150" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="-339.95" y="246.55" kX="0" kY="0" cX="1" cY="1" z="7" pX="114.5" pY="75" width="229" height="150" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="-330.05" y="246.55" kX="0" kY="0" cX="1" cY="1" z="7" pX="114.5" pY="75" width="229" height="150" alpha="100" red="100" green="100" blue="100" dI="0" dr="76"/>
+    </b>
+    <b name="second_4" sc="1" dl="0">
+     <f dr="102" dI="-1"/>
+     <f x="-87.45" y="71.7" kX="0" kY="0" cX="0.2" cY="0.2" z="7" pX="17" pY="26.15" width="25" height="75" alpha="0" red="100" green="100" blue="100" dI="0" twE="1" dr="5"/>
+     <f x="-87.45" y="71.7" kX="0" kY="0" cX="1.08" cY="1.08" z="7" pX="91.75" pY="141.15" width="131" height="405" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-87.45" y="71.7" kX="0" kY="0" cX="0.94" cY="0.94" z="7" pX="80.25" pY="123.45" width="115" height="355" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-87.45" y="71.7" kX="0" kY="0" cX="1.05" cY="1.05" z="7" pX="88.8" pY="136.65" width="127" height="393" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-87.45" y="71.7" kX="0" kY="0" cX="1" cY="1" z="8" pX="84.95" pY="130.7" width="121" height="375" alpha="100" red="100" green="100" blue="100" dI="0" dr="114"/>
+    </b>
+    <b name="second_4_1" sc="1" dl="0">
+     <f dr="120" dI="-1"/>
+     <f x="-1.25" y="500.85" kX="0" kY="0" cX="1" cY="1" z="8" pX="49.15" pY="220.3" width="91" height="387" alpha="0" red="100" green="100" blue="100" dI="0" twE="1" dr="4"/>
+     <f x="-1.25" y="114.85" kX="0" kY="0" cX="1" cY="1" z="8" pX="49.15" pY="220.3" width="91" height="387" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="-1.25" y="178.85" kX="0" kY="0" cX="1" cY="1" z="8" pX="49.15" pY="220.3" width="91" height="387" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="-1.25" y="144.85" kX="0" kY="0" cX="1" cY="1" z="8" pX="49.15" pY="220.3" width="91" height="387" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="-1.25" y="148.85" kX="0" kY="0" cX="1" cY="1" z="9" pX="49.15" pY="220.3" width="91" height="387" alpha="100" red="100" green="100" blue="100" dI="0" dr="94"/>
+    </b>
+    <b name="second_7" sc="1" dl="0">
+     <f dr="160" dI="-1"/>
+     <f x="250.55" y="502.4" kX="0" kY="0" cX="1" cY="1" z="10" pX="209.7" pY="206.9" width="431" height="374" alpha="100" red="100" green="100" blue="100" dI="0" twE="1" dr="5"/>
+     <f x="250.55" y="134.7" kX="0" kY="0" cX="1" cY="1" z="10" pX="209.7" pY="206.9" width="431" height="374" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="250.55" y="156.4" kX="0" kY="0" cX="1" cY="1" z="10" pX="209.7" pY="206.9" width="431" height="374" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="250.55" y="148.4" kX="0" kY="0" cX="1" cY="1" z="10" pX="209.7" pY="206.9" width="431" height="374" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="250.55" y="150.4" kX="0" kY="0" cX="1" cY="1" z="10" pX="209.7" pY="206.9" width="431" height="374" alpha="100" red="100" green="100" blue="100" dI="0" dr="56"/>
+    </b>
+    <b name="second_7-1" sc="1" dl="0">
+     <f dr="184" dI="-1"/>
+     <f x="147.35" y="178.85" kX="0" kY="0" cX="8" cY="8" z="11" pX="692" pY="508" width="1416" height="808" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="147.35" y="178.85" kX="0" kY="0" cX="0.8" cY="0.8" z="11" pX="69.2" pY="50.8" width="142" height="81" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="147.35" y="178.85" kX="0" kY="0" cX="1.19" cY="1.19" z="11" pX="103.3" pY="75.85" width="212" height="121" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="147.35" y="178.85" kX="0" kY="0" cX="0.94" cY="0.94" z="11" pX="80.95" pY="59.45" width="166" height="95" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="147.35" y="178.85" kX="0" kY="0" cX="0.98" cY="0.98" z="11" pX="84.6" pY="62.1" width="174" height="99" alpha="100" red="100" green="100" blue="100" dI="0" dr="33"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="second" width="4096" height="512">
+  <SubTexture name="second_cell-second_7_1" pX="86.5" pY="63.5" width="177" height="101" x="2483" y="0"/>
+  <SubTexture name="second_cell-second_7" pX="209.7" pY="206.9" width="431" height="374" x="580" y="0"/>
+  <SubTexture name="second_cell-second_4_1" pX="49.15" pY="220.3" width="91" height="387" x="1978" y="0"/>
+  <SubTexture name="second_cell-second_4" pX="84.95" pY="130.7" width="121" height="375" x="1855" y="0"/>
+  <SubTexture name="second_cell-second_6" pX="114.5" pY="75" width="229" height="150" x="2071" y="0"/>
+  <SubTexture name="second_cell-second_3" pX="171.7" pY="215" width="300" height="322" x="1553" y="0"/>
+  <SubTexture name="second_cell-second_2_2" pX="89.5" pY="59.5" width="179" height="119" x="2302" y="0"/>
+  <SubTexture name="second_cell-second_2_1" pX="52.5" pY="57.5" width="105" height="115" x="2662" y="0"/>
+  <SubTexture name="second_cell-second_2" pX="282.25" pY="147.1" width="578" height="255" x="0" y="0"/>
+  <SubTexture name="second_cell-second_1_2" pX="34.35" pY="88" width="79" height="83" x="2769" y="0"/>
+  <SubTexture name="second_cell-second_1_1" pX="33.5" pY="32.5" width="67" height="65" x="2850" y="0"/>
+  <SubTexture name="second_cell-second_1" pX="269.9" pY="145.1" width="538" height="256" x="1013" y="0"/>
+ </TextureAtlas>
+</skeleton>

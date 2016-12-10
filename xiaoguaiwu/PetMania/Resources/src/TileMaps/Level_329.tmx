@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="11" tilewidth="68" tileheight="68">
+ <tileset firstgid="1" name="game_grid1" tilewidth="68" tileheight="68">
+  <image source="game_grid1.png" width="68" height="68"/>
+ </tileset>
+ <tileset firstgid="2" name="map" tilewidth="68" tileheight="68">
+  <image source="map.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Valid" width="9" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAeYCSAh7MaagAALNwAOQ==
+  </data>
+ </layer>
+ <objectgroup name="BottomObj" width="9" height="11"/>
+ <objectgroup name="MiddleObj" width="9" height="11">
+  <object name="65" type="Monster" gid="18" x="204" y="408">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="65" type="Monster" gid="18" x="408" y="408">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="65" type="Monster" gid="18" x="408" y="544">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="65" type="Monster" gid="18" x="204" y="544">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="65" type="Monster" gid="18" x="476" y="476">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="65" type="Monster" gid="18" x="136" y="476">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="65" type="Monster" gid="18" x="272" y="612">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="65" type="Monster" gid="18" x="340" y="612">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="3" x="544" y="408">
+   <properties>
+    <property name="Color" value="Green"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="3" x="272" y="476">
+   <properties>
+    <property name="Color" value="Green"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="3" x="340" y="476">
+   <properties>
+    <property name="Color" value="Green"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="3" x="544" y="544">
+   <properties>
+    <property name="Color" value="Green"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="3" x="476" y="612">
+   <properties>
+    <property name="Color" value="Green"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="3" x="68" y="408">
+   <properties>
+    <property name="Color" value="Green"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="3" x="68" y="544">
+   <properties>
+    <property name="Color" value="Green"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="3" x="136" y="612">
+   <properties>
+    <property name="Color" value="Green"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#000000" name="TopObj" width="9" height="11">
+  <object name="Stone" type="Stone" gid="34" x="272" y="544">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="544" y="476">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="272" y="408">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="204" y="476">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="340" y="408">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="340" y="544">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="68" y="68" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="68" y="476">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="544" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="408" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="476" y="408">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="204" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="136" y="544">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="136" y="408">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="476" y="544">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="68" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Stone" type="Stone" gid="34" x="408" y="476">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="136" y="544" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="272" y="408" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="340" y="408" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="476" y="544" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="408" y="340" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="476" y="408" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="408" y="476" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="340" y="544" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="272" y="544" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="204" y="476" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="136" y="408" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="204" y="340" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="544" y="476" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="544" y="340" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="68" y="476" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="68" y="340" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="136" y="68" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="204" y="68" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="272" y="68" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="340" y="68" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="408" y="68" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="476" y="68" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="544" y="68" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="CeilObj" width="9" height="11">
+  <object name="Haze" type="Haze" x="272" y="408" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="136" y="544" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="340" y="408" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="204" y="340" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="204" y="476" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="340" y="544" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="136" y="408" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="408" y="340" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="476" y="544" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="272" y="544" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="408" y="476" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="476" y="408" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="544" y="476" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="544" y="340" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="68" y="476" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+  <object name="Haze" type="Haze" x="68" y="340" width="68" height="68">
+   <properties>
+    <property name="HazeLevel" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,246 @@
+<skeleton name="bz_02" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="bz_02">
+   <b name="hei_1" x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="bz_02_cell-tongyongbaozha_00001"/>
+    <d name="bz_02_cell-tongyongbaozha_00002"/>
+    <d name="bz_02_cell-tongyongbaozha_00003"/>
+    <d name="bz_02_cell-tongyongbaozha_00004"/>
+    <d name="bz_02_cell-tongyongbaozha_00005"/>
+    <d name="bz_02_cell-tongyongbaozha_00006"/>
+    <d name="bz_02_cell-tongyongbaozha_00007"/>
+    <d name="bz_02_cell-tongyongbaozha_00008"/>
+    <d name="bz_02_cell-tongyongbaozha_00009"/>
+    <d name="bz_02_cell-tongyongbaozha_00010"/>
+    <d name="bz_02_cell-tongyongbaozha_00011"/>
+    <d name="bz_02_cell-tongyongbaozha_00012"/>
+   </b>
+   <b name="hei_4" x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" alpha="100" red="100" green="100" blue="100" z="1">
+    <d name="bz_02_cell-tongyongbaozha_00001"/>
+    <d name="bz_02_cell-tongyongbaozha_00002"/>
+    <d name="bz_02_cell-tongyongbaozha_00003"/>
+    <d name="bz_02_cell-tongyongbaozha_00004"/>
+    <d name="bz_02_cell-tongyongbaozha_00005"/>
+    <d name="bz_02_cell-tongyongbaozha_00006"/>
+    <d name="bz_02_cell-tongyongbaozha_00007"/>
+    <d name="bz_02_cell-tongyongbaozha_00008"/>
+    <d name="bz_02_cell-tongyongbaozha_00009"/>
+    <d name="bz_02_cell-tongyongbaozha_00010"/>
+    <d name="bz_02_cell-tongyongbaozha_00011"/>
+    <d name="bz_02_cell-tongyongbaozha_00012"/>
+   </b>
+   <b name="hei_5" x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" alpha="100" red="100" green="100" blue="100" z="2">
+    <d name="bz_02_cell-tongyongbaozha_00001"/>
+    <d name="bz_02_cell-tongyongbaozha_00002"/>
+    <d name="bz_02_cell-tongyongbaozha_00003"/>
+    <d name="bz_02_cell-tongyongbaozha_00004"/>
+    <d name="bz_02_cell-tongyongbaozha_00005"/>
+    <d name="bz_02_cell-tongyongbaozha_00006"/>
+    <d name="bz_02_cell-tongyongbaozha_00007"/>
+    <d name="bz_02_cell-tongyongbaozha_00008"/>
+    <d name="bz_02_cell-tongyongbaozha_00009"/>
+    <d name="bz_02_cell-tongyongbaozha_00010"/>
+    <d name="bz_02_cell-tongyongbaozha_00011"/>
+    <d name="bz_02_cell-tongyongbaozha_00012"/>
+   </b>
+   <b name="hei_6" x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" alpha="100" red="100" green="100" blue="100" z="3">
+    <d name="bz_02_cell-tongyongbaozha_00001"/>
+    <d name="bz_02_cell-tongyongbaozha_00002"/>
+    <d name="bz_02_cell-tongyongbaozha_00003"/>
+    <d name="bz_02_cell-tongyongbaozha_00004"/>
+    <d name="bz_02_cell-tongyongbaozha_00005"/>
+    <d name="bz_02_cell-tongyongbaozha_00006"/>
+    <d name="bz_02_cell-tongyongbaozha_00007"/>
+    <d name="bz_02_cell-tongyongbaozha_00008"/>
+    <d name="bz_02_cell-tongyongbaozha_00009"/>
+    <d name="bz_02_cell-tongyongbaozha_00010"/>
+    <d name="bz_02_cell-tongyongbaozha_00011"/>
+    <d name="bz_02_cell-tongyongbaozha_00012"/>
+   </b>
+   <b name="bz_bao_2" x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="bz_02_cell-final_effects_0001"/>
+    <d name="bz_02_cell-final_effects_0002"/>
+    <d name="bz_02_cell-final_effects_0003"/>
+    <d name="bz_02_cell-final_effects_0004"/>
+    <d name="bz_02_cell-final_effects_0005"/>
+    <d name="bz_02_cell-final_effects_0006"/>
+    <d name="bz_02_cell-final_effects_0007"/>
+    <d name="bz_02_cell-final_effects_0008"/>
+    <d name="bz_02_cell-final_effects_0009"/>
+    <d name="bz_02_cell-final_effects_0010"/>
+    <d name="bz_02_cell-final_effects_0011"/>
+    <d name="bz_02_cell-final_effects_0012"/>
+    <d name="bz_02_cell-final_effects_0013"/>
+    <d name="bz_02_cell-final_effects_0014"/>
+    <d name="bz_02_cell-final_effects_0015"/>
+    <d name="bz_02_cell-final_effects_0016"/>
+    <d name="bz_02_cell-final_effects_0017"/>
+    <d name="bz_02_cell-final_effects_0018"/>
+    <d name="bz_02_cell-final_effects_0019"/>
+    <d name="bz_02_cell-final_effects_0020"/>
+    <d name="bz_02_cell-final_effects_0021"/>
+    <d name="bz_02_cell-final_effects_0022"/>
+    <d name="bz_02_cell-final_effects_0023"/>
+    <d name="bz_02_cell-final_effects_0024"/>
+    <d name="bz_02_cell-final_effects_0025"/>
+    <d name="bz_02_cell-final_effects_0026"/>
+    <d name="bz_02_cell-final_effects_0027"/>
+    <d name="bz_02_cell-final_effects_0028"/>
+    <d name="bz_02_cell-final_effects_0029"/>
+    <d name="bz_02_cell-final_effects_0030"/>
+    <d name="bz_02_cell-final_effects_0031"/>
+    <d name="bz_02_cell-final_effects_0032"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bz_02">
+   <mov name="bz_02" dr="32" to="0" drTW="32" lp="0" twE="NaN">
+    <b name="hei_1" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="1" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="2" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="3" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="4" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="5" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="6" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="7" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="8" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="9" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="10" dr="1"/>
+     <f x="1.45" y="-67.8" kX="180" kY="180" cX="2" cY="2" z="0" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="11" dr="1"/>
+     <f dr="18" dI="-1"/>
+    </b>
+    <b name="hei_4" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="1" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="2" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="3" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="4" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="5" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="6" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="7" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="8" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="9" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="10" dr="1"/>
+     <f x="69.25" y="0.6" kX="-90" kY="90" cX="2" cY="2" z="1" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="11" dr="1"/>
+     <f dr="18" dI="-1"/>
+    </b>
+    <b name="hei_5" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="1" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="2" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="3" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="4" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="5" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="6" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="7" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="8" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="9" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="10" dr="1"/>
+     <f x="-70.55" y="0.6" kX="90" kY="-90" cX="2" cY="2" z="2" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="11" dr="1"/>
+     <f dr="18" dI="-1"/>
+    </b>
+    <b name="hei_6" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="1" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="2" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="3" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="4" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="5" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="6" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="7" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="8" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="9" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="10" dr="1"/>
+     <f x="1.45" y="70.2" kX="0" kY="180" cX="2" cY="2" z="3" pX="50" pY="50" width="100" height="100" alpha="100" red="100" green="100" blue="100" dI="11" dr="1"/>
+     <f dr="18" dI="-1"/>
+    </b>
+    <b name="bz_bao_2" sc="1" dl="0">
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="1" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="2" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="3" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="4" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="5" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="6" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="7" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="8" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="9" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="10" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="11" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="12" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="4" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="13" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="14" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="15" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="16" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="17" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="18" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="19" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="20" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="21" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="22" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="23" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="24" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="25" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="26" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="27" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="28" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="29" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="30" dr="1"/>
+     <f x="-0.05" y="-0.05" kX="0" kY="0" cX="2" cY="2" z="0" pX="175" pY="175" width="350" height="350" alpha="100" red="100" green="100" blue="100" dI="31" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="bz_02" width="512" height="4096">
+  <SubTexture name="bz_02_cell-final_effects_0032" pX="87.5" pY="87.5" width="175" height="175" x="177" y="0"/>
+  <SubTexture name="bz_02_cell-final_effects_0031" pX="87.5" pY="87.5" width="175" height="175" x="177" y="1947"/>
+  <SubTexture name="bz_02_cell-final_effects_0030" pX="87.5" pY="87.5" width="175" height="175" x="177" y="177"/>
+  <SubTexture name="bz_02_cell-final_effects_0029" pX="87.5" pY="87.5" width="175" height="175" x="177" y="2655"/>
+  <SubTexture name="bz_02_cell-final_effects_0028" pX="87.5" pY="87.5" width="175" height="175" x="177" y="354"/>
+  <SubTexture name="bz_02_cell-final_effects_0027" pX="87.5" pY="87.5" width="175" height="175" x="177" y="2124"/>
+  <SubTexture name="bz_02_cell-final_effects_0026" pX="87.5" pY="87.5" width="175" height="175" x="177" y="531"/>
+  <SubTexture name="bz_02_cell-final_effects_0025" pX="87.5" pY="87.5" width="175" height="175" x="0" y="2655"/>
+  <SubTexture name="bz_02_cell-final_effects_0024" pX="87.5" pY="87.5" width="175" height="175" x="177" y="708"/>
+  <SubTexture name="bz_02_cell-final_effects_0023" pX="87.5" pY="87.5" width="175" height="175" x="0" y="1770"/>
+  <SubTexture name="bz_02_cell-final_effects_0022" pX="87.5" pY="87.5" width="175" height="175" x="177" y="885"/>
+  <SubTexture name="bz_02_cell-final_effects_0021" pX="87.5" pY="87.5" width="175" height="175" x="0" y="1947"/>
+  <SubTexture name="bz_02_cell-final_effects_0020" pX="87.5" pY="87.5" width="175" height="175" x="177" y="1062"/>
+  <SubTexture name="bz_02_cell-final_effects_0019" pX="87.5" pY="87.5" width="175" height="175" x="0" y="2124"/>
+  <SubTexture name="bz_02_cell-final_effects_0018" pX="87.5" pY="87.5" width="175" height="175" x="177" y="1239"/>
+  <SubTexture name="bz_02_cell-final_effects_0017" pX="87.5" pY="87.5" width="175" height="175" x="0" y="2301"/>
+  <SubTexture name="bz_02_cell-final_effects_0016" pX="87.5" pY="87.5" width="175" height="175" x="177" y="1416"/>
+  <SubTexture name="bz_02_cell-final_effects_0015" pX="87.5" pY="87.5" width="175" height="175" x="0" y="2478"/>
+  <SubTexture name="bz_02_cell-final_effects_0014" pX="87.5" pY="87.5" width="175" height="175" x="177" y="1593"/>
+  <SubTexture name="bz_02_cell-final_effects_0013" pX="87.5" pY="87.5" width="175" height="175" x="177" y="2478"/>
+  <SubTexture name="bz_02_cell-final_effects_0012" pX="87.5" pY="87.5" width="175" height="175" x="177" y="1770"/>
+  <SubTexture name="bz_02_cell-final_effects_0011" pX="87.5" pY="87.5" width="175" height="175" x="177" y="2301"/>
+  <SubTexture name="bz_02_cell-final_effects_0010" pX="87.5" pY="87.5" width="175" height="175" x="0" y="0"/>
+  <SubTexture name="bz_02_cell-final_effects_0009" pX="87.5" pY="87.5" width="175" height="175" x="0" y="177"/>
+  <SubTexture name="bz_02_cell-final_effects_0008" pX="87.5" pY="87.5" width="175" height="175" x="0" y="354"/>
+  <SubTexture name="bz_02_cell-final_effects_0007" pX="87.5" pY="87.5" width="175" height="175" x="0" y="531"/>
+  <SubTexture name="bz_02_cell-final_effects_0006" pX="87.5" pY="87.5" width="175" height="175" x="0" y="708"/>
+  <SubTexture name="bz_02_cell-final_effects_0005" pX="87.5" pY="87.5" width="175" height="175" x="0" y="885"/>
+  <SubTexture name="bz_02_cell-final_effects_0004" pX="87.5" pY="87.5" width="175" height="175" x="0" y="1062"/>
+  <SubTexture name="bz_02_cell-final_effects_0003" pX="87.5" pY="87.5" width="175" height="175" x="0" y="1239"/>
+  <SubTexture name="bz_02_cell-final_effects_0002" pX="87.5" pY="87.5" width="175" height="175" x="0" y="1416"/>
+  <SubTexture name="bz_02_cell-final_effects_0001" pX="87.5" pY="87.5" width="175" height="175" x="0" y="1593"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00012" pX="25" pY="25" width="50" height="50" x="354" y="0"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00011" pX="25" pY="25" width="50" height="50" x="406" y="104"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00010" pX="25" pY="25" width="50" height="50" x="354" y="52"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00009" pX="25" pY="25" width="50" height="50" x="458" y="156"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00008" pX="25" pY="25" width="50" height="50" x="458" y="52"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00007" pX="25" pY="25" width="50" height="50" x="406" y="156"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00006" pX="25" pY="25" width="50" height="50" x="406" y="0"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00005" pX="25" pY="25" width="50" height="50" x="458" y="0"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00004" pX="25" pY="25" width="50" height="50" x="406" y="52"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00003" pX="25" pY="25" width="50" height="50" x="354" y="104"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00002" pX="25" pY="25" width="50" height="50" x="458" y="104"/>
+  <SubTexture name="bz_02_cell-tongyongbaozha_00001" pX="25" pY="25" width="50" height="50" x="354" y="156"/>
+ </TextureAtlas>
+</skeleton>

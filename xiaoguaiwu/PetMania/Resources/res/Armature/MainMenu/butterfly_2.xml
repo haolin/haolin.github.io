@@ -1,0 +1,132 @@
+<skeleton name="butterfly_2" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="butterfly_2">
+   <b name="butterfly2_11" x="3.2" y="3.9" kX="0" kY="0.22" cX="1" cY="0.9" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="butterfly_cell-butterfly2_1"/>
+   </b>
+   <b name="butterfly2_12" x="-7.55" y="-0.6" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="1">
+    <d name="butterfly_cell-butterfly2_2"/>
+   </b>
+   <b name="butterfly2_13" x="-9.55" y="7.45" kX="-30" kY="105.99" cX="0.59" cY="0.92" alpha="100" red="100" green="100" blue="100" z="2">
+    <d name="butterfly_cell-butterfly2_1"/>
+   </b>
+   <b name="butterfly2_14" x="7.4" y="-2.25" kX="0" kY="0" cX="0.31" cY="0.31" alpha="0" red="100" green="100" blue="100" z="3">
+    <d name="butterfly_cell-lizi_2"/>
+   </b>
+   <b name="butterfly2_15" x="24.4" y="7.6" kX="0" kY="0" cX="0.31" cY="0.31" alpha="50" red="100" green="100" blue="100" z="4">
+    <d name="butterfly_cell-lizi_2"/>
+   </b>
+   <b name="butterfly2_16" x="-9.5" y="-6.05" kX="0" kY="0" cX="0.31" cY="0.31" alpha="78" red="100" green="100" blue="100" z="5">
+    <d name="butterfly_cell-lizi_2"/>
+   </b>
+   <b name="butterfly2_17" x="-4.4" y="10.55" kX="0" kY="0" cX="0.31" cY="0.31" alpha="0" red="100" green="100" blue="100" z="6">
+    <d name="butterfly_cell-lizi_2"/>
+   </b>
+   <b name="butterfly2_18" x="4.55" y="30.45" kX="0" kY="0" cX="0.31" cY="0.31" alpha="67" red="100" green="100" blue="100" z="7">
+    <d name="butterfly_cell-lizi_2"/>
+   </b>
+   <b name="butterfly2_19" x="19.9" y="-0.2" kX="0" kY="0" cX="0.31" cY="0.31" alpha="70" red="100" green="100" blue="100" z="8">
+    <d name="butterfly_cell-lizi_2"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="butterfly_2">
+   <mov name="butterfly_2" dr="20" to="0" drTW="20" lp="0" twE="NaN">
+    <b name="butterfly2_11" sc="1" dl="0">
+     <f x="3.2" y="3.9" kX="0" kY="0.22" cX="1" cY="0.9" z="0" pX="14.9" pY="22.4" width="31" height="42" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="1.4" y="8.55" kX="2.3" kY="45.12" cX="1.12" cY="1.02" z="0" pX="12.6" pY="37.1" width="26" height="71" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-8.85" y="13.6" kX="-54.98" kY="88.32" cX="1.51" cY="1" z="0" pX="21" pY="36.7" width="39" height="73" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="1.75" y="6.45" kX="-8.18" kY="34.19" cX="1.11" cY="1.02" z="0" pX="17.25" pY="34.35" width="35" height="66" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="3.2" y="3.9" kX="0" kY="0.22" cX="1" cY="0.9" z="0" pX="14.9" pY="22.4" width="31" height="42" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="3.2" y="3.9" kX="0" kY="0.22" cX="1" cY="0.9" z="0" pX="14.9" pY="22.4" width="31" height="42" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="1.4" y="8.55" kX="2.3" kY="45.12" cX="1.12" cY="1.02" z="0" pX="12.6" pY="37.1" width="26" height="71" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-8.85" y="13.6" kX="-54.98" kY="88.32" cX="1.51" cY="1" z="0" pX="21" pY="36.7" width="39" height="73" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="1.75" y="6.45" kX="-8.18" kY="34.19" cX="1.11" cY="1.02" z="0" pX="17.25" pY="34.35" width="35" height="66" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="3.2" y="3.9" kX="0" kY="0.22" cX="1" cY="0.9" z="0" pX="14.9" pY="22.4" width="31" height="42" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="3.2" y="3.9" kX="0" kY="0.22" cX="1" cY="0.9" z="0" pX="14.9" pY="22.4" width="31" height="42" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="1.4" y="8.55" kX="2.3" kY="45.12" cX="1.12" cY="1.02" z="0" pX="12.6" pY="37.1" width="26" height="71" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-8.85" y="13.6" kX="-54.98" kY="88.32" cX="1.51" cY="1" z="0" pX="21" pY="36.7" width="39" height="73" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="1.75" y="6.45" kX="-8.18" kY="34.19" cX="1.11" cY="1.02" z="0" pX="17.25" pY="34.35" width="35" height="66" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="3.2" y="3.9" kX="0" kY="0.22" cX="1" cY="0.9" z="0" pX="14.9" pY="22.4" width="31" height="42" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="3.2" y="3.9" kX="0" kY="0.22" cX="1" cY="0.9" z="0" pX="14.9" pY="22.4" width="31" height="42" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="1.4" y="8.55" kX="2.3" kY="45.12" cX="1.12" cY="1.02" z="0" pX="12.6" pY="37.1" width="26" height="71" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-8.85" y="13.6" kX="-54.98" kY="88.32" cX="1.51" cY="1" z="0" pX="21" pY="36.7" width="39" height="73" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="1.75" y="6.45" kX="-8.18" kY="34.19" cX="1.11" cY="1.02" z="0" pX="17.25" pY="34.35" width="35" height="66" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="3.2" y="3.9" kX="0" kY="0.22" cX="1" cY="0.9" z="0" pX="14.9" pY="22.4" width="31" height="42" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="butterfly2_12" sc="1" dl="0">
+     <f x="-7.55" y="-0.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-5.55" y="-2.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-7.55" y="-0.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-7.55" y="-0.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-5.55" y="-2.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-7.55" y="-0.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-7.55" y="-0.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-5.55" y="-2.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-7.55" y="-0.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-7.55" y="-0.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-5.55" y="-2.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-7.55" y="-0.6" kX="0" kY="0" cX="1" cY="1" z="1" pX="6.8" pY="19.2" width="14" height="39" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+    </b>
+    <b name="butterfly2_13" sc="1" dl="0">
+     <f x="-9.55" y="7.45" kX="-30" kY="105.99" cX="0.59" cY="0.92" z="2" pX="13.95" pY="28.3" width="27" height="54" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-10.1" y="12.35" kX="-36.98" kY="104.83" cX="1.38" cY="0.92" z="2" pX="19.2" pY="38.1" width="37" height="75" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-9.55" y="7.45" kX="-30" kY="105.99" cX="0.59" cY="0.92" z="2" pX="13.95" pY="28.3" width="27" height="54" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-9.55" y="7.45" kX="-30" kY="105.99" cX="0.59" cY="0.92" z="2" pX="13.95" pY="28.3" width="27" height="54" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-10.1" y="12.35" kX="-36.98" kY="104.83" cX="1.38" cY="0.92" z="2" pX="19.2" pY="38.1" width="37" height="75" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-9.55" y="7.45" kX="-30" kY="105.99" cX="0.59" cY="0.92" z="2" pX="13.95" pY="28.3" width="27" height="54" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-9.55" y="7.45" kX="-30" kY="105.99" cX="0.59" cY="0.92" z="2" pX="13.95" pY="28.3" width="27" height="54" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-10.1" y="12.35" kX="-36.98" kY="104.83" cX="1.38" cY="0.92" z="2" pX="19.2" pY="38.1" width="37" height="75" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-9.55" y="7.45" kX="-30" kY="105.99" cX="0.59" cY="0.92" z="2" pX="13.95" pY="28.3" width="27" height="54" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-9.55" y="7.45" kX="-30" kY="105.99" cX="0.59" cY="0.92" z="2" pX="13.95" pY="28.3" width="27" height="54" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-10.1" y="12.35" kX="-36.98" kY="104.83" cX="1.38" cY="0.92" z="2" pX="19.2" pY="38.1" width="37" height="75" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-9.55" y="7.45" kX="-30" kY="105.99" cX="0.59" cY="0.92" z="2" pX="13.95" pY="28.3" width="27" height="54" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+    </b>
+    <b name="butterfly2_14" sc="1" dl="0">
+     <f x="7.4" y="-2.25" kX="0" kY="0" cX="0.31" cY="0.31" z="3" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="9"/>
+     <f x="24.5" y="-3.75" kX="0" kY="0" cX="0.31" cY="0.31" z="3" pX="5.8" pY="5.8" width="9" height="9" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="10"/>
+     <f x="41.75" y="-6.8" kX="0" kY="0" cX="0.31" cY="0.31" z="3" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="butterfly2_15" sc="1" dl="0">
+     <f x="24.4" y="7.6" kX="0" kY="0" cX="0.31" cY="0.31" z="4" pX="5.8" pY="5.8" width="9" height="9" alpha="50" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="29.75" y="5.05" kX="0" kY="0" cX="0.31" cY="0.31" z="4" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="6.55" y="16.05" kX="0" kY="0" cX="0.31" cY="0.31" z="4" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="9"/>
+     <f x="19.05" y="10.1" kX="0" kY="0" cX="0.31" cY="0.31" z="4" pX="5.8" pY="5.8" width="9" height="9" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="23.35" y="8.1" kX="0" kY="0" cX="0.31" cY="0.31" z="4" pX="5.8" pY="5.8" width="9" height="9" alpha="60" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="butterfly2_16" sc="1" dl="0">
+     <f x="-9.5" y="-6.05" kX="0" kY="0" cX="0.31" cY="0.31" z="5" pX="5.8" pY="5.8" width="9" height="9" alpha="78" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="-10.35" y="-10" kX="0" kY="0" cX="0.31" cY="0.31" z="5" pX="5.8" pY="5.8" width="9" height="9" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="10"/>
+     <f x="-10.7" y="-17.8" kX="0" kY="0" cX="0.31" cY="0.31" z="5" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-6.35" y="7.8" kX="0" kY="0" cX="0.31" cY="0.31" z="5" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="6"/>
+     <f x="-9.05" y="-4.05" kX="0" kY="0" cX="0.31" cY="0.31" z="5" pX="5.8" pY="5.8" width="9" height="9" alpha="67" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="butterfly2_17" sc="1" dl="0">
+     <f x="-4.4" y="10.55" kX="0" kY="0" cX="0.31" cY="0.31" z="6" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="9"/>
+     <f x="4.6" y="-18.2" kX="0" kY="0" cX="0.31" cY="0.31" z="6" pX="5.8" pY="5.8" width="9" height="9" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="10"/>
+     <f x="16.9" y="-25.8" kX="0" kY="0" cX="0.31" cY="0.31" z="6" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="butterfly2_18" sc="1" dl="0">
+     <f x="4.55" y="30.45" kX="0" kY="0" cX="0.31" cY="0.31" z="7" pX="5.8" pY="5.8" width="9" height="9" alpha="67" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="8.55" y="33.3" kX="0" kY="0" cX="0.31" cY="0.31" z="7" pX="5.8" pY="5.8" width="9" height="9" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="10"/>
+     <f x="17.4" y="40.35" kX="0" kY="0" cX="0.31" cY="0.31" z="7" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-4.4" y="10.55" kX="0" kY="0" cX="0.31" cY="0.31" z="7" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="0.3" y="28.2" kX="0" kY="0" cX="0.31" cY="0.31" z="7" pX="5.8" pY="5.8" width="9" height="9" alpha="55" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="butterfly2_19" sc="1" dl="0">
+     <f x="19.9" y="-0.2" kX="0" kY="0" cX="0.31" cY="0.31" z="8" pX="5.8" pY="5.8" width="9" height="9" alpha="70" red="100" green="100" blue="100" dI="0" twE="0" dr="7"/>
+     <f x="36.2" y="-6.5" kX="0" kY="0" cX="0.31" cY="0.31" z="8" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+     <f x="-4.4" y="10.55" kX="0" kY="0" cX="0.31" cY="0.31" z="8" pX="5.8" pY="5.8" width="9" height="9" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="9"/>
+     <f x="12.85" y="2.4" kX="0" kY="0" cX="0.31" cY="0.31" z="8" pX="5.8" pY="5.8" width="9" height="9" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="2"/>
+     <f x="17.5" y="0.65" kX="0" kY="0" cX="0.31" cY="0.31" z="8" pX="5.8" pY="5.8" width="9" height="9" alpha="80" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="butterfly_2" width="512" height="64">
+  <SubTexture name="butterfly_cell-lizi_2" pX="18.75" pY="18.75" width="29" height="29" x="33" y="0"/>
+  <SubTexture name="butterfly_cell-butterfly2_2" pX="6.8" pY="19.2" width="14" height="39" x="64" y="0"/>
+  <SubTexture name="butterfly_cell-butterfly2_1" pX="14.9" pY="24.85" width="31" height="46" x="0" y="0"/>
+ </TextureAtlas>
+</skeleton>

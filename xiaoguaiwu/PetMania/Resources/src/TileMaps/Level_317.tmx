@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="11" tilewidth="68" tileheight="68">
+ <tileset firstgid="1" name="game_grid1" tilewidth="68" tileheight="68">
+  <image source="game_grid1.png" width="68" height="68"/>
+ </tileset>
+ <tileset firstgid="2" name="map" tilewidth="68" tileheight="68">
+  <image source="map.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Valid" width="9" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAuYMSCCcmjqyOkhhgxaugjxV/UAAAmIAAw
+  </data>
+ </layer>
+ <objectgroup name="BottomObj" width="9" height="11"/>
+ <objectgroup name="MiddleObj" width="9" height="11"/>
+ <objectgroup color="#000000" name="TopObj" width="9" height="11">
+  <object name="10" type="Factory_Normal" x="68" y="136" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Boss" x="0" y="340" width="68" height="68">
+   <properties>
+    <property name="BossName" value="ColorLeft"/>
+    <property name="BossType" value="ColorBoss"/>
+    <property name="BossTypeConfig" value="Blue,Green,Yellow,Purple,Orange,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Boss" x="68" y="340" width="68" height="68">
+   <properties>
+    <property name="BossName" value="ColorLeft"/>
+    <property name="BossType" value="ColorBoss"/>
+    <property name="BossTypeConfig" value="Blue,Green,Yellow,Purple,Orange,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Boss" x="0" y="408" width="68" height="68">
+   <properties>
+    <property name="BossName" value="ColorLeft"/>
+    <property name="BossType" value="ColorBoss"/>
+    <property name="BossTypeConfig" value="Blue,Green,Yellow,Purple,Orange,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Boss" x="68" y="408" width="68" height="68">
+   <properties>
+    <property name="BossName" value="ColorLeft"/>
+    <property name="BossType" value="ColorBoss"/>
+    <property name="BossTypeConfig" value="Blue,Green,Yellow,Purple,Orange,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Boss" x="476" y="340" width="68" height="68">
+   <properties>
+    <property name="BossName" value="ColorRight"/>
+    <property name="BossType" value="ColorBoss"/>
+    <property name="BossTypeConfig" value="Blue,Green,Yellow,Purple,Orange,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Boss" x="544" y="340" width="68" height="68">
+   <properties>
+    <property name="BossName" value="ColorRight"/>
+    <property name="BossType" value="ColorBoss"/>
+    <property name="BossTypeConfig" value="Blue,Green,Yellow,Purple,Orange,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Boss" x="476" y="408" width="68" height="68">
+   <properties>
+    <property name="BossName" value="ColorRight"/>
+    <property name="BossType" value="ColorBoss"/>
+    <property name="BossTypeConfig" value="Blue,Green,Yellow,Purple,Orange,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Boss" x="544" y="408" width="68" height="68">
+   <properties>
+    <property name="BossName" value="ColorRight"/>
+    <property name="BossType" value="ColorBoss"/>
+    <property name="BossTypeConfig" value="Blue,Green,Yellow,Purple,Orange,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="136" y="68" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="204" y="68" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="272" y="68" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="340" y="68" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="408" y="68" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="476" y="136" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

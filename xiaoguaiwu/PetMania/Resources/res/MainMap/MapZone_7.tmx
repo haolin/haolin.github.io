@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="12" height="8" tilewidth="80" tileheight="80">
+ <tileset firstgid="1" name="MapStars" tilewidth="82" tileheight="66">
+  <image source="MapStars.png" width="82" height="66"/>
+ </tileset>
+ <tileset firstgid="2" name="SpaceStation" tilewidth="166" tileheight="92">
+  <image source="Map_SpaceStation.png" width="166" height="92"/>
+ </tileset>
+ <tileset firstgid="3" name="MapWayPoint" tilewidth="32" tileheight="32">
+  <image source="MapWayPoint.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="4" name="MapSpace_WayPoint" tilewidth="20" tileheight="20">
+  <image source="MapSpace_WayPoint.png" width="20" height="20"/>
+ </tileset>
+ <tileset firstgid="5" name="MapZone_1" tilewidth="80" tileheight="80">
+  <image source="MapZone_1.png" width="960" height="640"/>
+ </tileset>
+ <layer name="Background" width="12" height="8">
+  <data encoding="base64" compression="zlib">
+   eJwNw+c2ggEAANDvDzIiI1siLStlV2aRPSuF7Pd/Bveec7uCIOi2x5C99tnvgGEHHTLisCOOOmbUcSecdMppZ5x1zpjzxl1w0YRLJk2ZNmPWZVdcdc11c26Yt+CmW26746577lu0ZNkDDz3y2BNPrVj1zHNrXnjpldfeeOud9z746JPP1m3Y9MWWbV99892OH3765bc//vrnP22WE7E=
+  </data>
+ </layer>
+ <objectgroup color="#ff5500" name="MapLevels" width="12" height="8">
+  <object name="109" type="MapStar_Mushroom" gid="1" x="559" y="593"/>
+  <object name="101" type="MapStar_Green" gid="1" x="21" y="229"/>
+  <object name="103" type="MapStar_Green" gid="1" x="55" y="386"/>
+  <object name="106" type="MapStar_Mushroom" gid="1" x="235" y="551"/>
+  <object name="105" type="MapStar_Green" gid="1" x="116" y="578"/>
+  <object name="110" type="MapStar_Mushroom" gid="1" x="671" y="624"/>
+  <object name="102" type="MapStar_Green" gid="1" x="109" y="289"/>
+  <object name="107" type="MapStar_Mushroom" gid="1" x="347" y="536"/>
+  <object name="108" type="MapStar_Mushroom" gid="1" x="455" y="551"/>
+  <object name="104" type="MapStar_Green" gid="1" x="42" y="503"/>
+  <object name="115" type="MapStar_Green" gid="1" x="513" y="385"/>
+  <object name="111" type="MapStar_Green" gid="1" x="773" y="577"/>
+  <object name="114" type="MapStar_Green" gid="1" x="626" y="381"/>
+  <object name="112" type="MapStar_Green" gid="1" x="800" y="475"/>
+  <object name="113" type="MapStar_Green" gid="1" x="728" y="398"/>
+  <object name="119" type="MapStar_Mushroom" gid="1" x="222" y="171"/>
+  <object name="118" type="MapStar_Mushroom" gid="1" x="232" y="275"/>
+  <object name="120" type="MapStar_Mushroom" gid="1" x="292" y="89"/>
+  <object name="117" type="MapStar_Mushroom" gid="1" x="292" y="364"/>
+  <object name="116" type="MapStar_Mushroom" gid="1" x="393" y="403"/>
+  <object name="124" type="MapStar_Green" gid="1" x="730" y="109"/>
+  <object name="125" type="MapStar_Green" gid="1" x="835" y="153"/>
+  <object name="122" type="MapStar_Green" gid="1" x="506" y="120"/>
+  <object name="121" type="MapStar_Green" gid="1" x="405" y="82"/>
+  <object name="123" type="MapStar_Green" gid="1" x="618" y="154"/>
+ </objectgroup>
+ <objectgroup name="MapStation" width="12" height="8">
+  <object name="6" gid="2" x="740" y="273"/>
+ </objectgroup>
+ <objectgroup color="#000000" name="LevelsPath" width="12" height="8">
+  <object name="1" gid="3" x="113" y="223">
+   <properties>
+    <property name="From" value="101"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="106" y="310">
+   <properties>
+    <property name="From" value="102"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="88" y="327">
+   <properties>
+    <property name="From" value="102"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="69" y="416">
+   <properties>
+    <property name="From" value="103"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="68" y="440">
+   <properties>
+    <property name="From" value="103"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="193" y="553">
+   <properties>
+    <property name="From" value="105"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="741" y="598">
+   <properties>
+    <property name="From" value="110"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="759" y="591">
+   <properties>
+    <property name="From" value="110"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="83" y="533">
+   <properties>
+    <property name="From" value="104"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="210" y="540">
+   <properties>
+    <property name="From" value="105"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="97" y="549">
+   <properties>
+    <property name="From" value="104"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="96" y="211">
+   <properties>
+    <property name="From" value="101"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="654" y="601">
+   <properties>
+    <property name="From" value="109"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="635" y="594">
+   <properties>
+    <property name="From" value="109"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="550" y="553">
+   <properties>
+    <property name="From" value="108"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="531" y="539">
+   <properties>
+    <property name="From" value="108"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="439" y="522">
+   <properties>
+    <property name="From" value="107"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="419" y="515">
+   <properties>
+    <property name="From" value="107"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="303" y="522">
+   <properties>
+    <property name="From" value="106"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="326" y="519">
+   <properties>
+    <property name="From" value="106"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="819" y="521">
+   <properties>
+    <property name="From" value="111"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="826" y="503">
+   <properties>
+    <property name="From" value="111"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="820" y="411">
+   <properties>
+    <property name="From" value="112"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="802" y="398">
+   <properties>
+    <property name="From" value="112"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="468" y="389">
+   <properties>
+    <property name="From" value="115"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="369" y="389">
+   <properties>
+    <property name="From" value="116"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="587" y="367">
+   <properties>
+    <property name="From" value="114"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="605" y="361">
+   <properties>
+    <property name="From" value="114"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="486" y="386">
+   <properties>
+    <property name="From" value="115"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="353" y="383">
+   <properties>
+    <property name="From" value="116"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="717" y="363">
+   <properties>
+    <property name="From" value="113"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="698" y="362">
+   <properties>
+    <property name="From" value="113"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="281" y="319">
+   <properties>
+    <property name="From" value="117"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="271" y="301">
+   <properties>
+    <property name="From" value="117"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="246" y="214">
+   <properties>
+    <property name="From" value="118"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="245" y="195">
+   <properties>
+    <property name="From" value="118"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="384" y="63">
+   <properties>
+    <property name="From" value="120"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="363" y="65">
+   <properties>
+    <property name="From" value="120"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="253" y="110">
+   <properties>
+    <property name="From" value="119"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="265" y="94">
+   <properties>
+    <property name="From" value="119"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="477" y="68">
+   <properties>
+    <property name="From" value="121"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="493" y="80">
+   <properties>
+    <property name="From" value="121"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="705" y="119">
+   <properties>
+    <property name="From" value="123"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="687" y="128">
+   <properties>
+    <property name="From" value="123"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="596" y="127">
+   <properties>
+    <property name="From" value="122"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="579" y="123">
+   <properties>
+    <property name="From" value="122"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="823" y="115">
+   <properties>
+    <property name="From" value="124"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="807" y="107">
+   <properties>
+    <property name="From" value="124"/>
+   </properties>
+  </object>
+  <object name="0" gid="3" x="831" y="175">
+   <properties>
+    <property name="From" value="125"/>
+   </properties>
+  </object>
+  <object name="1" gid="3" x="817" y="186">
+   <properties>
+    <property name="From" value="125"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="StationPath" width="12" height="8">
+  <object name="0" gid="4" x="822" y="302"/>
+  <object name="3" gid="4" x="947" y="349"/>
+  <object name="1" gid="4" x="856" y="331"/>
+  <object name="2" gid="4" x="901" y="344"/>
+ </objectgroup>
+</map>

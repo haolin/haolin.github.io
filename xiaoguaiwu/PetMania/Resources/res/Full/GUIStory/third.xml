@@ -1,0 +1,99 @@
+<skeleton name="third" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="third">
+   <b name="third_1" x="-243" y="-472.3" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="third_cell-third_1"/>
+   </b>
+   <b name="third_1-1" x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="1">
+    <d name="third_cell-third_1_1"/>
+   </b>
+   <b name="third_3" x="101.4" y="-325.7" kX="0" kY="0" cX="0.2" cY="0.2" alpha="0" red="100" green="100" blue="100" z="2">
+    <d name="third_cell-third_3"/>
+   </b>
+   <b name="third_4" x="344.5" y="-151" kX="0" kY="0" cX="0.2" cY="0.2" alpha="100" red="100" green="100" blue="100" z="3">
+    <d name="third_cell-third_4"/>
+   </b>
+   <b name="third_5" x="-672.55" y="484.5" kX="0" kY="0" cX="1" cY="1" alpha="0" red="100" green="100" blue="100" z="4">
+    <d name="third_cell-third_5"/>
+   </b>
+   <b name="third_6" x="-46.75" y="8.75" kX="0" kY="0" cX="0.2" cY="0.2" alpha="0" red="100" green="100" blue="100" z="5">
+    <d name="third_cell-third_6"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="third">
+   <mov name="third" dr="180" to="0" drTW="200" lp="0" twE="NaN">
+    <b name="third_1" sc="1" dl="0">
+     <f x="-243" y="-472.3" kX="0" kY="0" cX="1" cY="1" z="0" pX="174.4" pY="149.5" width="339" height="301" alpha="100" red="100" green="100" blue="100" dI="0" twE="1" dr="6"/>
+     <f x="-243" y="-153" kX="0" kY="0" cX="1" cY="1" z="0" pX="174.4" pY="149.5" width="339" height="301" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="-243" y="-168.5" kX="0" kY="0" cX="1" cY="1" z="0" pX="174.4" pY="149.5" width="339" height="301" alpha="100" red="100" green="100" blue="100" dI="0" dr="171"/>
+    </b>
+    <b name="third_1-1" sc="1" dl="0">
+     <f dr="27" dI="-1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-369.2" y="-137.25" kX="0" kY="0" cX="1" cY="1" z="1" pX="58.2" pY="168.8" width="181" height="63" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="-374" y="-135.05" kX="0.77" kY="0.77" cX="1.02" cY="1.03" z="1" pX="58.1" pY="174.95" width="187" height="68" alpha="100" red="100" green="100" blue="100" dI="0" dr="128"/>
+    </b>
+    <b name="third_3" sc="1" dl="0">
+     <f dr="52" dI="-1"/>
+     <f x="101.4" y="-325.7" kX="0" kY="0" cX="0.2" cY="0.2" z="2" pX="34.1" pY="37.05" width="46" height="66" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="6"/>
+     <f x="101.4" y="-130.7" kX="0" kY="0" cX="1.2" cY="1.2" z="2" pX="204.6" pY="222.4" width="275" height="393" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="101.4" y="-130.7" kX="0" kY="0" cX="1" cY="1" z="2" pX="170.5" pY="185.35" width="229" height="327" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="101.4" y="-130.7" kX="0" kY="0" cX="1.04" cY="1.04" z="2" pX="177.4" pY="192.85" width="239" height="341" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="101.4" y="-130.7" kX="0" kY="0" cX="1" cY="1" z="2" pX="170.5" pY="185.35" width="229" height="327" alpha="100" red="100" green="100" blue="100" dI="0" dr="113"/>
+    </b>
+    <b name="third_4" sc="1" dl="0">
+     <f dr="85" dI="-1"/>
+     <f x="344.5" y="-151" kX="0" kY="0" cX="0.2" cY="0.2" z="3" pX="34.15" pY="33" width="54" height="68" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="6"/>
+     <f x="344.5" y="-151" kX="0" kY="0" cX="1.2" cY="1.2" z="3" pX="205" pY="198" width="324" height="405" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="344.5" y="-151" kX="0" kY="0" cX="1" cY="1" z="3" pX="170.85" pY="165" width="270" height="337" alpha="100" red="100" green="100" blue="100" dI="0" dr="85"/>
+    </b>
+    <b name="third_5" sc="1" dl="0">
+     <f dr="113" dI="-1"/>
+     <f x="-672.55" y="484.5" kX="0" kY="0" cX="1" cY="1" z="4" pX="182" pY="164.5" width="366" height="329" alpha="0" red="100" green="100" blue="100" dI="0" twE="1" dr="8"/>
+     <f x="-270.6" y="151.45" kX="0" kY="0" cX="1" cY="1" z="4" pX="182" pY="164.5" width="366" height="329" alpha="100" red="100" green="100" blue="100" dI="0" dr="59"/>
+    </b>
+    <b name="third_6" sc="1" dl="0">
+     <f dr="130" dI="-1"/>
+     <f x="-46.75" y="8.75" kX="0" kY="0" cX="0.2" cY="0.2" z="5" pX="53.7" pY="29.1" width="108" height="59" alpha="0" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="207.55" y="198.3" kX="-0.3" kY="-0.3" cX="0.99" cY="0.99" z="5" pX="266.55" pY="145.45" width="534" height="291" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="190.9" y="175.8" kX="-0.03" kY="-0.03" cX="0.99" cY="0.99" z="5" pX="265.9" pY="144.2" width="532" height="289" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="3"/>
+     <f x="192.4" y="177.3" kX="-0.03" kY="-0.03" cX="0.99" cY="0.99" z="5" pX="265.9" pY="144.2" width="532" height="289" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="190.9" y="175.8" kX="-0.03" kY="-0.03" cX="0.99" cY="0.99" z="5" pX="265.9" pY="144.2" width="532" height="289" alpha="100" red="100" green="100" blue="100" dI="0" dr="35"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="third" width="4096" height="512">
+  <SubTexture name="third_cell-third_6" pX="268.5" pY="145.5" width="537" height="291" x="0" y="0"/>
+  <SubTexture name="third_cell-third_5" pX="182" pY="164.5" width="366" height="329" x="539" y="0"/>
+  <SubTexture name="third_cell-third_4" pX="170.85" pY="165" width="270" height="337" x="1248" y="0"/>
+  <SubTexture name="third_cell-third_3" pX="170.5" pY="185.35" width="229" height="327" x="1520" y="0"/>
+  <SubTexture name="third_cell-third_1_1" pX="58.2" pY="168.8" width="181" height="63" x="1751" y="0"/>
+  <SubTexture name="third_cell-third_1" pX="174.4" pY="149.5" width="339" height="301" x="907" y="0"/>
+ </TextureAtlas>
+</skeleton>

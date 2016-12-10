@@ -1,0 +1,81 @@
+<skeleton name="new_ball_3" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="to_be_nomber_one">
+   <b name="boy.png" x="10.5" y="20.1" kX="0" kY="0" cX="0.04" cY="0.04" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="boy"/>
+   </b>
+   <b name="fly_new_ball.png" x="18.8" y="23.8" kX="0" kY="0" cX="0.04" cY="0.04" alpha="100" red="100" green="100" blue="100" z="1">
+    <d name="fly_new_bal"/>
+   </b>
+   <b name="monster_small.png" x="17.75" y="18.2" kX="0" kY="0" cX="0.04" cY="0.04" alpha="100" red="100" green="100" blue="100" z="2">
+    <d name="monster_small"/>
+   </b>
+   <b name="star.png" x="265.85" y="4.65" kX="-96.51" kY="-96.51" cX="0.1" cY="0.1" alpha="100" red="100" green="100" blue="100" z="3">
+    <d name="star"/>
+   </b>
+   <b name="star1.png" x="269.85" y="49.8" kX="-4.24" kY="-4.24" cX="0.1" cY="0.1" alpha="100" red="100" green="100" blue="100" z="3">
+    <d name="star_1"/>
+   </b>
+   <b name="star2.png" x="228.95" y="35" kX="-122.04" kY="-122.04" cX="0.1" cY="0.1" alpha="100" red="100" green="100" blue="100" z="3">
+    <d name="star2"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="to_be_nomber_one">
+   <mov name="new_ball" dr="50" to="0" drTW="50" lp="0" twE="NaN">
+    <b name="boy.png" sc="1" dl="0">
+     <f x="10.5" y="20.1" kX="0" kY="0" cX="0.04" cY="0.04" z="0" pX="5.4" pY="7.6" width="11" height="16" alpha="100" red="100" green="100" blue="100" dI="0" twE="1" dr="7"/>
+     <f x="-181.75" y="-40.65" kX="-8.23" kY="-8.23" cX="1.1" cY="1.1" z="0" pX="156.65" pY="202.25" width="314" height="405" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="-128.95" y="-3.1" kX="1.73" kY="1.73" cX="0.9" cY="0.9" z="0" pX="112.1" pY="154.85" width="225" height="310" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="-154.1" y="-15.65" kX="-1.48" kY="-1.48" cX="1.02" cY="1.02" z="0" pX="125.7" pY="174.15" width="252" height="349" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="-145.2" y="-14.55" kX="-0.32" kY="-0.32" cX="0.98" cY="0.98" z="0" pX="117.95" pY="165.65" width="236" height="332" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="-148.6" y="-15.15" kX="0" kY="0" cX="1" cY="1" z="0" pX="119.5" pY="168.5" width="239" height="337" alpha="100" red="100" green="100" blue="100" dI="0" dr="24"/>
+    </b>
+    <b name="fly_new_ball.png" sc="1" dl="0">
+     <f x="18.8" y="23.8" kX="0" kY="0" cX="0.04" cY="0.04" z="1" pX="12.1" pY="4.7" width="25" height="10" alpha="100" red="100" green="100" blue="100" dI="0" twE="1" dr="5"/>
+     <f x="37.4" y="119.1" kX="0" kY="0" cX="1.1" cY="1.1" z="1" pX="295.35" pY="114.95" width="591" height="230" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="33.9" y="100.25" kX="0" kY="0" cX="0.9" cY="0.9" z="1" pX="241.65" pY="94.05" width="484" height="189" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="35.95" y="111.05" kX="0" kY="0" cX="1.02" cY="1.02" z="1" pX="272.55" pY="106.1" width="546" height="213" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="35.25" y="107.7" kX="0" kY="0" cX="0.98" cY="0.98" z="1" pX="262.95" pY="102.35" width="526" height="205" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="35.65" y="109.65" kX="0" kY="0" cX="1" cY="1" z="1" pX="268.5" pY="104.5" width="537" height="209" alpha="100" red="100" green="100" blue="100" dI="0" dr="26"/>
+    </b>
+    <b name="monster_small.png" sc="1" dl="0">
+     <f dr="2" dI="-1"/>
+     <f x="17.75" y="18.2" kX="0" kY="0" cX="0.04" cY="0.04" z="2" pX="1.9" pY="1.95" width="4" height="4" alpha="100" red="100" green="100" blue="100" dI="0" twE="1" dr="5"/>
+     <f x="12.4" y="-102.9" kX="0" kY="0" cX="0.89" cY="1.66" z="2" pX="37.35" pY="72.35" width="75" height="145" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="13.4" y="-2.55" kX="0" kY="0" cX="1.43" cY="0.68" z="2" pX="60.05" pY="29.5" width="121" height="59" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="12.85" y="-23.9" kX="0" kY="0" cX="0.91" cY="1.2" z="2" pX="38.15" pY="52.3" width="77" height="105" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="13" y="-13.9" kX="0" kY="0" cX="1.01" cY="0.96" z="2" pX="42.6" pY="41.85" width="86" height="84" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="5"/>
+     <f x="12.9" y="-15.3" kX="0" kY="0" cX="1" cY="1" z="2" pX="42" pY="43.5" width="84" height="87" alpha="100" red="100" green="100" blue="100" dI="0" dr="24"/>
+    </b>
+    <b name="star.png" sc="1" dl="0">
+     <f dr="27" dI="-1"/>
+     <f x="265.85" y="4.65" kX="-96.51" kY="-96.51" cX="0.1" cY="0.1" z="3" pX="2.45" pY="2.25" width="5" height="5" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="265.85" y="4.65" kX="-55.16" kY="-55.16" cX="1.94" cY="1.94" z="3" pX="57.2" pY="56.25" width="115" height="113" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="6"/>
+     <f x="265.85" y="4.65" kX="0" kY="0" cX="1" cY="1" z="3" pX="20" pY="22" width="40" height="44" alpha="100" red="100" green="100" blue="100" dI="0" dr="13"/>
+    </b>
+    <b name="star1.png" sc="1" dl="0">
+     <f dr="21" dI="-1"/>
+     <f x="269.85" y="49.8" kX="-4.24" kY="-4.24" cX="0.1" cY="0.1" z="3" pX="1.7" pY="1.7" width="4" height="4" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="269.85" y="49.85" kX="15.79" kY="15.79" cX="1.94" cY="1.94" z="4" pX="38.35" pY="38.35" width="77" height="77" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="6"/>
+     <f x="269.85" y="49.8" kX="42.69" kY="42.69" cX="1" cY="1" z="4" pX="22.6" pY="22.6" width="46" height="46" alpha="100" red="100" green="100" blue="100" dI="0" dr="19"/>
+    </b>
+    <b name="star2.png" sc="1" dl="0">
+     <f dr="15" dI="-1"/>
+     <f x="228.95" y="35" kX="-122.04" kY="-122.04" cX="0.1" cY="0.1" z="3" pX="2.1" pY="2.1" width="5" height="5" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="4"/>
+     <f x="228.95" y="35.05" kX="-69.72" kY="-69.72" cX="3.88" cY="3.88" z="4" pX="75.55" pY="75.4" width="151" height="151" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="6"/>
+     <f x="228.95" y="35" kX="0" kY="0" cX="1" cY="1" z="5" pX="15.15" pY="15.15" width="31" height="31" alpha="100" red="100" green="100" blue="100" dI="0" dr="25"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="new_ball_3" width="1024" height="512">
+  <SubTexture name="star2" pX="15.15" pY="15.15" width="31" height="31" x="942" y="0"/>
+  <SubTexture name="star_1" pX="16" pY="16" width="32" height="32" x="908" y="0"/>
+  <SubTexture name="star" pX="20" pY="22" width="40" height="44" x="866" y="0"/>
+  <SubTexture name="monster_small" pX="42" pY="43.5" width="84" height="87" x="780" y="0"/>
+  <SubTexture name="fly_new_bal" pX="268.5" pY="104.5" width="537" height="209" x="0" y="0"/>
+  <SubTexture name="boy" pX="119.5" pY="168.5" width="239" height="337" x="539" y="0"/>
+ </TextureAtlas>
+</skeleton>

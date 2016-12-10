@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Laguage</key>
+	<string>zh</string>
+	<key>GameTitle</key>
+	<string>进击的小怪物</string>
+	<key>OK</key>
+	<string>确定</string>
+	<key>Cancle</key>
+	<string>取消</string>
+	<key>Exchange</key>
+	<string>兑换</string>
+	<key>Notification</key>
+	<string>通知</string>
+	<key>IAPLoading</key>
+	<string>正在连接到iTunes...</string>
+	<key>IAPERROR</key>
+	<string>无法连接到 iTunes，请稍后再试。</string>
+	<key>Continue</key>
+	<string>继续</string>
+	<key>NewVersion</key>
+	<string>进击的小怪物有最新版本,您是否更新到最新版本?</string>
+	<key>Please leave your suggestions and advice to us.</key>
+	<string>请您留下宝贵的建议和意见</string>
+	<key>InputRedemptionCode</key>
+	<string>请输入完成后点击兑换按钮</string>
+	<key>ShareFail</key>
+	<string>分享失败</string>
+	<key>ShareSuccess</key>
+	<string>分享成功</string>
+	<key>GetShopItemFail</key>
+	<string>获取商品信息失败</string>
+	<key>GameCenterFailed</key>
+	<string>GameCenter登录失败</string>
+	<key>RedemptionCode</key>
+	<string>兑换码</string>
+</dict>
+</plist>

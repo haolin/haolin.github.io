@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="11" tilewidth="68" tileheight="68">
+ <properties>
+  <property name="Connect" value="58,01,1|68,11,1|78,21,1|88,31,1|08,51,1|18,61,1|28,71,1|38,81,1"/>
+ </properties>
+ <tileset firstgid="1" name="game_grid1" tilewidth="68" tileheight="68">
+  <image source="game_grid1.png" width="68" height="68"/>
+ </tileset>
+ <tileset firstgid="2" name="map" tilewidth="68" tileheight="68">
+  <image source="map.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Valid" width="9" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAMGEcxXkwtAAA+3ABJ
+  </data>
+ </layer>
+ <objectgroup name="BottomObj" width="9" height="11" visible="0"/>
+ <objectgroup name="MiddleObj" width="9" height="11" visible="0">
+  <object type="Flower" gid="17" x="340" y="136">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="17" x="340" y="272">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="17" x="408" y="204">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="17" x="476" y="272">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="17" x="476" y="136">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="17" x="544" y="204">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="17" x="136" y="340">
+   <properties>
+    <property name="Color" value="Purple"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="2" x="136" y="408">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="68" y="408">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="204" y="408">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="32" type="Monster" gid="19" x="136" y="476">
+   <properties>
+    <property name="Color" value="Yellow"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="204" y="204">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="204" y="272">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Flower" gid="4" x="408" y="408">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="476" y="544">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="2" x="68" y="204">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="2" x="68" y="272">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="2" x="0" y="340">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="2" x="68" y="476">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="2" x="136" y="544">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="0" y="476">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="68" y="612">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="476" y="408">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="408" y="612">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="340" y="408">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="340" y="544">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="32" type="Monster" gid="19" x="544" y="476">
+   <properties>
+    <property name="Color" value="Yellow"/>
+   </properties>
+  </object>
+  <object name="32" type="Monster" gid="19" x="408" y="476">
+   <properties>
+    <property name="Color" value="Yellow"/>
+   </properties>
+  </object>
+  <object name="32" type="Monster" gid="19" x="340" y="612">
+   <properties>
+    <property name="Color" value="Yellow"/>
+   </properties>
+  </object>
+  <object name="32" type="Monster" gid="19" x="544" y="612">
+   <properties>
+    <property name="Color" value="Yellow"/>
+   </properties>
+  </object>
+  <object name="32" type="Monster" gid="19" x="136" y="136">
+   <properties>
+    <property name="Color" value="Yellow"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="17" x="0" y="136">
+   <properties>
+    <property name="Color" value="Purple"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="17" x="0" y="272">
+   <properties>
+    <property name="Color" value="Purple"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="17" x="0" y="408">
+   <properties>
+    <property name="Color" value="Purple"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="17" x="68" y="544">
+   <properties>
+    <property name="Color" value="Purple"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="2" x="476" y="612">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="2" x="204" y="612">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="17" x="204" y="340">
+   <properties>
+    <property name="Color" value="Purple"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="17" x="204" y="476">
+   <properties>
+    <property name="Color" value="Purple"/>
+   </properties>
+  </object>
+  <object name="32" type="Monster" gid="19" x="0" y="544">
+   <properties>
+    <property name="Color" value="Yellow"/>
+   </properties>
+  </object>
+  <object name="32" type="Monster" gid="19" x="136" y="612">
+   <properties>
+    <property name="Color" value="Yellow"/>
+   </properties>
+  </object>
+  <object name="32" type="Monster" gid="19" x="136" y="204">
+   <properties>
+    <property name="Color" value="Yellow"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="136" y="272">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="204" y="136">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="68" y="136">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object type="Monster" gid="18" x="204" y="544">
+   <properties>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="0" y="204">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="68" y="340">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="0" y="612">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="408" y="136">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="340" y="204">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="544" y="136">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="408" y="272">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="476" y="204">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Monster" gid="4" x="544" y="272">
+   <properties>
+    <property name="Color" value="Orange"/>
+   </properties>
+  </object>
+  <object name="43" type="Flower" gid="4" x="544" y="408">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object name="43" type="Flower" gid="4" x="340" y="476">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object name="43" type="Flower" gid="4" x="476" y="476">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object name="43" type="Flower" gid="4" x="408" y="544">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+  <object name="43" type="Flower" gid="4" x="544" y="544">
+   <properties>
+    <property name="FlowerLevel" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#000000" name="TopObj" width="9" height="11" visible="0">
+  <object name="10" type="Factory_Normal" x="340" y="272" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Pink,Purple,Orange"/>
+    <property name="FlowerSwitch" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="544" y="272" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Pink,Purple,Orange"/>
+    <property name="FlowerSwitch" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="408" y="272" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Pink,Purple,Orange"/>
+    <property name="FlowerSwitch" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="476" y="272" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Pink,Purple,Orange"/>
+    <property name="FlowerSwitch" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="544" y="408">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="544" y="544">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="476" y="476">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="408" y="408">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="408" y="544">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="340" y="476">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="544" y="204">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="476" y="136">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="476" y="272">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="408" y="204">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="340" y="136">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="Lock" type="Lock" gid="49" x="340" y="272">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

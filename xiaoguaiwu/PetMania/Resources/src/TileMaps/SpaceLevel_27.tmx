@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="11" tilewidth="68" tileheight="68">
+ <properties>
+  <property name="Connect" value="28,01,1|68,81,1|36,03,1|56,83,1"/>
+ </properties>
+ <tileset firstgid="1" name="game_grid1" tilewidth="68" tileheight="68">
+  <image source="game_grid1.png" width="68" height="68"/>
+ </tileset>
+ <tileset firstgid="2" name="map" tilewidth="68" tileheight="68">
+  <image source="map.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Valid" width="9" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAMGJFodIwsj08NseYMlBpc/kUXw8WnBgAAK4gALw==
+  </data>
+ </layer>
+ <objectgroup name="BottomObj" width="9" height="11">
+  <object name="Jelly2" type="Floor" gid="33" x="0" y="136">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly2" type="Floor" gid="33" x="544" y="136">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly2" type="Floor" gid="33" x="544" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly2" type="Floor" gid="33" x="544" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly2" type="Floor" gid="33" x="544" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly2" type="Floor" gid="33" x="0" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly2" type="Floor" gid="33" x="0" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly2" type="Floor" gid="33" x="0" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly2" type="Floor" gid="33" x="0" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object name="Jelly2" type="Floor" gid="33" x="544" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="MiddleObj" width="9" height="11"/>
+ <objectgroup color="#000000" name="TopObj" width="9" height="11">
+  <object name="10" type="Factory_Normal" x="136" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="204" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="272" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="340" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Pink"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="408" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Pink"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

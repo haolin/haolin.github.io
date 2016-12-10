@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Laguage</key>
+	<string>en</string>
+	<key>GameTitle</key>
+	<string>Cosmic Crash</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>Cancle</key>
+	<string>Cancel</string>
+	<key>Exchange</key>
+	<string>Exchange</string>
+	<key>Notification</key>
+	<string>Notification</string>
+	<key>IAPLoading</key>
+	<string>Connect to Appstore..</string>
+	<key>IAPERROR</key>
+	<string>Connect failed, try later.</string>
+	<key>Continue</key>
+	<string>Continue</string>
+	<key>NewVersion</key>
+	<string>There&apos;s a newer version, update?</string>
+	<key>Please leave your suggestions and advice to us.</key>
+	<string>Please send us your suggestions.</string>
+	<key>InputRedemptionCode</key>
+	<string>Input reward code</string>
+	<key>ShareFail</key>
+	<string>Share failed...</string>
+	<key>ShareSuccess</key>
+	<string>Share completed！</string>
+	<key>GetShopItemFail</key>
+	<string>Failed to get Item Informations.</string>
+	<key>GameCenterFailed</key>
+	<string>Login failed, try later.</string>
+	<key>RedemptionCode</key>
+	<string>Reward code</string>
+</dict>
+</plist>

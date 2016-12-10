@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="11" tilewidth="68" tileheight="68">
+ <properties>
+  <property name="Connect" value="02,18,1|04,28,1|06,38,1|82,78,1|84,68,1|86,58,1"/>
+ </properties>
+ <tileset firstgid="1" name="game_grid1" tilewidth="68" tileheight="68">
+  <image source="game_grid1.png" width="68" height="68"/>
+ </tileset>
+ <tileset firstgid="2" name="map" tilewidth="68" tileheight="68">
+  <image source="map.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Valid" width="9" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAeMGLByHL41KCrHUzmEALY9KLbRw0AACcAACs=
+  </data>
+ </layer>
+ <objectgroup name="BottomObj" width="9" height="11"/>
+ <objectgroup name="MiddleObj" width="9" height="11">
+  <object type="Flower" gid="4" x="0" y="204">
+   <properties>
+    <property name="FlowerLevel" value="1"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="4" x="544" y="476">
+   <properties>
+    <property name="FlowerLevel" value="1"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="4" x="0" y="340">
+   <properties>
+    <property name="FlowerLevel" value="1"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="4" x="0" y="476">
+   <properties>
+    <property name="FlowerLevel" value="1"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="4" x="544" y="204">
+   <properties>
+    <property name="FlowerLevel" value="1"/>
+   </properties>
+  </object>
+  <object type="Flower" gid="4" x="544" y="340">
+   <properties>
+    <property name="FlowerLevel" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#000000" name="TopObj" width="9" height="11">
+  <object name="10" type="Factory_Normal" x="136" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Orange"/>
+    <property name="FlowerSwitch" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="204" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Orange"/>
+    <property name="FlowerSwitch" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="272" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Orange"/>
+    <property name="FlowerSwitch" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="340" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Orange"/>
+    <property name="FlowerSwitch" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="408" y="0" width="68" height="68">
+   <properties>
+    <property name="FactoryColorsConfig" value="Blue,Yellow,Orange"/>
+    <property name="FlowerSwitch" value="1"/>
+   </properties>
+  </object>
+  <object type="Stone" gid="34" x="476" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object type="Stone" gid="34" x="68" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="0" y="136" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="0" y="272" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="0" y="408" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="544" y="136" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="544" y="272" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Ice" x="544" y="408" width="68" height="68">
+   <properties>
+    <property name="Layers" value="3"/>
+   </properties>
+  </object>
+  <object name="10" type="Begin" x="0" y="68" width="68" height="68"/>
+  <object name="10" type="Begin" x="544" y="68" width="68" height="68"/>
+  <object name="10" type="Begin" x="0" y="204" width="68" height="68"/>
+  <object name="10" type="Begin" x="0" y="340" width="68" height="68"/>
+  <object name="10" type="Begin" x="544" y="204" width="68" height="68"/>
+  <object name="10" type="Begin" x="544" y="340" width="68" height="68"/>
+  <object type="Stone" gid="34" x="136" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object type="Stone" gid="34" x="204" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object type="Stone" gid="34" x="340" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+  <object type="Stone" gid="34" x="408" y="612">
+   <properties>
+    <property name="Layers" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

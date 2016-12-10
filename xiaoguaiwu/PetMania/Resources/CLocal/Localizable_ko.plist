@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Laguage</key>
+	<string>ko</string>
+	<key>GameTitle</key>
+	<string>너네별로 돌아가 for kakao</string>
+	<key>OK</key>
+	<string>확인</string>
+	<key>Cancle</key>
+	<string>취소</string>
+	<key>Exchange</key>
+	<string>교환</string>
+	<key>Notification</key>
+	<string>공지</string>
+	<key>IAPLoading</key>
+	<string>iTunes에 접속 중입니다...</string>
+	<key>IAPERROR</key>
+	<string>iTunes에 접속할 수 없습니다. 잠시 후에 다시 시도해주세요.</string>
+	<key>Continue</key>
+	<string>계속</string>
+	<key>NewVersion</key>
+	<string>진격의 몬스터 최신 버전이 출시되었습니다. 최신 버전으로 업데이트하시겠습니까?</string>
+	<key>Please leave your suggestions and advice to us.</key>
+	<string>소중한 의견을 남겨주세요.</string>
+	<key>InputRedemptionCode</key>
+	<string>입력 후 교환 버튼을 클릭해주세요.</string>
+	<key>ShareFail</key>
+	<string>Share failed...</string>
+	<key>ShareSuccess</key>
+	<string>Share completed！</string>
+	<key>GetShopItemFail</key>
+	<string>아이템 정보 획득 실패.</string>
+	<key>GameCenterFailed</key>
+	<string>Login failed, try later.</string>
+	<key>RedemptionCode</key>
+	<string>교환코드</string>
+</dict>
+</plist>

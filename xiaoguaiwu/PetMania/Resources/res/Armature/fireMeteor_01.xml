@@ -1,0 +1,66 @@
+<skeleton name="bz_01" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="bz_01">
+   <b name="1_0003" x="0" y="0" kX="0" kY="0" cX="2" cY="2" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="bz_01_cell-1_00024"/>
+    <d name="bz_01_cell-1_00025"/>
+    <d name="bz_01_cell-1_00026"/>
+    <d name="bz_01_cell-1_00027"/>
+    <d name="bz_01_cell-1_00028"/>
+    <d name="bz_01_cell-1_00029"/>
+    <d name="bz_01_cell-1_00030"/>
+    <d name="bz_01_cell-1_00031"/>
+    <d name="bz_01_cell-1_00032"/>
+    <d name="bz_01_cell-1_00033"/>
+    <d name="bz_01_cell-1_00034"/>
+    <d name="bz_01_cell-1_00035"/>
+    <d name="bz_01_cell-1_00036"/>
+    <d name="bz_01_cell-1_00037"/>
+    <d name="bz_01_cell-1_00038"/>
+    <d name="bz_01_cell-1_00039"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="bz_01">
+   <mov name="bz" dr="16" to="6" drTW="16" lp="0" twE="NaN">
+    <b name="1_0003" sc="1" dl="0">
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="1" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="2" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="3" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="4" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="5" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="6" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="7" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="8" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="9" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="10" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="11" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="12" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="13" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="14" dr="1"/>
+     <f x="0" y="0" kX="0" kY="0" cX="2" cY="2" z="0" pX="150" pY="150" width="300" height="300" alpha="100" red="100" green="100" blue="100" dI="15" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="bz_01" width="512" height="1024">
+  <SubTexture name="bz_01_cell-1_00039" pX="75" pY="75" width="150" height="150" x="152" y="0"/>
+  <SubTexture name="bz_01_cell-1_00038" pX="75" pY="75" width="150" height="150" x="0" y="456"/>
+  <SubTexture name="bz_01_cell-1_00037" pX="75" pY="75" width="150" height="150" x="0" y="152"/>
+  <SubTexture name="bz_01_cell-1_00036" pX="75" pY="75" width="150" height="150" x="304" y="608"/>
+  <SubTexture name="bz_01_cell-1_00035" pX="75" pY="75" width="150" height="150" x="304" y="152"/>
+  <SubTexture name="bz_01_cell-1_00034" pX="75" pY="75" width="150" height="150" x="304" y="456"/>
+  <SubTexture name="bz_01_cell-1_00033" pX="75" pY="75" width="150" height="150" x="152" y="304"/>
+  <SubTexture name="bz_01_cell-1_00032" pX="75" pY="75" width="150" height="150" x="0" y="760"/>
+  <SubTexture name="bz_01_cell-1_00031" pX="75" pY="75" width="150" height="150" x="0" y="0"/>
+  <SubTexture name="bz_01_cell-1_00030" pX="75" pY="75" width="150" height="150" x="304" y="0"/>
+  <SubTexture name="bz_01_cell-1_00029" pX="75" pY="75" width="150" height="150" x="152" y="152"/>
+  <SubTexture name="bz_01_cell-1_00028" pX="75" pY="75" width="150" height="150" x="0" y="304"/>
+  <SubTexture name="bz_01_cell-1_00027" pX="75" pY="75" width="150" height="150" x="304" y="304"/>
+  <SubTexture name="bz_01_cell-1_00026" pX="75" pY="75" width="150" height="150" x="152" y="456"/>
+  <SubTexture name="bz_01_cell-1_00025" pX="75" pY="75" width="150" height="150" x="0" y="608"/>
+  <SubTexture name="bz_01_cell-1_00024" pX="75" pY="75" width="150" height="150" x="152" y="608"/>
+ </TextureAtlas>
+</skeleton>

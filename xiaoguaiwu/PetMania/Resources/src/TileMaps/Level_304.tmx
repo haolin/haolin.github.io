@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="11" tilewidth="68" tileheight="68">
+ <tileset firstgid="1" name="game_grid1" tilewidth="68" tileheight="68">
+  <image source="game_grid1.png" width="68" height="68"/>
+ </tileset>
+ <tileset firstgid="2" name="map" tilewidth="68" tileheight="68">
+  <image source="map.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Valid" width="9" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOMOLB6PIMOMQJqcfFp7U4Pj4xfqcWAAAyBAA6
+  </data>
+ </layer>
+ <objectgroup name="BottomObj" width="9" height="11"/>
+ <objectgroup name="MiddleObj" width="9" height="11"/>
+ <objectgroup color="#000000" name="TopObj" width="9" height="11">
+  <object name="10" type="Factory_Normal" x="68" y="0" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Yellow,Pink,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="0" y="68" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Yellow,Pink,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="136" y="0" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Yellow,Pink,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="204" y="0" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Yellow,Pink,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="272" y="0" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Yellow,Pink,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="340" y="0" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Yellow,Pink,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="408" y="0" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Yellow,Pink,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="476" y="0" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Yellow,Pink,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="544" y="68" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Yellow,Pink,Purple,Orange"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#00ff00" name="CeilObj" width="9" height="11"/>
+</map>

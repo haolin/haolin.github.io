@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="9" height="11" tilewidth="68" tileheight="68">
+ <properties>
+  <property name="Connect" value="08,21,1|88,61,1"/>
+ </properties>
+ <tileset firstgid="1" name="game_grid1" tilewidth="68" tileheight="68">
+  <image source="game_grid1.png" width="68" height="68"/>
+ </tileset>
+ <tileset firstgid="2" name="map" tilewidth="68" tileheight="68">
+  <image source="map.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Valid" width="9" height="11">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAeMBLgk6IGHaOrx6UGG3ug1VALAAAiYAAt
+  </data>
+ </layer>
+ <objectgroup name="BottomObj" width="9" height="11">
+  <object type="Floor" gid="33" x="272" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="0" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="544" y="612">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="544" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="544" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="0" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="0" y="612">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="408" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="544" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="340" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="136" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="272" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="0" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="0" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="204" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="544" y="340">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="408" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="272" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="340" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="136" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="408" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="340" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="340" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="204" y="476">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="136" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="408" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="136" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="204" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="204" y="408">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="272" y="544">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="272" y="612">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="340" y="612">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="136" y="612">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="204" y="612">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="408" y="612">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="272" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="136" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="340" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="408" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+  <object type="Floor" gid="33" x="204" y="272">
+   <properties>
+    <property name="Layers" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="MiddleObj" width="9" height="11"/>
+ <objectgroup color="#000000" name="TopObj" width="9" height="11">
+  <object name="10" type="Factory_Normal" x="0" y="204" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="204" y="136" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="272" y="136" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="340" y="136" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+  <object name="10" type="Factory_Normal" x="544" y="204" width="68" height="68">
+   <properties>
+    <property name="Block" value="1"/>
+    <property name="FactoryColorsConfig" value="Blue,Green,Yellow,Purple,Orange"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

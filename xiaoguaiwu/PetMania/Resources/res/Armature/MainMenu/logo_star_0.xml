@@ -1,0 +1,53 @@
+<skeleton name="logo_star_0" frameRate="24" version="1.4">
+ <armatures>
+  <armature name="logo_star_0">
+   <b name="logo_star_1" x="163.2" y="12.6" kX="9.78" kY="9.78" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="0">
+    <d name="logo_star_cell-logo_star_1"/>
+   </b>
+   <b name="logo_star_3" x="-125.8" y="3.85" kX="11.65" kY="11.65" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="1">
+    <d name="logo_star_cell-logo_star_3"/>
+   </b>
+   <b name="logo_star_2" x="149.3" y="-23.8" kX="0" kY="0" cX="1" cY="1" alpha="100" red="100" green="100" blue="100" z="2">
+    <d name="logo_star_cell-logo_star_2"/>
+   </b>
+  </armature>
+ </armatures>
+ <animations>
+  <animation name="logo_star_0">
+   <mov name="logo_star_0" dr="125" to="6" drTW="125" lp="0" twE="NaN">
+    <b name="logo_star_1" sc="1" dl="0">
+     <f x="163.2" y="12.6" kX="9.78" kY="9.78" cX="1" cY="1" z="0" pX="42.6" pY="33.65" width="86" height="68" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="19"/>
+     <f x="140.8" y="20.2" kX="-2.19" kY="-2.19" cX="1" cY="1" z="0" pX="39.5" pY="28.95" width="79" height="58" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="20"/>
+     <f x="163.2" y="12.6" kX="9.78" kY="9.78" cX="1" cY="1" z="0" pX="42.6" pY="33.65" width="86" height="68" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="19"/>
+     <f x="140.8" y="20.2" kX="-2.19" kY="-2.19" cX="1" cY="1" z="0" pX="39.5" pY="28.95" width="79" height="58" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="20"/>
+     <f x="163.2" y="12.6" kX="9.78" kY="9.78" cX="1" cY="1" z="0" pX="42.6" pY="33.65" width="86" height="68" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="19"/>
+     <f x="140.8" y="20.2" kX="-2.19" kY="-2.19" cX="1" cY="1" z="0" pX="39.5" pY="28.95" width="79" height="58" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="27"/>
+     <f x="163.2" y="12.6" kX="9.78" kY="9.78" cX="1" cY="1" z="0" pX="42.6" pY="33.65" width="86" height="68" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="logo_star_3" sc="1" dl="0">
+     <f x="-125.8" y="3.85" kX="11.65" kY="11.65" cX="1" cY="1" z="1" pX="52.5" pY="40.85" width="105" height="82" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="19"/>
+     <f x="-138.65" y="-6.8" kX="1.48" kY="1.48" cX="1" cY="1" z="1" pX="47.8" pY="33.2" width="96" height="67" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="20"/>
+     <f x="-125.8" y="3.85" kX="11.65" kY="11.65" cX="1" cY="1" z="1" pX="52.5" pY="40.85" width="105" height="82" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="19"/>
+     <f x="-138.65" y="-6.8" kX="1.48" kY="1.48" cX="1" cY="1" z="1" pX="47.8" pY="33.2" width="96" height="67" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="20"/>
+     <f x="-125.8" y="3.85" kX="11.65" kY="11.65" cX="1" cY="1" z="1" pX="52.5" pY="40.85" width="105" height="82" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="19"/>
+     <f x="-138.65" y="-6.8" kX="1.48" kY="1.48" cX="1" cY="1" z="1" pX="47.8" pY="33.2" width="96" height="67" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="27"/>
+     <f x="-125.8" y="3.85" kX="11.65" kY="11.65" cX="1" cY="1" z="1" pX="52.5" pY="40.85" width="105" height="82" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="1"/>
+    </b>
+    <b name="logo_star_2" sc="1" dl="0">
+     <f x="149.3" y="-23.8" kX="0" kY="0" cX="1" cY="1" z="2" pX="30" pY="24" width="60" height="48" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="19"/>
+     <f x="164.9" y="-29" kX="10.47" kY="10.47" cX="1" cY="1" z="2" pX="33.85" pY="29.05" width="68" height="59" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="20"/>
+     <f x="149.3" y="-23.8" kX="0" kY="0" cX="1" cY="1" z="2" pX="30" pY="24" width="60" height="48" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="19"/>
+     <f x="164.9" y="-29" kX="10.47" kY="10.47" cX="1" cY="1" z="2" pX="33.85" pY="29.05" width="68" height="59" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="20"/>
+     <f x="149.3" y="-23.8" kX="0" kY="0" cX="1" cY="1" z="2" pX="30" pY="24" width="60" height="48" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="19"/>
+     <f x="164.9" y="-29" kX="10.47" kY="10.47" cX="1" cY="1" z="2" pX="33.85" pY="29.05" width="68" height="59" alpha="100" red="100" green="100" blue="100" dI="0" twE="0" dr="27"/>
+     <f x="149.3" y="-23.8" kX="0" kY="0" cX="1" cY="1" z="2" pX="30" pY="24" width="60" height="48" alpha="100" red="100" green="100" blue="100" dI="0" dr="1"/>
+    </b>
+   </mov>
+  </animation>
+ </animations>
+ <TextureAtlas name="logo_star_0" width="512" height="128">
+  <SubTexture name="logo_star_cell-logo_star_2" pX="30" pY="24" width="60" height="48" x="175" y="0"/>
+  <SubTexture name="logo_star_cell-logo_star_3" pX="47" pY="32" width="94" height="64" x="0" y="0"/>
+  <SubTexture name="logo_star_cell-logo_star_1" pX="38.5" pY="27.5" width="77" height="55" x="96" y="0"/>
+ </TextureAtlas>
+</skeleton>
